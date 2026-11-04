@@ -1,0 +1,57 @@
+# Real configuration and credentials
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+# Dependencies and generated outputs
+node_modules/
+.next*/
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+*.tsbuildinfo
+next-env.d.ts
+*.log
+runtime/
+work/
+inputs/
+experiments/**/results/
+# External scientific datasets and model weights
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.zip
+*.tar
+*.gz
+*.parquet
+web_release/*
+!web_release/README.md
+data/downloads/
+**/public/compound_images/
+predictor_data/
+retrobiocat_runtime/source/
+retrobiocat_runtime/data/
+subnetx_runtime/source/
+subnetx_runtime/data/
+# Audit outputs stay outside the distribution
+.DS_Store
+Thumbs.db
+
+# Scientific working layers and upstream materials
+external/
+staging/
+evidence_work/
+expression_work/
+reaction_standardization_work/
+logs/

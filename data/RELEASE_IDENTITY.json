@@ -1,0 +1,56 @@
+{
+  "code_prepared_on": "2026-11-04",
+  "scientific_snapshot": "2026.09.1-public-scope-20261030-public",
+  "download_catalog_revision": "2026.09.1-public-scope-20261030-metadata-20261101",
+  "record_counts": {
+    "reactions": 23598,
+    "enzymes": 155428,
+    "reaction_enzyme_associations": 249032,
+    "reaction_assigned_kinetics": 23634
+  },
+  "counts_are": "record counts, not deduplicated chemical transformations/proteins/experiments",
+  "runtime_inputs": [
+    {
+      "name": "reactenzdb_web.db",
+      "size": 2927681536,
+      "sha256": "1207a29d92e179442873df3592efafa8ea3a47eb6699410c8261a556de76b2a6",
+      "identity_type": "recorded_runtime_input_20261104"
+    },
+    {
+      "name": "reactenzdb_evidence_rc.sqlite",
+      "size": 2472488960,
+      "sha256": "bdf445be87b1501207d9878f4d2ad36ed99f49b1cdb64e453170123eae548035",
+      "identity_type": "recorded_runtime_input_20261104"
+    },
+    {
+      "name": "retrosynthesis_reaction_lookup.sqlite",
+      "size": 47890432,
+      "sha256": "4f4d79e2d86362f5af376431a8cf43f6cf3835b5e10986fcdc2576ff8ce4d135",
+      "identity_type": "recorded_runtime_input_20261104"
+    }
+  ],
+  "public_download_inputs": [
+    {
+      "name": "reactenzdb_web.db",
+      "path": "download_bundle/sqlite/reactenzdb_web.db",
+      "size": 2364874752,
+      "sha256": "b3fb42b29af432c46eb24a97f64bcfb0c1e14647d893e6680670f12691fc85f5"
+    },
+    {
+      "name": "reaction_standardization.sqlite",
+      "path": "download_bundle/sqlite/reaction_standardization.sqlite",
+      "size": 150925312,
+      "sha256": "08ab79b8c88fc5ef90f27e6eb70922f0822bb3024a368d731366873afd6ea894"
+    },
+    {
+      "name": "retrosynthesis_reaction_lookup.sqlite",
+      "path": "download_bundle/sqlite/retrosynthesis_reaction_lookup.sqlite",
+      "size": 28667904,
+      "sha256": "d4c9f798bb1f98fadcd1a606256677d8bdc4e882292eb758cba4a3296bc1060f"
+    }
+  ],
+  "runtime_and_public_download_core_are_identical": false,
+  "runtime_evidence_sqlite_in_current_public_catalog": false,
+  "archive_doi": null,
+  "manuscript_doi": null
+}

@@ -1,0 +1,187 @@
+{
+  "schema_version": "1.0",
+  "revision": "literature-pair-notes-20261104-v1",
+  "checked_date": "2026-11-04",
+  "core_snapshot": "2026.09.1-public-scope-20261030-public",
+  "core_sha256": "1207a29d92e179442873df3592efafa8ea3a47eb6699410c8261a556de76b2a6",
+  "scope": "Two source-grounded literature notes linked to existing public reaction–enzyme associations. Separate from the frozen assay database and its assertion counts.",
+  "review_method": "AI-assisted extraction and targeted primary-text checks, with exact native-sequence comparison to current UniProt and the paper-listed RefSeq accession.",
+  "independent_human_review_completed": false,
+  "cascade_experiment_confirmed": false,
+  "records": [
+    {
+      "checked_date": "2026-11-04",
+      "review_status": "ai_assisted_primary_text_checked",
+      "independent_human_review_completed": false,
+      "cascade_experiment_confirmed": false,
+      "record_id": "literature:27917101:Q7RW48:cinnamate",
+      "reaction_id": "OENA13544",
+      "reactenz_reaction_id": "R03262",
+      "biopart_id": "OENC372697",
+      "reactenz_enzyme_id": "E115312",
+      "protein_label": "NcCAR / Q7RW48",
+      "organism": "Neurospora crassa OR74A",
+      "protein_accession": "Q7RW48",
+      "paper_sequence_accession": "XP_955820.1",
+      "gene_locus": "NCU05000",
+      "native_sequence_sha256": "cfadeac7b96ce7bfd8de85e11bd5bb751d6a35b0e223358ef6984469a613329b",
+      "native_sequence_length": 1052,
+      "paper_sequence_identical": true,
+      "current_uniprot_sequence_identical": true,
+      "reaction_context": "Cinnamate to cinnamaldehyde; ATP- and NADPH-dependent carboxylate reduction.",
+      "substrate_smiles": "O=C(O)/C=C/c1ccccc1",
+      "product_smiles": "O=C/C=C/c1ccccc1",
+      "support_level": "target_substrate_activity_with_reported_product_analysis",
+      "assay_readout": "NADPH loss at 340 nm. The paper additionally reports cinnamaldehyde formation by HPLC; that pH-confirmation trace is described as data not shown.",
+      "product_confirmation": "Product formation is reported by the authors using HPLC; the specific pH-confirmation trace is not displayed.",
+      "construct": "Codon-optimized NcCAR, expressed with an N-terminal TEV-cleavable His tag and coexpressed E. coli phosphopantetheinyltransferase. Kinetic parameters were determined after His-tag cleavage and further purification.",
+      "measurements": [
+        {
+          "parameter": "apparent Km",
+          "value": 445,
+          "uncertainty": 50,
+          "unit": "µM",
+          "subject": "cinnamic acid",
+          "anchor": "Results and Discussion; Spectrophotometric Assay"
+        },
+        {
+          "parameter": "kcat",
+          "value": 4.57,
+          "unit": "s⁻¹",
+          "subject": "cinnamic acid",
+          "anchor": "Results and Discussion"
+        },
+        {
+          "parameter": "Vmax",
+          "value": 2.33,
+          "uncertainty": 0.06,
+          "unit": "µmol min⁻¹ mg⁻¹",
+          "subject": "cinnamic acid",
+          "anchor": "Results and Discussion"
+        }
+      ],
+      "conditions": [
+        {
+          "scope": "Kinetic parameter assay",
+          "temperature_c": 28,
+          "ph": 6.0,
+          "description": "MES buffer prepared at 100 mM with 10 mM MgCl2; 160 µL buffer in a 200 µL reaction, ATP and NADPH supplied, 5% v/v DMSO. The stock buffer concentrations are not asserted as the final assay concentrations."
+        }
+      ],
+      "paper": {
+        "pmid": "27917101",
+        "pmcid": "PMC5129534",
+        "doi": "10.1002/adsc.201600914",
+        "year": 2016,
+        "title": "Selective Enzymatic Transformation to Aldehydes in vivo by Fungal Carboxylate Reductase from Neurospora crassa",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5129534/"
+      },
+      "anchors": [
+        {
+          "label": "Target-substrate screening: Table 1",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5129534/#adsc201600914-tbl-0001"
+        },
+        {
+          "label": "Protein identity and kinetic results",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5129534/#adsc201600914-sec-0002"
+        },
+        {
+          "label": "Assay and kinetic conditions",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5129534/#adsc201600914-sec-0008"
+        }
+      ],
+      "limitations": [
+        "These parameters apply to the reported recombinant preparation and assay conditions, not every protein construct or host.",
+        "No combined NcCAR–CHR cascade experiment was established in this check.",
+        "This note does not change frozen source-assertion counts or confer independent expert-review status."
+      ]
+    },
+    {
+      "checked_date": "2026-11-04",
+      "review_status": "ai_assisted_primary_text_checked",
+      "independent_human_review_completed": false,
+      "cascade_experiment_confirmed": false,
+      "record_id": "literature:30126866:Q02971:cinnamaldehyde",
+      "reaction_id": "OENA1868",
+      "reactenz_reaction_id": "R07661",
+      "biopart_id": "OENC178551",
+      "reactenz_enzyme_id": "E023974",
+      "protein_label": "CHR / AtCAD7 / Q02971",
+      "organism": "Arabidopsis thaliana",
+      "protein_accession": "Q02971",
+      "historical_accession": "B9DG76",
+      "paper_sequence_accession": "NP_195511.1",
+      "gene_locus": "At4g37980",
+      "native_sequence_sha256": "894e3970d622a023171e1c1c845093818e16202a06598b9db022f5f882b4511f",
+      "native_sequence_length": 357,
+      "paper_sequence_identical": true,
+      "current_uniprot_sequence_identical": true,
+      "reaction_context": "Cinnamaldehyde reduction in an NADPH-dependent aldehyde-reductase assay, corresponding to the reduction direction of the reference reaction.",
+      "substrate_smiles": "O=C/C=C/c1ccccc1",
+      "product_smiles": "OC/C=C/c1ccccc1",
+      "support_level": "target_substrate_activity_product_identity_not_independently_confirmed",
+      "assay_readout": "NADPH oxidation measured at 340 nm; cinnamaldehyde is directly included in the substrate activity and kinetic experiments.",
+      "product_confirmation": "The inspected target-substrate kinetics establish activity with cinnamaldehyde. The described GC-MS product experiments use hexenal; they do not independently identify cinnamyl alcohol for this target assay. The table names cinnamaldehyde without independently resolving its E/Z form.",
+      "construct": "At4g37980 open reading frame expressed as a C-terminal His-tagged recombinant protein in E. coli. Paper-listed RefSeq NP_195511.1 and the native database sequence match exactly.",
+      "measurements": [
+        {
+          "parameter": "Km",
+          "value": 8.46,
+          "uncertainty": 7.172,
+          "unit": "µM",
+          "subject": "cinnamaldehyde",
+          "anchor": "Table 2"
+        },
+        {
+          "parameter": "Vmax",
+          "value": 587,
+          "uncertainty": 103.0,
+          "unit": "nkat mg⁻¹",
+          "subject": "cinnamaldehyde",
+          "anchor": "Table 2"
+        }
+      ],
+      "conditions": [
+        {
+          "scope": "Reported spectrophotometric assay method",
+          "temperature_c": 25,
+          "ph": 8.0,
+          "description": "50 mM Tris-HCl and NADPH. This is the general enzyme-assay method, not a separately reported cinnamaldehyde pH optimum; the table does not specify a distinct buffer recipe for each kinetic series."
+        }
+      ],
+      "paper": {
+        "pmid": "30126866",
+        "pmcid": "PMC6181032",
+        "doi": "10.1104/pp.18.00632",
+        "year": 2018,
+        "title": "Identification of a Hexenal Reductase That Modulates the Composition of Green Leaf Volatiles",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6181032/"
+      },
+      "anchors": [
+        {
+          "label": "Cinnamaldehyde kinetics: Table 2",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6181032/#tbl2"
+        },
+        {
+          "label": "Recombinant protein and target-substrate activity",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6181032/#s03"
+        },
+        {
+          "label": "Enzyme assay method",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6181032/#s10"
+        },
+        {
+          "label": "Paper sequence accession",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6181032/#s17"
+        }
+      ],
+      "limitations": [
+        "Target-substrate activity is directly reported; separate chemical identification of cinnamyl alcohol was not established for this assay in the inspected material.",
+        "Cinnamaldehyde E/Z identity is not independently established by Table 2.",
+        "Evidence is assigned only to E023974 / At4g37980, not to all seven Arabidopsis candidates or another gene also called CAD7.",
+        "The relatively large reported Km uncertainty is retained; no precision or affinity superiority is inferred.",
+        "No combined NcCAR–CHR cascade experiment was established; the enzymes were measured under different conditions."
+      ]
+    }
+  ]
+}

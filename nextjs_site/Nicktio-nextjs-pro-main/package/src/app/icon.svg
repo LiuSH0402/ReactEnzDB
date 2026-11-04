@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>ReactEnzDB</title>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#10243a"/>
+  <rect x="8.5" y="15" width="7" height="34" fill="#edf5ff"/>
+  <rect x="8.5" y="15" width="23" height="21.5" rx="9" fill="#edf5ff"/>
+  <rect x="15.5" y="21.5" width="10" height="8.5" rx="4" fill="#10243a"/>
+  <path d="m20 32 6.5 1 7.5 16h-7.5z" fill="#edf5ff"/>
+  <path d="M35.5 15h20v6.5H43v7h8l6.5 3.5-6.5 3.5h-8v7h12.5V49h-20z" fill="#2dd4c7"/>
+</svg>

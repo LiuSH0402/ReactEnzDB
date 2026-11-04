@@ -1,0 +1,8 @@
+JSME Molecule Editor 2024.04.29
+Copyright (c) Peter Ertl and Bruno Bienfait
+License: BSD-3-Clause
+Homepage: https://jsme-editor.github.io/
+Citation: B. Bienfait and P. Ertl, JSME: a free molecule editor in JavaScript, J. Cheminformatics 5:24 (2013)
+
+Vendored from the jsme-editor npm package for local structure drawing on ReactEnzDB Search.
+These files are served from /jsme and are not a ReactEnzDB data layer.

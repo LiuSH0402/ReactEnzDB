@@ -1,0 +1,7 @@
+networkx==3.2.1
+numpy==1.26.4
+pandas==2.2.3
+PyYAML==6.0.2
+rdkit==2024.3.5
+setuptools==75.8.0
+six==1.17.0

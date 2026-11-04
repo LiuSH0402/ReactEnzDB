@@ -1,0 +1,1012 @@
+[
+  {
+    "script": "scripts/analyze_candidate_redundancy_diversity.py",
+    "cli_options": [],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "RELEASE_ROOT",
+        "expression": "ROOT / 'web_release'"
+      },
+      {
+        "name": "SOURCE_DB",
+        "expression": "ROOT / 'web_release' / 'enzyme_sequence_clusters.sqlite'"
+      },
+      {
+        "name": "OUTPUT_DB",
+        "expression": "ROOT / 'web_release' / 'candidate_diversity_analysis.sqlite'"
+      },
+      {
+        "name": "DOWNLOAD_DIR",
+        "expression": "ROOT / 'web_release' / 'downloads'"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/build_advanced_candidate_selection.py",
+    "cli_options": [
+      "--limit-reactions"
+    ],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "CORE_DB",
+        "expression": "ROOT / 'web_release' / 'reactenzdb_web.db'"
+      },
+      {
+        "name": "CLUSTER_DB",
+        "expression": "ROOT / 'web_release' / 'enzyme_sequence_clusters.sqlite'"
+      },
+      {
+        "name": "EVIDENCE_DB",
+        "expression": "ROOT / 'evidence_work' / 'release_candidate' / 'reactenzdb_evidence_rc.sqlite'"
+      },
+      {
+        "name": "OUTPUT_DB",
+        "expression": "ROOT / 'web_release' / 'advanced_candidate_selection.sqlite'"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/build_brenda_sequence_catalog.py",
+    "cli_options": [
+      "--limit-files",
+      "--reprocess"
+    ],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "WORK",
+        "expression": "ROOT / 'evidence_work'"
+      },
+      {
+        "name": "RAW_ROOT",
+        "expression": "WORK / 'raw' / 'brenda'"
+      },
+      {
+        "name": "EVIDENCE_DB",
+        "expression": "WORK / 'enzyme_reaction_evidence.sqlite'"
+      },
+      {
+        "name": "FETCH_DB",
+        "expression": "WORK / 'source_fetch_status.sqlite'"
+      },
+      {
+        "name": "OUTPUT_DB",
+        "expression": "WORK / 'brenda_sequence_catalog.sqlite'"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/build_browse_summary_tables.py",
+    "cli_options": [],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/build_enzyme_reaction_evidence.py",
+    "cli_options": [
+      "--stage"
+    ],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "CORE_DB",
+        "expression": "ROOT / 'web_release' / 'reactenzdb_web.db'"
+      },
+      {
+        "name": "WORK_DIR",
+        "expression": "ROOT / 'evidence_work'"
+      },
+      {
+        "name": "OUTPUT_DB",
+        "expression": "WORK_DIR / 'enzyme_reaction_evidence.sqlite'"
+      },
+      {
+        "name": "SOURCE_STATUS_DB",
+        "expression": "WORK_DIR / 'source_fetch_status.sqlite'"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/build_evidence_release_candidate.py",
+    "cli_options": [
+      "--skip-tsv"
+    ],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "WORK",
+        "expression": "ROOT / 'evidence_work'"
+      },
+      {
+        "name": "SOURCE_DB",
+        "expression": "WORK / 'enzyme_reaction_evidence.sqlite'"
+      },
+      {
+        "name": "RELEASE_DIR",
+        "expression": "WORK / 'release_candidate'"
+      },
+      {
+        "name": "OUTPUT_DB",
+        "expression": "RELEASE_DIR / 'reactenzdb_evidence_rc.sqlite'"
+      },
+      {
+        "name": "TSV_DIR",
+        "expression": "RELEASE_DIR / 'tsv'"
+      },
+      {
+        "name": "INCLUDED_SOURCE_SQL",
+        "expression": "\"(source_db IN ('SABIO-RK','BRENDA') OR source_db LIKE 'ReactEnzDB-core:%')\""
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/build_evidence_scores.py",
+    "cli_options": [],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/build_expression_evidence_foundation.py",
+    "cli_options": [
+      "--force"
+    ],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "DATA_ROOT",
+        "expression": "Path(os.environ.get('REACTENZDB_INPUT_ROOT', ROOT / 'inputs'))"
+      },
+      {
+        "name": "CORE_DB",
+        "expression": "ROOT / 'web_release' / 'reactenzdb_web.db'"
+      },
+      {
+        "name": "UPSTREAM_DB",
+        "expression": "DATA_ROOT / 'rdbsb_v2' / 'rdbsb_biosyn_v2.db'"
+      },
+      {
+        "name": "HOST_CONTEXT_DB",
+        "expression": "ROOT / 'web_release' / 'host_context_chassis.sqlite'"
+      },
+      {
+        "name": "WORK",
+        "expression": "ROOT / 'expression_work'"
+      },
+      {
+        "name": "OUTPUT_DB",
+        "expression": "WORK / 'expression_evidence.sqlite'"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/build_expression_evidence_web_release.py",
+    "cli_options": [],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/build_model_ready_dataset.py",
+    "cli_options": [
+      "--main-db",
+      "--output-db",
+      "--download-dir",
+      "--summary"
+    ],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "DEFAULT_MAIN_DB",
+        "expression": "ROOT / 'web_release' / 'reactenzdb_web.db'"
+      },
+      {
+        "name": "DEFAULT_OUTPUT_DB",
+        "expression": "ROOT / 'web_release' / 'model_ready_dataset.sqlite'"
+      },
+      {
+        "name": "DEFAULT_DOWNLOAD_DIR",
+        "expression": "ROOT / 'web_release' / 'downloads'"
+      },
+      {
+        "name": "DEFAULT_SUMMARY",
+        "expression": "ROOT / 'web_release' / 'model_ready_dataset.summary.json'"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/build_reaction_standardization_core.py",
+    "cli_options": [
+      "--work-db",
+      "--batch-size"
+    ],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "WORK_DB",
+        "expression": "ROOT / 'reaction_standardization_work' / 'reaction_standardization.sqlite'"
+      },
+      {
+        "name": "WEB_DB",
+        "expression": "ROOT / 'web_release' / 'reactenzdb_web.db'"
+      },
+      {
+        "name": "MODEL_DB",
+        "expression": "ROOT / 'web_release' / 'model_ready_dataset.sqlite'"
+      },
+      {
+        "name": "SOURCE_ROOT",
+        "expression": "ROOT / 'external' / 'reaction_standardization'"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/build_retrosynthesis_reaction_lookup.py",
+    "cli_options": [
+      "--source",
+      "--output"
+    ],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/build_retrosynthesis_resource_layer.py",
+    "cli_options": [
+      "--retro-root",
+      "--output-db"
+    ],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "DEFAULT_RETRO_ROOT",
+        "expression": "Path(os.environ.get('RETROSYNTHESIS_DATA_ROOT', ROOT / 'inputs' / 'retrosynthesis'))"
+      },
+      {
+        "name": "DEFAULT_OUTPUT_DB",
+        "expression": "ROOT / 'web_release' / 'retrosynthesis_resources.sqlite'"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/build_retrosynthesis_tool_registry.py",
+    "cli_options": [],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "DATA_ROOT",
+        "expression": "Path(os.environ.get('RETROSYNTHESIS_DATA_ROOT', ROOT / 'inputs' / 'retrosynthesis'))"
+      },
+      {
+        "name": "RELEASE_DIR",
+        "expression": "ROOT / 'web_release'"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/build_rule_template_benchmark_layer.py",
+    "cli_options": [
+      "--retro-db",
+      "--model-db",
+      "--output-db",
+      "--download-dir",
+      "--summary"
+    ],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "DEFAULT_RETRO_DB",
+        "expression": "ROOT / 'web_release' / 'retrosynthesis_resources.sqlite'"
+      },
+      {
+        "name": "DEFAULT_MODEL_DB",
+        "expression": "ROOT / 'web_release' / 'model_ready_dataset.sqlite'"
+      },
+      {
+        "name": "DEFAULT_OUTPUT_DB",
+        "expression": "ROOT / 'web_release' / 'rule_template_benchmark.sqlite'"
+      },
+      {
+        "name": "DEFAULT_DOWNLOAD_DIR",
+        "expression": "ROOT / 'web_release' / 'downloads'"
+      },
+      {
+        "name": "DEFAULT_SUMMARY",
+        "expression": "ROOT / 'web_release' / 'rule_template_benchmark.summary.json'"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/build_sequence_clusters.py",
+    "cli_options": [
+      "--stage",
+      "--force-cluster",
+      "--threads"
+    ],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "CORE_DB",
+        "expression": "RELEASE / 'reactenzdb_web.db'"
+      },
+      {
+        "name": "WORK",
+        "expression": "RELEASE / 'sequence_clusters_work'"
+      },
+      {
+        "name": "OUTPUT_DB",
+        "expression": "RELEASE / 'enzyme_sequence_clusters.sqlite'"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/build_subnetx_runtime_index.py",
+    "cli_options": [],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/build_web_release.py",
+    "cli_options": [
+      "--source-db",
+      "--output-db",
+      "--membership-db",
+      "--reo-id-registry",
+      "--release-version",
+      "--force"
+    ],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "DATA_ROOT",
+        "expression": "Path(os.environ.get('REACTENZDB_INPUT_ROOT', ROOT / 'inputs'))"
+      },
+      {
+        "name": "DEFAULT_SOURCE_DB",
+        "expression": "DATA_ROOT / 'rdbsb_v2' / 'rdbsb_biosyn_v2.db'"
+      },
+      {
+        "name": "DEFAULT_OUTPUT_DB",
+        "expression": "ROOT / 'web_release' / 'reactenzdb_web.db'"
+      },
+      {
+        "name": "DEFAULT_MANIFEST",
+        "expression": "ROOT / 'web_release' / 'manifest.json'"
+      },
+      {
+        "name": "DEFAULT_REO_REGISTRY",
+        "expression": "ROOT / 'web_release' / 'reo_id_registry.sqlite'"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/check_runtime_inputs.py",
+    "cli_options": [
+      "--core",
+      "--evidence"
+    ],
+    "path_defaults": [],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/data_semantics.py",
+    "cli_options": [],
+    "path_defaults": [
+      {
+        "name": "SOURCE_RULE",
+        "expression": "'KINETIC_SOURCE_TOKENS_V1'"
+      },
+      {
+        "name": "SOURCES",
+        "expression": "frozenset({'brenda', 'uniprot', 'metacyc', 'sabio-rk', 'rdbsb'})"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/enrich_structure_confidence.py",
+    "cli_options": [],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/enrich_web_evidence.py",
+    "cli_options": [
+      "--exports",
+      "--source-db",
+      "--web-db",
+      "--skip-evidence",
+      "--reference-inheritance-plan",
+      "--uniprot-alias-plan"
+    ],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "DATA_ROOT",
+        "expression": "Path(os.environ.get('REACTENZDB_INPUT_ROOT', ROOT / 'inputs'))"
+      },
+      {
+        "name": "DEFAULT_EXPORTS",
+        "expression": "DATA_ROOT / 'rdbsb_v2' / 'exports_v2'"
+      },
+      {
+        "name": "DEFAULT_SOURCE_DB",
+        "expression": "DATA_ROOT / 'rdbsb_v2' / 'rdbsb_biosyn_v2.db'"
+      },
+      {
+        "name": "DEFAULT_WEB_DB",
+        "expression": "ROOT / 'web_release' / 'reactenzdb_web.db'"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/export_reaction_standardization_release.py",
+    "cli_options": [],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "WORK",
+        "expression": "ROOT / 'reaction_standardization_work'"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/export_web_csvs.py",
+    "cli_options": [
+      "--db",
+      "--output-dir",
+      "--chunksize"
+    ],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "DEFAULT_DB",
+        "expression": "ROOT / 'web_release' / 'reactenzdb_web.db'"
+      },
+      {
+        "name": "DEFAULT_OUTPUT",
+        "expression": "ROOT / 'web_release' / 'downloads'"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/extract_fulltext_expression_evidence.py",
+    "cli_options": [
+      "--max-documents",
+      "--reset"
+    ],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "WORK",
+        "expression": "ROOT / 'expression_work'"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/ingest_brenda_full_evidence.py",
+    "cli_options": [
+      "--limit-ecs",
+      "--ec",
+      "--refresh-status",
+      "--refresh-existing-only",
+      "--postprocess-only",
+      "--commit-every"
+    ],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "WORK_DIR",
+        "expression": "ROOT / 'evidence_work'"
+      },
+      {
+        "name": "EVIDENCE_DB",
+        "expression": "WORK_DIR / 'enzyme_reaction_evidence.sqlite'"
+      },
+      {
+        "name": "RAW_DIR",
+        "expression": "WORK_DIR / 'raw' / 'brenda'"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/ingest_sabio_full_evidence.py",
+    "cli_options": [
+      "--limit-files",
+      "--refresh-file-status"
+    ],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "WORK_DIR",
+        "expression": "ROOT / 'evidence_work'"
+      },
+      {
+        "name": "EVIDENCE_DB",
+        "expression": "WORK_DIR / 'enzyme_reaction_evidence.sqlite'"
+      },
+      {
+        "name": "CORE_DB",
+        "expression": "ROOT / 'web_release' / 'reactenzdb_web.db'"
+      },
+      {
+        "name": "RAW_DIR",
+        "expression": "WORK_DIR / 'raw' / 'sabio'"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/initialize_reaction_standardization_db.py",
+    "cli_options": [
+      "--output"
+    ],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "SOURCE_ROOT",
+        "expression": "ROOT / 'external' / 'reaction_standardization'"
+      },
+      {
+        "name": "DEFAULT_OUTPUT",
+        "expression": "ROOT / 'reaction_standardization_work' / 'reaction_standardization.sqlite'"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/optimize_web_release.py",
+    "cli_options": [
+      "--db"
+    ],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "DEFAULT_DB",
+        "expression": "ROOT / 'web_release' / 'reactenzdb_web.db'"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/prepare_data_display_exports.py",
+    "cli_options": [
+      "--release-dir",
+      "--output-dir"
+    ],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/prepare_fair_release_assets.py",
+    "cli_options": [
+      "--db",
+      "--release-dir",
+      "--downloads-dir",
+      "--chunksize",
+      "--skip-exports",
+      "--export-table",
+      "--rebuild-manual-audit"
+    ],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "DEFAULT_DB",
+        "expression": "ROOT / 'web_release' / 'reactenzdb_web.db'"
+      },
+      {
+        "name": "DEFAULT_RELEASE_DIR",
+        "expression": "ROOT / 'web_release'"
+      },
+      {
+        "name": "DEFAULT_DOWNLOAD_DIR",
+        "expression": "DEFAULT_RELEASE_DIR / 'downloads'"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/prepare_kegg_content_excluded_downloads.py",
+    "cli_options": [
+      "--original-dir",
+      "--previous-bundle",
+      "--output-dir"
+    ],
+    "path_defaults": [],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/protein_coordinate_mapping.py",
+    "cli_options": [],
+    "path_defaults": [],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/protein_reference_inheritance.py",
+    "cli_options": [],
+    "path_defaults": [],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/publish_reaction_standardization_web.py",
+    "cli_options": [],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "SOURCE",
+        "expression": "ROOT / 'reaction_standardization_work' / 'release_2026-07-14' / 'reaction_standardization.sqlite'"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/reconcile_release_metadata.py",
+    "cli_options": [
+      "--work"
+    ],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "DEFAULT_WORK",
+        "expression": "ROOT / 'work' / 'release_metadata'"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/reo_ids.py",
+    "cli_options": [],
+    "path_defaults": [],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/repair_confirmed_data_defects.py",
+    "cli_options": [],
+    "path_defaults": [],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/run_retrosynthesis_predictor.py",
+    "cli_options": [
+      "--tool",
+      "--target",
+      "--top-k"
+    ],
+    "path_defaults": [
+      {
+        "name": "DATA_ROOT",
+        "expression": "Path(__file__).resolve().parents[1] / 'inputs' / 'retrosynthesis'"
+      },
+      {
+        "name": "DEFAULT_DATA_ROOT",
+        "expression": "Path(__file__).resolve().parents[1] / 'predictor_data'"
+      },
+      {
+        "name": "DATA_ROOT",
+        "expression": "Path(os.environ.get('RETROSYNTHESIS_DATA_ROOT', DEFAULT_DATA_ROOT)).resolve()"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/separate_sqlite_release.py",
+    "cli_options": [
+      "--release-dir",
+      "--output-dir",
+      "--file",
+      "--workers"
+    ],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/sync_reaction_standardization_after_qc.py",
+    "cli_options": [],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/uniprot_accession_rules.py",
+    "cli_options": [],
+    "path_defaults": [],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/uniprot_alias_inheritance.py",
+    "cli_options": [],
+    "path_defaults": [],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/validate_enzyme_reaction_evidence.py",
+    "cli_options": [
+      "--verify-all-raw-hashes"
+    ],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "WORK",
+        "expression": "ROOT / 'evidence_work'"
+      },
+      {
+        "name": "FETCH_DB",
+        "expression": "WORK / 'source_fetch_status.sqlite'"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/validate_evidence_release_candidate.py",
+    "cli_options": [],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      }
+    ],
+    "execution_status": "Not individually run on full scientific inputs during packaging; consult VALIDATION for tested subset."
+  },
+  {
+    "script": "scripts/build_reaction_cross_database_layer.py",
+    "cli_options": [],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "WORK_DB",
+        "expression": "ROOT / 'reaction_standardization_work' / 'reaction_standardization.sqlite'"
+      },
+      {
+        "name": "WEB_DB",
+        "expression": "ROOT / 'web_release' / 'reactenzdb_web.db'"
+      }
+    ],
+    "execution_status": "Preserved source, AST checked; scientific stage not rerun in packaging."
+  },
+  {
+    "script": "scripts/build_rxnmapper_atom_mapping_layer.py",
+    "cli_options": [
+      "phase",
+      "--cohort",
+      "--work-db",
+      "--progress-db",
+      "--batch-size",
+      "--limit",
+      "--retry-errors"
+    ],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "WORK_DB",
+        "expression": "ROOT / 'reaction_standardization_work' / 'reaction_standardization.sqlite'"
+      },
+      {
+        "name": "PROGRESS_DB",
+        "expression": "ROOT / 'reaction_standardization_work' / 'rxnmapper_progress.sqlite'"
+      }
+    ],
+    "execution_status": "Preserved source, AST checked; scientific stage not rerun in packaging."
+  },
+  {
+    "script": "scripts/refresh_sequence_cluster_final_evidence.py",
+    "cli_options": [],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "CLUSTER_DB",
+        "expression": "RELEASE / 'enzyme_sequence_clusters.sqlite'"
+      },
+      {
+        "name": "EVIDENCE_DB",
+        "expression": "ROOT / 'evidence_work' / 'release_candidate' / 'reactenzdb_evidence_rc.sqlite'"
+      },
+      {
+        "name": "CORE_DB",
+        "expression": "RELEASE / 'reactenzdb_web.db'"
+      }
+    ],
+    "execution_status": "Preserved source, AST checked; scientific stage not rerun in packaging."
+  },
+  {
+    "script": "scripts/build_host_registry_staging.py",
+    "cli_options": [],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "STAGING_ROOT",
+        "expression": "ROOT / 'staging' / 'host-context' / '2026.09.1'"
+      },
+      {
+        "name": "DB_PATH",
+        "expression": "STAGING_ROOT / 'host_context_v1_staging.sqlite'"
+      },
+      {
+        "name": "SCHEMA_PATH",
+        "expression": "ROOT / 'schema' / 'host_context_v1_staging.sql'"
+      }
+    ],
+    "execution_status": "Preserved source, AST checked; scientific stage not rerun in packaging."
+  },
+  {
+    "script": "scripts/build_reaction_host_mapping_v1.py",
+    "cli_options": [
+      "--dry-run-hosts",
+      "--dry-run-host"
+    ],
+    "path_defaults": [
+      {
+        "name": "ROOT",
+        "expression": "Path(__file__).resolve().parents[1]"
+      },
+      {
+        "name": "STAGING_DB",
+        "expression": "ROOT / 'staging/host-context/2026.09.1/host_context_v1_staging.sqlite'"
+      },
+      {
+        "name": "NORMALIZED_DIR",
+        "expression": "ROOT / 'staging/host-models/2026.09.1/normalized'"
+      },
+      {
+        "name": "CORE_DB",
+        "expression": "ROOT / 'web_release/reactenzdb_web.db'"
+      },
+      {
+        "name": "POLICY_PATH",
+        "expression": "ROOT / 'host_reaction_mapping_policy_202609.json'"
+      },
+      {
+        "name": "SOURCE_LOCATED_TERM_RE",
+        "expression": "re.compile('^\\\\s*[+-]?(?:\\\\d+(?:\\\\.\\\\d*)?|\\\\.\\\\d+)\\\\s+([^\\\\s@+]+)@([^\\\\s+]+)\\\\s*$')"
+      }
+    ],
+    "execution_status": "Preserved source, AST checked; scientific stage not rerun in packaging."
+  }
+]

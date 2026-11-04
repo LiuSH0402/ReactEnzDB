@@ -1,0 +1,42 @@
+ARG NODE_IMAGE=docker.m.daocloud.io/library/node:22.14.0-bookworm-slim
+FROM ${NODE_IMAGE} AS builder
+
+WORKDIR /app/nextjs_site/Nicktio-nextjs-pro-main/package
+
+COPY package.json package-lock.json .npmrc ./
+RUN npm ci
+
+COPY . .
+
+ARG NEXT_PUBLIC_SITE_URL=http://127.0.0.1
+ENV NEXT_PUBLIC_SITE_URL=${NEXT_PUBLIC_SITE_URL}
+ENV NEXT_TELEMETRY_DISABLED=1
+RUN npm run build
+
+FROM reactenzdb-runtime:2026.09.1-python AS runner
+USER root
+RUN rm -rf /app/nextjs_site/Nicktio-nextjs-pro-main/package
+WORKDIR /app/nextjs_site/Nicktio-nextjs-pro-main/package
+
+
+ENV NODE_ENV=production
+ENV NEXT_TELEMETRY_DISABLED=1
+ENV HOSTNAME=0.0.0.0
+ENV PORT=3000
+ENV REACTENZDB_PYTHON=/opt/reactenzdb-python/bin/python
+ENV REACTENZDB_ANALYTICS_DB=/app/runtime/reactenzdb_analytics.sqlite
+
+COPY --from=builder --chown=node:node /app/nextjs_site/Nicktio-nextjs-pro-main/package/.next/standalone ./
+COPY --from=builder --chown=node:node /app/nextjs_site/Nicktio-nextjs-pro-main/package/.next/static ./.next/static
+COPY --from=builder --chown=node:node /app/nextjs_site/Nicktio-nextjs-pro-main/package/public ./public
+COPY --from=builder --chown=node:node /app/nextjs_site/Nicktio-nextjs-pro-main/package/scripts/reaction_smiles_search.py ./scripts/reaction_smiles_search.py
+COPY --from=builder --chown=node:node /app/nextjs_site/Nicktio-nextjs-pro-main/package/scripts/retrosynthesis_mapping.py ./scripts/retrosynthesis_mapping.py
+COPY --from=builder --chown=node:node /app/nextjs_site/Nicktio-nextjs-pro-main/package/scripts/sqlite_fts_search.py ./scripts/sqlite_fts_search.py
+
+USER node
+EXPOSE 3000
+
+HEALTHCHECK --interval=30s --timeout=10s --start-period=90s --retries=5 \
+  CMD ["node", "-e", "fetch('http://127.0.0.1:3000/api/health').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))"]
+
+CMD ["node", "server.js"]

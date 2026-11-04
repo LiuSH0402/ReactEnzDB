@@ -1,0 +1,51 @@
+{
+  "frozen_at_utc": "2026-11-01T04:03:31.470123+00:00",
+  "cohort_counts": {
+    "single_step_development": 43,
+    "multistep_development": 13,
+    "engineering_controls": 5
+  },
+  "old_new_logical_index_equivalence": {
+    "bioinformatics\\_website_integration_20261101\\original_lookup.sqlite": {
+      "rows": 109522,
+      "sha256": "51fadbe37caa76bba28e04383e7aa06b21e99bfb2273e808db02622616aed8a2"
+    },
+    "ReactEnzDB\\web_release\\retrosynthesis_reaction_lookup.sqlite": {
+      "rows": 109522,
+      "sha256": "51fadbe37caa76bba28e04383e7aa06b21e99bfb2273e808db02622616aed8a2"
+    }
+  },
+  "inputs": {
+    "ReactEnzDB\\web_release\\reactenzdb_web.db": {
+      "sha256": "1207a29d92e179442873df3592efafa8ea3a47eb6699410c8261a556de76b2a6",
+      "size": 2927681536
+    },
+    "_public_scope_20261030\\runtime\\evidence_release\\reactenzdb_evidence_rc.sqlite": {
+      "sha256": "bdf445be87b1501207d9878f4d2ad36ed99f49b1cdb64e453170123eae548035",
+      "size": 2472488960
+    },
+    "ReactEnzDB\\web_release\\retrosynthesis_reaction_lookup.sqlite": {
+      "sha256": "4f4d79e2d86362f5af376431a8cf43f6cf3835b5e10986fcdc2576ff8ce4d135",
+      "size": 47890432
+    },
+    "ReactEnzDB\\nextjs_site\\Nicktio-nextjs-pro-main\\package\\src\\app\\api\\retrosynthesis\\match\\route.ts": {
+      "sha256": "49001fa3d78701b735c3a5647945d405236e25acfd3b980939aa81110afdd42f",
+      "size": 5134
+    },
+    "ReactEnzDB\\nextjs_site\\Nicktio-nextjs-pro-main\\package\\scripts\\retrosynthesis_mapping.py": {
+      "sha256": "e3ebfdd56bbeefeeed9630dd16d50b5070c631cdc08515aa8ebc5980437c2b99",
+      "size": 11330
+    },
+    "bioinformatics\\_tool_integration_20261031\\queries.json": {
+      "sha256": "8eaa9f3ca2c7be3e50edaf6e77386f852a2c9ff5710c1bd7712a5f980221b35a",
+      "size": 9070
+    },
+    "bioinformatics\\_multistep_case_20261031\\queries.json": {
+      "sha256": "7bbf3687bddea0d6c34d64ddf32641657cb00b2982f2b7d6e82a9cf771f33da1",
+      "size": 9141
+    }
+  },
+  "status": "development_replay_not_independent_validation",
+  "human_accuracy_review_completed": false,
+  "human_timing_completed": false
+}

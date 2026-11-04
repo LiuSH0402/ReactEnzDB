@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "server": "packaged production build on localhost",
+  "scientific_inputs": "existing local runtime snapshots, read-only, not bundled",
+  "checks": [
+    {
+      "path": "/help",
+      "status": 200,
+      "html_bytes": 68015
+    },
+    {
+      "path": "/search",
+      "status": 200,
+      "html_bytes": 29885
+    },
+    {
+      "path": "/reactions/R03262",
+      "status": 200,
+      "html_bytes": 246590,
+      "contains_car_primary_reference": true
+    },
+    {
+      "path": "/reactions/R07661",
+      "status": 200,
+      "html_bytes": 298765,
+      "contains_chr_primary_reference": true
+    },
+    {
+      "case": "R03262/E115312",
+      "status": 200,
+      "literature_records": 1,
+      "source_assertions": 0,
+      "pagination_total": 0
+    },
+    {
+      "case": "R07661/E023974",
+      "status": 200,
+      "literature_records": 1,
+      "source_assertions": 0,
+      "pagination_total": 0
+    },
+    {
+      "case": "R03262/E023974",
+      "status": 404
+    }
+  ],
+  "production_modified": false
+}

@@ -1,0 +1,420 @@
+{
+  "target": "(E)-cinnamyl alcohol",
+  "source_route_rank": 1,
+  "step_count": 2,
+  "intermediate_connects": true,
+  "route_steps": [
+    {
+      "forward_step": 1,
+      "upstream": {
+        "reaction": "Carboxylic acid reduction",
+        "product_smiles": "O=C/C=C/c1ccccc1",
+        "substrate_smiles": [
+          "O=C(O)/C=C/c1ccccc1"
+        ],
+        "selected_enzyme": "CAR",
+        "possible_enzymes": [
+          "CAR"
+        ],
+        "enzyme_cofactors": {
+          "CAR": [
+            [
+              "NADP",
+              "AMP",
+              "Ppi"
+            ],
+            [
+              "NADPH",
+              "ATP"
+            ]
+          ]
+        }
+      },
+      "reference_candidates": [
+        {
+          "reaction_id": "OENA13525",
+          "public_id": "R03241",
+          "equation": "(E)-cinnamate + ATP + NADPH + H(+) = (E)-cinnamaldehyde + AMP + diphosphate + NADP(+)",
+          "direction": "=",
+          "query_orientation": "as_written",
+          "agrees_with_explicit_reference_direction": false,
+          "direction_unspecified": true,
+          "core_candidates": [
+            {
+              "biopart_id": "OENC372697",
+              "enzyme_name": "carboxylate reductase (NADP+)",
+              "organism": "Neurospora crassa OR74A",
+              "uniprot_accession": "Q7RW48"
+            }
+          ],
+          "literature_verified": false
+        },
+        {
+          "reaction_id": "OENA13544",
+          "public_id": "R03262",
+          "equation": "(E)-cinnamate + ATP + NADPH + H(+) = (E)-cinnamaldehyde + AMP + diphosphate + NADP(+)",
+          "direction": "=>",
+          "query_orientation": "as_written",
+          "agrees_with_explicit_reference_direction": true,
+          "direction_unspecified": false,
+          "core_candidates": [
+            {
+              "biopart_id": "OENC372697",
+              "enzyme_name": "carboxylate reductase (NADP+)",
+              "organism": "Neurospora crassa OR74A",
+              "uniprot_accession": "Q7RW48"
+            }
+          ],
+          "literature_verified": false
+        }
+      ]
+    },
+    {
+      "forward_step": 2,
+      "upstream": {
+        "reaction": "Aldehyde reduction",
+        "product_smiles": "OC/C=C/c1ccccc1",
+        "substrate_smiles": [
+          "O=C/C=C/c1ccccc1"
+        ],
+        "selected_enzyme": "ADH",
+        "possible_enzymes": [
+          "ADH"
+        ],
+        "enzyme_cofactors": {
+          "ADH": [
+            [
+              "NADP"
+            ],
+            [
+              "NADPH"
+            ]
+          ]
+        }
+      },
+      "reference_candidates": [
+        {
+          "reaction_id": "OENA1869",
+          "public_id": "R07662",
+          "equation": "(E)-cinnamyl alcohol + NADP(+) = (E)-cinnamaldehyde + NADPH + H(+)",
+          "direction": "=",
+          "query_orientation": "reversed",
+          "agrees_with_explicit_reference_direction": false,
+          "direction_unspecified": true,
+          "core_candidates": [
+            {
+              "biopart_id": "OENC1769",
+              "enzyme_name": "Cinnamyl alcohol dehydrogenase 5",
+              "organism": "Arabidopsis thaliana",
+              "uniprot_accession": "O49482"
+            },
+            {
+              "biopart_id": "OENC4249",
+              "enzyme_name": "Cinnamyl alcohol dehydrogenase 1",
+              "organism": "Ocimum basilicum",
+              "uniprot_accession": "Q2KNL5"
+            },
+            {
+              "biopart_id": "OENC178526",
+              "enzyme_name": "cinnamyl-alcohol dehydrogenase",
+              "organism": "Oryza sativa Japonica Group",
+              "uniprot_accession": "Q6ZHS4"
+            },
+            {
+              "biopart_id": "OENC178555",
+              "enzyme_name": "cinnamyl-alcohol dehydrogenase",
+              "organism": "Oryza sativa Japonica Group",
+              "uniprot_accession": "Q0JA75"
+            },
+            {
+              "biopart_id": "OENC113084",
+              "enzyme_name": "reticuline oxidase",
+              "organism": "Arabidopsis thaliana",
+              "uniprot_accession": "O64743"
+            },
+            {
+              "biopart_id": "OENC178524",
+              "enzyme_name": "Cinnamyl alcohol dehydrogenase 2",
+              "organism": "Arabidopsis thaliana",
+              "uniprot_accession": "Q9SJ25"
+            },
+            {
+              "biopart_id": "OENC178532",
+              "enzyme_name": "Cinnamyl alcohol dehydrogenase 3",
+              "organism": "Arabidopsis thaliana",
+              "uniprot_accession": "Q9SJ10"
+            },
+            {
+              "biopart_id": "OENC178536",
+              "enzyme_name": "Cinnamyl alcohol dehydrogenase 4",
+              "organism": "Arabidopsis thaliana",
+              "uniprot_accession": "B1GUX6"
+            },
+            {
+              "biopart_id": "OENC178549",
+              "enzyme_name": "cinnamyl-alcohol dehydrogenase",
+              "organism": "Oryza sativa Japonica Group",
+              "uniprot_accession": "Q7XWU3"
+            },
+            {
+              "biopart_id": "OENC178551",
+              "enzyme_name": "Cinnamyl alcohol dehydrogenase 7",
+              "organism": "Arabidopsis thaliana",
+              "uniprot_accession": "B9DG76"
+            },
+            {
+              "biopart_id": "OENC178573",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase",
+              "organism": "Zea mays",
+              "uniprot_accession": "O24562"
+            },
+            {
+              "biopart_id": "OENC178559",
+              "enzyme_name": "Cinnamyl alcohol dehydrogenase 8",
+              "organism": "Arabidopsis thaliana",
+              "uniprot_accession": "Q02972"
+            },
+            {
+              "biopart_id": "OENC178523",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase 1",
+              "organism": "Nicotiana tabacum",
+              "uniprot_accession": "P30359"
+            },
+            {
+              "biopart_id": "OENC178531",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase 2",
+              "organism": "Nicotiana tabacum",
+              "uniprot_accession": "P30360"
+            },
+            {
+              "biopart_id": "OENC178561",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase 9",
+              "organism": "Arabidopsis thaliana",
+              "uniprot_accession": "P42734"
+            },
+            {
+              "biopart_id": "OENC178575",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase",
+              "organism": "Medicago sativa",
+              "uniprot_accession": "P31656"
+            },
+            {
+              "biopart_id": "OENC113079",
+              "enzyme_name": "reticuline oxidase",
+              "organism": "Arabidopsis thaliana",
+              "uniprot_accession": "Q93ZA3"
+            },
+            {
+              "biopart_id": "OENC178487",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase 8A",
+              "organism": "Oryza sativa Japonica Group",
+              "uniprot_accession": "Q6ERX1"
+            },
+            {
+              "biopart_id": "OENC178489",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase 8B",
+              "organism": "Oryza sativa Japonica Group",
+              "uniprot_accession": "Q6ERW9"
+            },
+            {
+              "biopart_id": "OENC178491",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase 8C",
+              "organism": "Oryza sativa Japonica Group",
+              "uniprot_accession": "Q6ERW7"
+            },
+            {
+              "biopart_id": "OENC178495",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase 8D",
+              "organism": "Oryza sativa Japonica Group",
+              "uniprot_accession": "Q6ERW5"
+            },
+            {
+              "biopart_id": "OENC178516",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase 1",
+              "organism": "Aralia cordata",
+              "uniprot_accession": "P42495"
+            },
+            {
+              "biopart_id": "OENC178519",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase 1",
+              "organism": "Oryza sativa Japonica Group",
+              "uniprot_accession": "Q8H859"
+            },
+            {
+              "biopart_id": "OENC178518",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase 1",
+              "organism": "Eucalyptus gunnii",
+              "uniprot_accession": "Q42726"
+            },
+            {
+              "biopart_id": "OENC178517",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase 1",
+              "organism": "Arabidopsis thaliana",
+              "uniprot_accession": "Q9CAI3"
+            },
+            {
+              "biopart_id": "OENC178522",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase 1",
+              "organism": "Pseudotsuga menziesii",
+              "uniprot_accession": "P85913"
+            },
+            {
+              "biopart_id": "OENC178529",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase 2",
+              "organism": "Picea abies",
+              "uniprot_accession": "O82035"
+            },
+            {
+              "biopart_id": "OENC178525",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase 2",
+              "organism": "Eucalyptus gunnii",
+              "uniprot_accession": "P31655"
+            },
+            {
+              "biopart_id": "OENC178530",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase 2",
+              "organism": "Pseudotsuga menziesii",
+              "uniprot_accession": "P85916"
+            },
+            {
+              "biopart_id": "OENC178533",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase 3",
+              "organism": "Oryza sativa Japonica Group",
+              "uniprot_accession": "Q337Y2"
+            },
+            {
+              "biopart_id": "OENC178540",
+              "enzyme_name": "Putative cinnamyl alcohol dehydrogenase 4",
+              "organism": "Oryza sativa Japonica Group",
+              "uniprot_accession": "Q2R114"
+            },
+            {
+              "biopart_id": "OENC178544",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase 5",
+              "organism": "Oryza sativa Japonica Group",
+              "uniprot_accession": "Q0J6T3"
+            },
+            {
+              "biopart_id": "OENC178548",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase 6",
+              "organism": "Arabidopsis thaliana",
+              "uniprot_accession": "O65621"
+            },
+            {
+              "biopart_id": "OENC178558",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase 7/8",
+              "organism": "Picea abies",
+              "uniprot_accession": "Q08350"
+            },
+            {
+              "biopart_id": "OENC178566",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase 9",
+              "organism": "Oryza sativa Japonica Group",
+              "uniprot_accession": "Q10PS6"
+            },
+            {
+              "biopart_id": "OENC178570",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase",
+              "organism": "Eucalyptus botryoides",
+              "uniprot_accession": "P50746"
+            },
+            {
+              "biopart_id": "OENC178571",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase",
+              "organism": "Eucalyptus globulus",
+              "uniprot_accession": "O64969"
+            },
+            {
+              "biopart_id": "OENC178576",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase",
+              "organism": "Pinus radiata",
+              "uniprot_accession": "Q40976"
+            },
+            {
+              "biopart_id": "OENC178580",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase",
+              "organism": "Saccharum officinarum",
+              "uniprot_accession": "O82056"
+            },
+            {
+              "biopart_id": "OENC178572",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase",
+              "organism": "Lolium perenne",
+              "uniprot_accession": "O22380"
+            },
+            {
+              "biopart_id": "OENC178579",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase",
+              "organism": "Populus deltoides",
+              "uniprot_accession": "P31657"
+            },
+            {
+              "biopart_id": "OENC178578",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase",
+              "organism": "Pinus taeda",
+              "uniprot_accession": "P41637"
+            }
+          ],
+          "literature_verified": false
+        },
+        {
+          "reaction_id": "OENA1868",
+          "public_id": "R07661",
+          "equation": "(E)-cinnamyl alcohol + NADP(+) = (E)-cinnamaldehyde + NADPH + H(+)",
+          "direction": "<=",
+          "query_orientation": "reversed",
+          "agrees_with_explicit_reference_direction": true,
+          "direction_unspecified": false,
+          "core_candidates": [
+            {
+              "biopart_id": "OENC1769",
+              "enzyme_name": "Cinnamyl alcohol dehydrogenase 5",
+              "organism": "Arabidopsis thaliana",
+              "uniprot_accession": "O49482"
+            },
+            {
+              "biopart_id": "OENC178524",
+              "enzyme_name": "Cinnamyl alcohol dehydrogenase 2",
+              "organism": "Arabidopsis thaliana",
+              "uniprot_accession": "Q9SJ25"
+            },
+            {
+              "biopart_id": "OENC178532",
+              "enzyme_name": "Cinnamyl alcohol dehydrogenase 3",
+              "organism": "Arabidopsis thaliana",
+              "uniprot_accession": "Q9SJ10"
+            },
+            {
+              "biopart_id": "OENC178536",
+              "enzyme_name": "Cinnamyl alcohol dehydrogenase 4",
+              "organism": "Arabidopsis thaliana",
+              "uniprot_accession": "B1GUX6"
+            },
+            {
+              "biopart_id": "OENC178551",
+              "enzyme_name": "Cinnamyl alcohol dehydrogenase 7",
+              "organism": "Arabidopsis thaliana",
+              "uniprot_accession": "B9DG76"
+            },
+            {
+              "biopart_id": "OENC178559",
+              "enzyme_name": "Cinnamyl alcohol dehydrogenase 8",
+              "organism": "Arabidopsis thaliana",
+              "uniprot_accession": "Q02972"
+            },
+            {
+              "biopart_id": "OENC178561",
+              "enzyme_name": "Probable cinnamyl alcohol dehydrogenase 9",
+              "organism": "Arabidopsis thaliana",
+              "uniprot_accession": "P42734"
+            }
+          ],
+          "literature_verified": false
+        }
+      ]
+    }
+  ],
+  "experimental_route_feasibility_verified_by_ReactEnzDB": false,
+  "source_publication": "10.1039/C7GC03325G",
+  "upstream_full_activity_scoring_executed": false
+}

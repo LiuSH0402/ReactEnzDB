@@ -1,0 +1,157 @@
+{
+  "runtime_tables": 102,
+  "public_tables": 71,
+  "runtime_only_tables": [
+    "qc_web_kinetic_biopart_id_pre_20260813",
+    "qc_web_kinetics_pre_20260813",
+    "qc_web_reaction_ec_pre_20260813",
+    "qc_web_reaction_master_orientation_pre_20260813",
+    "qc_web_reactions_pre_20260813",
+    "web_data_completion_audit",
+    "web_data_repair_metadata",
+    "web_enzymes_fts",
+    "web_enzymes_fts_config",
+    "web_enzymes_fts_data",
+    "web_enzymes_fts_docsize",
+    "web_enzymes_fts_idx",
+    "web_kinetic_external_source_status",
+    "web_kinetics_source_provenance",
+    "web_protein_reference_inheritance",
+    "web_qc_metadata",
+    "web_reactions_fts",
+    "web_reactions_fts_config",
+    "web_reactions_fts_data",
+    "web_reactions_fts_docsize",
+    "web_reactions_fts_idx",
+    "web_retrosynthesis_benchmark_reactions",
+    "web_retrosynthesis_benchmark_sets",
+    "web_retrosynthesis_building_blocks",
+    "web_retrosynthesis_routes",
+    "web_retrosynthesis_rule_links",
+    "web_retrosynthesis_rules",
+    "web_retrosynthesis_sources",
+    "web_source_imports",
+    "web_source_records",
+    "web_uniprot_alias_inheritance"
+  ],
+  "missing_columns": {
+    "web_reactions": [
+      "source_db"
+    ],
+    "web_reaction_enzymes": [
+      "source_db"
+    ],
+    "web_kinetics": [
+      "source_db"
+    ],
+    "web_xrefs": [
+      "source_db"
+    ],
+    "web_pdb_mappings": [
+      "source_db"
+    ],
+    "web_alphafold_mappings": [
+      "source"
+    ],
+    "web_pathways": [
+      "source_db",
+      "evidence_source"
+    ],
+    "web_reaction_pathways": [
+      "source_db"
+    ],
+    "web_entity_references": [
+      "source_db"
+    ],
+    "web_attribute_evidences": [
+      "source_label",
+      "source_db"
+    ],
+    "web_protein_annotations": [
+      "source_db"
+    ],
+    "web_protein_domains": [
+      "source_db"
+    ],
+    "web_protein_features": [
+      "source_db"
+    ],
+    "web_external_kinetics": [
+      "source_db",
+      "source_url"
+    ],
+    "web_kinetic_external_checks": [
+      "source_db",
+      "source_url"
+    ],
+    "web_external_attribute_values": [
+      "source_db",
+      "source_url"
+    ],
+    "web_attribute_external_checks": [
+      "source_db",
+      "source_url"
+    ],
+    "web_mnx_reaction_mappings": [
+      "source_db",
+      "source_url"
+    ],
+    "web_mnx_compound_mappings": [
+      "source_db",
+      "source_description",
+      "source_url"
+    ],
+    "web_mcsa_entries": [
+      "source_db"
+    ],
+    "web_mcsa_enzyme_mappings": [
+      "source_db"
+    ],
+    "web_mcsa_reaction_mappings": [
+      "source_db"
+    ],
+    "web_import_field_status": [
+      "source_db",
+      "source_release"
+    ],
+    "web_import_compound_conflicts": [
+      "source_release"
+    ],
+    "web_source_kinetics_unassigned": [
+      "source_release"
+    ],
+    "web_assay_source_evidence": [
+      "source_db",
+      "source_entry_id",
+      "source_url"
+    ],
+    "web_kinetic_assay_links": [
+      "source_entry_id"
+    ],
+    "web_expression_source_observations": [
+      "source_db",
+      "source_entry_id",
+      "source_url"
+    ],
+    "web_compound_physicochemical_properties": [
+      "source_url"
+    ],
+    "web_experimental_structure_source_mappings": [
+      "source_url"
+    ],
+    "web_experimental_coordinate_files": [
+      "source_url"
+    ],
+    "web_compound_reported_property_values": [
+      "source_name",
+      "source_url"
+    ],
+    "web_protein_stability_observations": [
+      "source_release"
+    ],
+    "web_structure_confidence": [
+      "source_note"
+    ]
+  },
+  "evidence_sqlite_in_public_catalog": false
+}

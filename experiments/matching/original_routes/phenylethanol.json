@@ -1,0 +1,274 @@
+{
+  "name": "phenylethanol",
+  "target": "OCCc1ccccc1",
+  "exit_code": 0,
+  "elapsed_seconds": 3.30409949994646,
+  "result": {
+    "tool": "retrobiocat",
+    "target_smiles": "OCCc1ccccc1",
+    "mode": "rule_based_pathway_cpu",
+    "requested_steps": 2,
+    "network": {
+      "nodes": 21,
+      "edges": 20,
+      "substrates": 11,
+      "reactions": 10
+    },
+    "pathways": [
+      {
+        "rank": 1,
+        "end_materials": [
+          "O=C(O)Cc1ccccc1"
+        ],
+        "steps": [
+          {
+            "reaction": "Aldehyde reduction",
+            "product_smiles": "OCCc1ccccc1",
+            "substrate_smiles": [
+              "O=CCc1ccccc1"
+            ],
+            "selected_enzyme": "ADH",
+            "possible_enzymes": [
+              "ADH"
+            ],
+            "enzyme_cofactors": {
+              "ADH": [
+                [
+                  "NADP"
+                ],
+                [
+                  "NADPH"
+                ]
+              ]
+            }
+          },
+          {
+            "reaction": "Carboxylic acid reduction",
+            "product_smiles": "O=CCc1ccccc1",
+            "substrate_smiles": [
+              "O=C(O)Cc1ccccc1"
+            ],
+            "selected_enzyme": "CAR",
+            "possible_enzymes": [
+              "CAR"
+            ],
+            "enzyme_cofactors": {
+              "CAR": [
+                [
+                  "NADP",
+                  "AMP",
+                  "Ppi"
+                ],
+                [
+                  "NADPH",
+                  "ATP"
+                ]
+              ]
+            }
+          }
+        ],
+        "scores": {
+          "change_in_complexity": 0.0374000000000001,
+          "starting_material": 1.0,
+          "num_intermediates": 1,
+          "num_enzyme_steps": 2,
+          "complexity_per_enzyme": 0.01870000000000005,
+          "complexity_per_intermediate": 0.0374000000000001,
+          "postitive_enzyme_steps_score": 0,
+          "cofactor_score": 0,
+          "simple_score": 0.009350000000000025
+        }
+      },
+      {
+        "rank": 2,
+        "end_materials": [
+          "OCCc1ccccc1"
+        ],
+        "steps": [],
+        "scores": {
+          "change_in_complexity": 0.0,
+          "starting_material": 1.0,
+          "num_intermediates": -1,
+          "num_enzyme_steps": 0,
+          "complexity_per_enzyme": 0,
+          "complexity_per_intermediate": -0.0,
+          "postitive_enzyme_steps_score": 0,
+          "cofactor_score": 0,
+          "simple_score": 0.0
+        }
+      },
+      {
+        "rank": 3,
+        "end_materials": [
+          "O=CCc1ccccc1"
+        ],
+        "steps": [
+          {
+            "reaction": "Aldehyde reduction",
+            "product_smiles": "OCCc1ccccc1",
+            "substrate_smiles": [
+              "O=CCc1ccccc1"
+            ],
+            "selected_enzyme": "ADH",
+            "possible_enzymes": [
+              "ADH"
+            ],
+            "enzyme_cofactors": {
+              "ADH": [
+                [
+                  "NADP"
+                ],
+                [
+                  "NADPH"
+                ]
+              ]
+            }
+          }
+        ],
+        "scores": {
+          "change_in_complexity": -0.0605,
+          "starting_material": 1.0,
+          "num_intermediates": 0,
+          "num_enzyme_steps": 1,
+          "complexity_per_enzyme": -0.0605,
+          "complexity_per_intermediate": 0,
+          "postitive_enzyme_steps_score": 0,
+          "cofactor_score": 0,
+          "simple_score": -0.03025
+        }
+      },
+      {
+        "rank": 4,
+        "end_materials": [
+          "NCCc1ccccc1"
+        ],
+        "steps": [
+          {
+            "reaction": "Aldehyde reduction",
+            "product_smiles": "OCCc1ccccc1",
+            "substrate_smiles": [
+              "O=CCc1ccccc1"
+            ],
+            "selected_enzyme": "ADH",
+            "possible_enzymes": [
+              "ADH"
+            ],
+            "enzyme_cofactors": {
+              "ADH": [
+                [
+                  "NADP"
+                ],
+                [
+                  "NADPH"
+                ]
+              ]
+            }
+          },
+          {
+            "reaction": "Primary amine deamination",
+            "product_smiles": "O=CCc1ccccc1",
+            "substrate_smiles": [
+              "NCCc1ccccc1"
+            ],
+            "selected_enzyme": "AmDH",
+            "possible_enzymes": [
+              "AmDH",
+              "TA"
+            ],
+            "enzyme_cofactors": {
+              "AmDH": [
+                [
+                  "NADH",
+                  "NH3"
+                ],
+                [
+                  "NAD"
+                ]
+              ],
+              "TA": [
+                [
+                  "Amine"
+                ],
+                [
+                  "Carbonyl"
+                ]
+              ]
+            }
+          }
+        ],
+        "scores": {
+          "change_in_complexity": -0.21429999999999993,
+          "starting_material": 1.0,
+          "num_intermediates": 1,
+          "num_enzyme_steps": 2,
+          "complexity_per_enzyme": -0.10714999999999997,
+          "complexity_per_intermediate": -0.21429999999999993,
+          "postitive_enzyme_steps_score": 0,
+          "cofactor_score": 0,
+          "simple_score": -0.053574999999999984
+        }
+      },
+      {
+        "rank": 5,
+        "end_materials": [
+          "O=C(O)C(=O)Cc1ccccc1"
+        ],
+        "steps": [
+          {
+            "reaction": "Aldehyde reduction",
+            "product_smiles": "OCCc1ccccc1",
+            "substrate_smiles": [
+              "O=CCc1ccccc1"
+            ],
+            "selected_enzyme": "ADH",
+            "possible_enzymes": [
+              "ADH"
+            ],
+            "enzyme_cofactors": {
+              "ADH": [
+                [
+                  "NADP"
+                ],
+                [
+                  "NADPH"
+                ]
+              ]
+            }
+          },
+          {
+            "reaction": "Decarboxylation",
+            "product_smiles": "O=CCc1ccccc1",
+            "substrate_smiles": [
+              "O=C(O)C(=O)Cc1ccccc1"
+            ],
+            "selected_enzyme": "DC",
+            "possible_enzymes": [
+              "DC"
+            ],
+            "enzyme_cofactors": {
+              "DC": [
+                [
+                  "CO2"
+                ],
+                []
+              ]
+            }
+          }
+        ],
+        "scores": {
+          "change_in_complexity": -0.2715000000000001,
+          "starting_material": 1.0,
+          "num_intermediates": 1,
+          "num_enzyme_steps": 2,
+          "complexity_per_enzyme": -0.13575000000000004,
+          "complexity_per_intermediate": -0.2715000000000001,
+          "postitive_enzyme_steps_score": 0,
+          "cofactor_score": 0,
+          "simple_score": -0.06787500000000002
+        }
+      }
+    ],
+    "note": "Rule-based pathway proposals require expert review and experimental validation."
+  },
+  "error_tail": null
+}

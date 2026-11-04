@@ -1,0 +1,23 @@
+{
+  "packaging_date": "2026-11-04",
+  "queries": 61,
+  "successful_requests": 61,
+  "comparison_to_recorded_development_results": {
+    "metrics_equal": true,
+    "cohort_metrics_equal": true,
+    "route_metrics_equal": true,
+    "historical_pair_scope_audit": {
+      "pair_record_objects": 384,
+      "assertion_pair_links_checked": 351,
+      "unique_source_assertions": 328,
+      "violations": 0
+    },
+    "packaged_pair_scope_audit": {
+      "pair_record_objects": 384,
+      "assertion_pair_links_checked": 351,
+      "violations": 0
+    }
+  },
+  "human_accuracy_verified": false,
+  "human_time_savings_measured": false
+}

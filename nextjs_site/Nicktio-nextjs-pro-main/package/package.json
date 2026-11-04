@@ -1,0 +1,51 @@
+{
+  "name": "reactenzdb-web",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/*.test.mjs",
+    "check": "npm run typecheck && npm run test:unit && npm run build",
+    "test:unit": "node --test tests/api-pagination-contract.test.mjs tests/candidate-evidence-board.test.mjs tests/evidence-scope.test.mjs tests/host-context-preview-contract.test.mjs tests/host-context-step7.test.mjs tests/host-local-mapping-preview.test.mjs tests/host-registry-preview.test.mjs tests/kegg-access-policy.test.mjs tests/pair-literature.test.mjs tests/pathway-export-contract.test.mjs tests/pathway-host-input.test.mjs tests/pathway-local-calculations.test.mjs tests/pathway-resource-requirements.test.mjs tests/retrosynthesis-exact-match.test.mjs tests/retrosynthesis-integration.test.mjs tests/reviewed-downloads.test.mjs tests/search-review-regression.test.mjs tests/structure-search-field.test.mjs tests/ui-information-architecture.test.mjs tests/uniprot-accessions.test.mjs",
+    "test:release": "node --test tests/release-integrity.test.mjs"
+  },
+  "dependencies": {
+    "@iconify/icons-ion": "^1.2.10",
+    "@iconify/react": "^5.0.1",
+    "date-fns": "^3.4.0",
+    "gray-matter": "^4.0.3",
+    "motion": "^11.12.0",
+    "next": "15.5.24",
+    "next-themes": "^0.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hot-toast": "^2.4.1",
+    "react-slick": "^0.30.2",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
+    "sharp": "0.35.4",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-slick": "^0.23.13",
+    "postcss": "8.5.26",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5"
+  },
+  "overrides": {
+    "js-yaml": "3.15.2",
+    "nanoid": "3.3.18",
+    "postcss": "$postcss"
+  }
+}

@@ -1,0 +1,2 @@
+# Python helpers for the current website; exact validation versions are recorded in docs/VALIDATION.md.
+rdkit>=2025.3,<2027

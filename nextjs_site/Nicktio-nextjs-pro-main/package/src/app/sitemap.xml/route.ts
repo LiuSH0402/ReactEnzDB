@@ -1,0 +1,8 @@
+import { sitemapIndexResponse } from "@/lib/sitemap";
+
+export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
+
+export function GET() {
+  return sitemapIndexResponse();
+}

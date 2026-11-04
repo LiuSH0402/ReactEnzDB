@@ -1,0 +1,751 @@
+{
+  "release": {
+    "version": "ReactEnzDB 2026.09.1",
+    "date": "2026-09-22",
+    "snapshot_id": "2026.09.1-public-scope-20261030-public",
+    "snapshot_state": "server_frozen_public_bytes",
+    "updated_date": "2026-10-30"
+  },
+  "overall": {
+    "chassis_annotated_records": 31368,
+    "chassis_labels": 2100,
+    "kinetics_excluded_by_qc": 15881,
+    "reaction_qc_flag_rows": 434,
+    "coordinate_qc_source_only_features": 312,
+    "coordinate_qc_repaired_features": 147,
+    "coordinate_qc_mcsa_corrected_rows": 7,
+    "reactions": 23598,
+    "gold_reactions": 18133,
+    "silver_reactions": 5465,
+    "reaction_enzyme_pairs": 249032,
+    "enzymes": 155428,
+    "source_organisms": 6831,
+    "field_level_evidences": 391454,
+    "pdb_mapped_enzymes": 1612,
+    "kinetics": 23634,
+    "enzymes_with_sequence": 155417,
+    "structure_complete_reactions": 23590,
+    "kinetics_with_pmids": 13182,
+    "publication_references": 561693,
+    "enzyme_xrefs": 904255,
+    "alphafold_mapped_enzymes": 150550,
+    "compounds": 13920,
+    "compounds_with_smiles": 13914,
+    "compounds_with_chebi": 13920,
+    "compounds_with_pubchem": 12835,
+    "compound_images": 10883,
+    "uniprot_mapped_enzymes": 154980
+  },
+  "reaction": {
+    "direction": [
+      {
+        "label": "=",
+        "count": 12989
+      },
+      {
+        "label": "=>",
+        "count": 8225
+      },
+      {
+        "label": "<=>",
+        "count": 1608
+      },
+      {
+        "label": "<=",
+        "count": 758
+      },
+      {
+        "label": "<-->",
+        "count": 18
+      }
+    ],
+    "structure": [
+      {
+        "label": "SMILES complete",
+        "count": 23590,
+        "percent": 99.97
+      },
+      {
+        "label": "Partial / unresolved",
+        "count": 8,
+        "percent": 0.03
+      }
+    ],
+    "annotation": [
+      {
+        "label": "EC",
+        "count": 10087,
+        "percent": 42.75
+      },
+      {
+        "label": "Rhea",
+        "count": 19852,
+        "percent": 84.13
+      },
+      {
+        "label": "KEGG",
+        "count": 2165,
+        "percent": 9.17
+      },
+      {
+        "label": "MetaCyc",
+        "count": 4730,
+        "percent": 20.04
+      },
+      {
+        "label": "SMILES complete",
+        "count": 23590,
+        "percent": 99.97
+      }
+    ],
+    "ec_class": [
+      {
+        "label": "EC 1",
+        "count": 3105
+      },
+      {
+        "label": "EC 2",
+        "count": 3143
+      },
+      {
+        "label": "EC 3",
+        "count": 1426
+      },
+      {
+        "label": "EC 4",
+        "count": 1367
+      },
+      {
+        "label": "EC 5",
+        "count": 553
+      },
+      {
+        "label": "EC 6",
+        "count": 404
+      },
+      {
+        "label": "EC 7",
+        "count": 95
+      }
+    ]
+  },
+  "enzyme": {
+    "sequence_length_bins": [
+      {
+        "label": "missing",
+        "count": 11
+      },
+      {
+        "label": "<200 aa",
+        "count": 20290
+      },
+      {
+        "label": "200-399 aa",
+        "count": 81470
+      },
+      {
+        "label": "400-599 aa",
+        "count": 40188
+      },
+      {
+        "label": "600-799 aa",
+        "count": 8231
+      },
+      {
+        "label": "800-999 aa",
+        "count": 2068
+      },
+      {
+        "label": ">=1000 aa",
+        "count": 3170
+      }
+    ],
+    "top_organisms": [
+      {
+        "label": "Arabidopsis thaliana",
+        "count": 2332
+      },
+      {
+        "label": "Homo sapiens",
+        "count": 2286
+      },
+      {
+        "label": "Mus musculus",
+        "count": 2055
+      },
+      {
+        "label": "Rattus norvegicus",
+        "count": 1376
+      },
+      {
+        "label": "Escherichia coli K-12",
+        "count": 1241
+      },
+      {
+        "label": "Bos taurus",
+        "count": 893
+      },
+      {
+        "label": "Saccharomyces cerevisiae S288C",
+        "count": 881
+      },
+      {
+        "label": "Oryza sativa Japonica Group",
+        "count": 783
+      },
+      {
+        "label": "Mycobacterium tuberculosis H37Rv",
+        "count": 734
+      },
+      {
+        "label": "Bacillus subtilis subsp. subtilis str. 168",
+        "count": 702
+      },
+      {
+        "label": "Escherichia coli O157:H7",
+        "count": 634
+      },
+      {
+        "label": "Salmonella enterica subsp. enterica serovar Typhimurium str. LT2",
+        "count": 602
+      },
+      {
+        "label": "Schizosaccharomyces pombe 972h-",
+        "count": 596
+      },
+      {
+        "label": "Pseudomonas aeruginosa PAO1",
+        "count": 544
+      },
+      {
+        "label": "Escherichia coli CFT073",
+        "count": 527
+      },
+      {
+        "label": "Shigella flexneri",
+        "count": 513
+      },
+      {
+        "label": "Dictyostelium discoideum",
+        "count": 501
+      },
+      {
+        "label": "Mycobacterium tuberculosis CDC1551",
+        "count": 495
+      },
+      {
+        "label": "Caenorhabditis elegans",
+        "count": 477
+      },
+      {
+        "label": "Salmonella enterica subsp. enterica serovar Typhi",
+        "count": 459
+      }
+    ],
+    "coverage": [
+      {
+        "label": "Sequence",
+        "count": 155417,
+        "percent": 99.99
+      },
+      {
+        "label": "UniProt",
+        "count": 154980,
+        "percent": 99.71
+      },
+      {
+        "label": "PDB",
+        "count": 1612,
+        "percent": 1.04
+      },
+      {
+        "label": "AlphaFold",
+        "count": 150550,
+        "percent": 96.86
+      },
+      {
+        "label": "PDB or AlphaFold",
+        "count": 150593,
+        "percent": 96.89
+      }
+    ]
+  },
+  "kinetics": {
+    "parameter_types": [
+      {
+        "label": "km",
+        "count": 13978
+      },
+      {
+        "label": "kcat",
+        "count": 6139
+      },
+      {
+        "label": "kcat_km",
+        "count": 3487
+      },
+      {
+        "label": "vmax",
+        "count": 30
+      }
+    ],
+    "source_db": [
+      {
+        "label": "uniprot",
+        "count": 13926
+      },
+      {
+        "label": "brenda",
+        "count": 9525
+      },
+      {
+        "label": "sabio-rk",
+        "count": 129
+      },
+      {
+        "label": "metacyc",
+        "count": 34
+      },
+      {
+        "label": "brenda,metacyc",
+        "count": 18
+      },
+      {
+        "label": "unknown",
+        "count": 2
+      }
+    ],
+    "assignment_status": [
+      {
+        "label": "resolved_single_reaction",
+        "count": 22890
+      },
+      {
+        "label": "resolved_by_reaction_text",
+        "count": 475
+      },
+      {
+        "label": "resolved_by_external_annotation",
+        "count": 269
+      }
+    ]
+  },
+  "compound": {
+    "coverage": [
+      {
+        "label": "SMILES",
+        "count": 13914,
+        "percent": 99.96
+      },
+      {
+        "label": "ChEBI",
+        "count": 13920,
+        "percent": 100.0
+      },
+      {
+        "label": "PubChem",
+        "count": 12835,
+        "percent": 92.21
+      },
+      {
+        "label": "SVG image",
+        "count": 10883,
+        "percent": 78.18
+      }
+    ],
+    "image_status": [
+      {
+        "label": "generated",
+        "count": 10883
+      },
+      {
+        "label": "invalid_smiles",
+        "count": 23
+      }
+    ]
+  },
+  "chassis": {
+    "top_labels": [
+      {
+        "label": "Escherichia coli",
+        "count": 6367,
+        "reaction_count": 4217,
+        "enzyme_count": 2506,
+        "organism_count": 797
+      },
+      {
+        "label": "Escherichia coli strain BL21(DE3)",
+        "count": 1168,
+        "reaction_count": 915,
+        "enzyme_count": 518,
+        "organism_count": 248
+      },
+      {
+        "label": "Escherichia coli BL21(DE3) cells",
+        "count": 963,
+        "reaction_count": 804,
+        "enzyme_count": 410,
+        "organism_count": 194
+      },
+      {
+        "label": "HEK-293 cells",
+        "count": 930,
+        "reaction_count": 682,
+        "enzyme_count": 106,
+        "organism_count": 12
+      },
+      {
+        "label": "Escherichia coli BL21(DE3)",
+        "count": 771,
+        "reaction_count": 705,
+        "enzyme_count": 364,
+        "organism_count": 126
+      },
+      {
+        "label": "COS-7 cells",
+        "count": 757,
+        "reaction_count": 515,
+        "enzyme_count": 80,
+        "organism_count": 9
+      },
+      {
+        "label": "Saccharomyces cerevisiae",
+        "count": 658,
+        "reaction_count": 508,
+        "enzyme_count": 162,
+        "organism_count": 72
+      },
+      {
+        "label": "COS-7 cell",
+        "count": 584,
+        "reaction_count": 438,
+        "enzyme_count": 49,
+        "organism_count": 8
+      },
+      {
+        "label": "HEK-293 cell",
+        "count": 480,
+        "reaction_count": 401,
+        "enzyme_count": 37,
+        "organism_count": 4
+      },
+      {
+        "label": "CHO cells",
+        "count": 451,
+        "reaction_count": 354,
+        "enzyme_count": 40,
+        "organism_count": 9
+      },
+      {
+        "label": "Spodoptera frugiperda Sf9 cells",
+        "count": 365,
+        "reaction_count": 324,
+        "enzyme_count": 43,
+        "organism_count": 12
+      },
+      {
+        "label": "Escherichia coli strain BL21",
+        "count": 358,
+        "reaction_count": 249,
+        "enzyme_count": 80,
+        "organism_count": 40
+      },
+      {
+        "label": "Pichia pastoris",
+        "count": 340,
+        "reaction_count": 302,
+        "enzyme_count": 82,
+        "organism_count": 44
+      },
+      {
+        "label": "HEK-293T cells",
+        "count": 332,
+        "reaction_count": 270,
+        "enzyme_count": 61,
+        "organism_count": 5
+      },
+      {
+        "label": "Sf9 insect cells",
+        "count": 332,
+        "reaction_count": 275,
+        "enzyme_count": 44,
+        "organism_count": 9
+      },
+      {
+        "label": "COS cells",
+        "count": 258,
+        "reaction_count": 217,
+        "enzyme_count": 25,
+        "organism_count": 5
+      },
+      {
+        "label": "HeLa cells",
+        "count": 237,
+        "reaction_count": 204,
+        "enzyme_count": 40,
+        "organism_count": 4
+      },
+      {
+        "label": "CHO-K1 cells",
+        "count": 227,
+        "reaction_count": 220,
+        "enzyme_count": 17,
+        "organism_count": 2
+      },
+      {
+        "label": "HEK-293T cell",
+        "count": 223,
+        "reaction_count": 141,
+        "enzyme_count": 18,
+        "organism_count": 3
+      },
+      {
+        "label": "COS-1 cells",
+        "count": 186,
+        "reaction_count": 139,
+        "enzyme_count": 29,
+        "organism_count": 5
+      }
+    ]
+  },
+  "supplemental": {
+    "host_pathway": {
+      "counts": {
+        "hosts": 12,
+        "analysis_ready_hosts": 10,
+        "limited_mapping_hosts": 1,
+        "unavailable_mapping_hosts": 1,
+        "reactenz_reactions": 19623,
+        "exact_mapped_reaction_universe": 2300,
+        "pathway_membership_sets": 140,
+        "reaction_pathway_memberships": 2236
+      },
+      "generated_at": "2026-07-14T09:50:06+00:00"
+    },
+    "candidate_diversity": {
+      "counts": {
+        "reactions": 21187,
+        "reactions_with_multiple_nr70_clusters": 7758,
+        "reactions_with_multiple_nr50_clusters": 6139,
+        "reactions_with_reaction_supported_candidates": 2496,
+        "reactions_with_multimodal_candidates": 2299,
+        "reactions_with_exact_substrate_product_candidates": 185
+      },
+      "thresholds": [
+        {
+          "threshold": 100,
+          "cluster_count": 129738,
+          "enzyme_record_count": 155417,
+          "unique_sequence_memberships": 129738,
+          "compression_fraction_vs_enzyme_records": 0.1652264552783801,
+          "clusters_with_experimental_support": 4864,
+          "clusters_with_kinetic_support": 4864,
+          "clusters_with_pdb_support": 1599,
+          "clusters_with_alphafold_support": 127439,
+          "clusters_with_active_site_support": 99779,
+          "representatives_with_experimental_support": 101982,
+          "representatives_with_kinetic_support": 4864,
+          "representatives_with_pdb_support": 1564,
+          "representatives_with_alphafold_support": 127121,
+          "representatives_with_active_site_support": 48256,
+          "kinetic_supported_cluster_representative_retention": 1.0,
+          "pdb_supported_cluster_representative_retention": 0.9781113195747342,
+          "active_site_cluster_representative_retention": 0.4836288196915183,
+          "reaction_count": 21187,
+          "mean_clusters_per_reaction": 10.224854863831595,
+          "median_clusters_per_reaction": 2.0,
+          "p90_clusters_per_reaction": 12.0,
+          "reactions_with_multiple_clusters": 11713
+        },
+        {
+          "threshold": 90,
+          "cluster_count": 86298,
+          "enzyme_record_count": 155417,
+          "unique_sequence_memberships": 129738,
+          "compression_fraction_vs_enzyme_records": 0.4447325582143523,
+          "clusters_with_experimental_support": 4590,
+          "clusters_with_kinetic_support": 4590,
+          "clusters_with_pdb_support": 1485,
+          "clusters_with_alphafold_support": 84934,
+          "clusters_with_active_site_support": 66317,
+          "representatives_with_experimental_support": 71449,
+          "representatives_with_kinetic_support": 4590,
+          "representatives_with_pdb_support": 1417,
+          "representatives_with_alphafold_support": 84619,
+          "representatives_with_active_site_support": 31588,
+          "kinetic_supported_cluster_representative_retention": 1.0,
+          "pdb_supported_cluster_representative_retention": 0.9542087542087542,
+          "active_site_cluster_representative_retention": 0.4763182894280501,
+          "reaction_count": 21187,
+          "mean_clusters_per_reaction": 6.900221834143578,
+          "median_clusters_per_reaction": 2.0,
+          "p90_clusters_per_reaction": 8.0,
+          "reactions_with_multiple_clusters": 10695
+        },
+        {
+          "threshold": 70,
+          "cluster_count": 51462,
+          "enzyme_record_count": 155417,
+          "unique_sequence_memberships": 129738,
+          "compression_fraction_vs_enzyme_records": 0.6688779219776473,
+          "clusters_with_experimental_support": 4111,
+          "clusters_with_kinetic_support": 4111,
+          "clusters_with_pdb_support": 1391,
+          "clusters_with_alphafold_support": 50473,
+          "clusters_with_active_site_support": 38700,
+          "representatives_with_experimental_support": 45445,
+          "representatives_with_kinetic_support": 4111,
+          "representatives_with_pdb_support": 1280,
+          "representatives_with_alphafold_support": 50173,
+          "representatives_with_active_site_support": 18255,
+          "kinetic_supported_cluster_representative_retention": 1.0,
+          "pdb_supported_cluster_representative_retention": 0.9202012940330697,
+          "active_site_cluster_representative_retention": 0.47170542635658913,
+          "reaction_count": 21187,
+          "mean_clusters_per_reaction": 4.224666068815783,
+          "median_clusters_per_reaction": 1.0,
+          "p90_clusters_per_reaction": 5.0,
+          "reactions_with_multiple_clusters": 7758
+        },
+        {
+          "threshold": 50,
+          "cluster_count": 23798,
+          "enzyme_record_count": 155417,
+          "unique_sequence_memberships": 129738,
+          "compression_fraction_vs_enzyme_records": 0.84687646782527,
+          "clusters_with_experimental_support": 3425,
+          "clusters_with_kinetic_support": 3425,
+          "clusters_with_pdb_support": 1251,
+          "clusters_with_alphafold_support": 23062,
+          "clusters_with_active_site_support": 17052,
+          "representatives_with_experimental_support": 22338,
+          "representatives_with_kinetic_support": 3425,
+          "representatives_with_pdb_support": 1053,
+          "representatives_with_alphafold_support": 22796,
+          "representatives_with_active_site_support": 7737,
+          "kinetic_supported_cluster_representative_retention": 1.0,
+          "pdb_supported_cluster_representative_retention": 0.841726618705036,
+          "active_site_cluster_representative_retention": 0.4537297677691766,
+          "reaction_count": 21187,
+          "mean_clusters_per_reaction": 2.4630197762779065,
+          "median_clusters_per_reaction": 1.0,
+          "p90_clusters_per_reaction": 4.0,
+          "reactions_with_multiple_clusters": 6139
+        }
+      ],
+      "generated_at": "2026-10-30T05:06:34+00:00"
+    },
+    "sequence_clusters": {
+      "input_audit": {
+        "generated_at_utc": "2026-10-30T05:02:31.054592+00:00",
+        "core_database": "web_release/reactenzdb_web.db",
+        "enzyme_records_with_sequence": 155417,
+        "unique_sequences": 129738,
+        "duplicate_sequence_groups": 12032,
+        "enzyme_records_in_duplicate_groups": 37711,
+        "sequence_status": {
+          "valid_full_length": 154951,
+          "length_outlier": 47,
+          "possible_fragment": 419
+        },
+        "taxonomy_id_available": 155125,
+        "experimental_support_available": 121396,
+        "kinetic_support_available": 3402,
+        "pdb_available": 1612,
+        "alphafold_available": 150568,
+        "active_or_functional_site_available": 117627,
+        "length": {
+          "min": 4,
+          "p01": 100,
+          "median": 344.0,
+          "p99": 1387,
+          "max": 11659
+        },
+        "cluster_memberships": "Prior assignments retained for remaining sequences; no reclustering or new sequence-identity claims."
+      },
+      "cluster_summary": {
+        "NR100": {
+          "clusters": 129738,
+          "compression_vs_enzyme_records": 0.165226,
+          "singletons": 117706,
+          "median_enzyme_records_per_cluster": 1.0,
+          "max_enzyme_records_per_cluster": 29
+        },
+        "NR90": {
+          "clusters": 86298,
+          "compression_vs_enzyme_records": 0.444733,
+          "singletons": 65214,
+          "median_enzyme_records_per_cluster": 1.0,
+          "max_enzyme_records_per_cluster": 451
+        },
+        "NR70": {
+          "clusters": 51462,
+          "compression_vs_enzyme_records": 0.668878,
+          "singletons": 31975,
+          "median_enzyme_records_per_cluster": 1.0,
+          "max_enzyme_records_per_cluster": 557
+        },
+        "NR50": {
+          "clusters": 23798,
+          "compression_vs_enzyme_records": 0.846876,
+          "singletons": 11549,
+          "median_enzyme_records_per_cluster": 2.0,
+          "max_enzyme_records_per_cluster": 737
+        }
+      },
+      "generated_at": "2026-10-30T05:04:06+00:00"
+    },
+    "model_ready": {
+      "tables": {
+        "model_ready_reactions": 23598,
+        "model_ready_reaction_compounds": 109572,
+        "model_ready_enzyme_candidates": 249032,
+        "model_ready_trainable_reactions": 11989,
+        "model_ready_trainable_enzyme_candidates": 127458
+      },
+      "reaction_quality": {
+        "canonical_reaction_smiles": 23519,
+        "all_participants_have_smiles": 23590,
+        "formula_balanced": 20213,
+        "formula_unbalanced": 3323,
+        "formula_unknown": 62,
+        "contains_currency_metabolite": 22271,
+        "only_currency_transformation": 7213,
+        "default_trainable_gold": 9404,
+        "default_trainable_silver": 2585
+      },
+      "candidate_quality": {
+        "with_chassis_evidence": 17085,
+        "with_kinetic_evidence": 3517,
+        "with_sequence": 249020,
+        "with_structure_score": 238563,
+        "with_active_site_annotation": 97434,
+        "with_brenda_exact_kinetics": 1153,
+        "with_sabio_rk_exact_kinetics": 832,
+        "with_any_external_exact_kinetics": 1478,
+        "with_both_external_exact_kinetics": 507
+      },
+      "generated_at": "2026-10-30T06:01:40.292229+00:00"
+    },
+    "advanced_selection": {
+      "reaction_count": 21187,
+      "candidate_rows": 249020,
+      "reactions_with_known_active": 2498,
+      "known_active_rows": 5698,
+      "pairwise_alignment_screens": 0,
+      "novelty_counts": {
+        "no_supported_neighbour": 119017,
+        "outside_supported_nr50_families": 78294,
+        "same_supported_nr50_family": 36214,
+        "within_supported_cluster": 15495
+      },
+      "generated_at": "2026-10-30T06:01:16.956859+00:00"
+    }
+  },
+  "provenance": {
+    "generated_at_utc": "2026-10-30T06:01:45.737729+00:00",
+    "source_database_sha256": "1207a29d92e179442873df3592efafa8ea3a47eb6699410c8261a556de76b2a6",
+    "data_revision": "PUBLIC_SCOPE_20261030_V1",
+    "source_policy": "2026-10-08-external-links-only"
+  }
+}

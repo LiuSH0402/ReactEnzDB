@@ -1,0 +1,886 @@
+[
+  {
+    "id": "gsetretro:01-1",
+    "case": "01",
+    "name": "trans-cinnamic acid",
+    "rank": 1,
+    "tool": "gsetretro",
+    "precursors": "O=C(O)CCc1ccccc1",
+    "product": "O=C(O)/C=C/c1ccccc1",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "gsetretro:01-2",
+    "case": "01",
+    "name": "trans-cinnamic acid",
+    "rank": 2,
+    "tool": "gsetretro",
+    "precursors": "O=C(O)CC(O)c1ccccc1",
+    "product": "O=C(O)/C=C/c1ccccc1",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "gsetretro:01-3",
+    "case": "01",
+    "name": "trans-cinnamic acid",
+    "rank": 3,
+    "tool": "gsetretro",
+    "precursors": "N[C@@H](Cc1ccccc1)C(=O)O",
+    "product": "O=C(O)/C=C/c1ccccc1",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "gsetretro:01-4",
+    "case": "01",
+    "name": "trans-cinnamic acid",
+    "rank": 4,
+    "tool": "gsetretro",
+    "precursors": "*C(=O)/C=C/c1ccccc1.O=C(O)[C@H](O)Cc1ccccc1",
+    "product": "O=C(O)/C=C/c1ccccc1",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "gsetretro:01-5",
+    "case": "01",
+    "name": "trans-cinnamic acid",
+    "rank": 5,
+    "tool": "gsetretro",
+    "precursors": "*C(=O)/C=C/c1ccccc1",
+    "product": "O=C(O)/C=C/c1ccccc1",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "gsetretro:02-1",
+    "case": "02",
+    "name": "p-coumaric acid",
+    "rank": 1,
+    "tool": "gsetretro",
+    "precursors": "O=C(O)CCc1ccc(O)cc1",
+    "product": "O=C(O)/C=C/c1ccc(O)cc1",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "gsetretro:02-2",
+    "case": "02",
+    "name": "p-coumaric acid",
+    "rank": 2,
+    "tool": "gsetretro",
+    "precursors": "*C(=O)/C=C/c1ccc(O)cc1",
+    "product": "O=C(O)/C=C/c1ccc(O)cc1",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "gsetretro:02-3",
+    "case": "02",
+    "name": "p-coumaric acid",
+    "rank": 3,
+    "tool": "gsetretro",
+    "precursors": "O=C(O)/C=C/c1ccccc1",
+    "product": "O=C(O)/C=C/c1ccc(O)cc1",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "gsetretro:02-4",
+    "case": "02",
+    "name": "p-coumaric acid",
+    "rank": 4,
+    "tool": "gsetretro",
+    "precursors": "N[C@@H](Cc1ccc(O)cc1)C(=O)O",
+    "product": "O=C(O)/C=C/c1ccc(O)cc1",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "gsetretro:02-5",
+    "case": "02",
+    "name": "p-coumaric acid",
+    "rank": 5,
+    "tool": "gsetretro",
+    "precursors": "O=C(O)/C=C/c1ccc(O)c(O)c1",
+    "product": "O=C(O)/C=C/c1ccc(O)cc1",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "gsetretro:03-1",
+    "case": "03",
+    "name": "benzyl alcohol",
+    "rank": 1,
+    "tool": "gsetretro",
+    "precursors": "O=Cc1ccccc1",
+    "product": "OCc1ccccc1",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "gsetretro:03-2",
+    "case": "03",
+    "name": "benzyl alcohol",
+    "rank": 2,
+    "tool": "gsetretro",
+    "precursors": "Cc1ccccc1",
+    "product": "OCc1ccccc1",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "gsetretro:03-3",
+    "case": "03",
+    "name": "benzyl alcohol",
+    "rank": 3,
+    "tool": "gsetretro",
+    "precursors": "OCc1ccccc1O",
+    "product": "OCc1ccccc1",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "gsetretro:03-4",
+    "case": "03",
+    "name": "benzyl alcohol",
+    "rank": 4,
+    "tool": "gsetretro",
+    "precursors": "Cc1ccccc1O",
+    "product": "OCc1ccccc1",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "gsetretro:03-5",
+    "case": "03",
+    "name": "benzyl alcohol",
+    "rank": 5,
+    "tool": "gsetretro",
+    "precursors": "c1ccccc1",
+    "product": "OCc1ccccc1",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "gsetretro:04-1",
+    "case": "04",
+    "name": "tyramine",
+    "rank": 1,
+    "tool": "gsetretro",
+    "precursors": "O=C(/C=C/c1ccc(O)cc1)NCCc1ccc(O)cc1",
+    "product": "NCCc1ccc(O)cc1",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "gsetretro:04-2",
+    "case": "04",
+    "name": "tyramine",
+    "rank": 2,
+    "tool": "gsetretro",
+    "precursors": "O=CCc1ccc(O)cc1",
+    "product": "NCCc1ccc(O)cc1",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "gsetretro:04-3",
+    "case": "04",
+    "name": "tyramine",
+    "rank": 3,
+    "tool": "gsetretro",
+    "precursors": "N[C@@H](Cc1ccc(O)cc1)C(=O)O",
+    "product": "NCCc1ccc(O)cc1",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "gsetretro:04-4",
+    "case": "04",
+    "name": "tyramine",
+    "rank": 4,
+    "tool": "gsetretro",
+    "precursors": "NCCc1ccc(OS(=O)(=O)O)cc1",
+    "product": "NCCc1ccc(O)cc1",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "gsetretro:04-5",
+    "case": "04",
+    "name": "tyramine",
+    "rank": 5,
+    "tool": "gsetretro",
+    "precursors": "O=C(/C=C/c1ccccc1)NCCc1ccc(O)cc1",
+    "product": "NCCc1ccc(O)cc1",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "gsetretro:05-1",
+    "case": "05",
+    "name": "GABA",
+    "rank": 1,
+    "tool": "gsetretro",
+    "precursors": "N=C(N)NCCCC(=O)O",
+    "product": "NCCCC(=O)O",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "gsetretro:05-2",
+    "case": "05",
+    "name": "GABA",
+    "rank": 2,
+    "tool": "gsetretro",
+    "precursors": "N[C@@H](CCC(=O)O)C(=O)O",
+    "product": "NCCCC(=O)O",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "gsetretro:05-3",
+    "case": "05",
+    "name": "GABA",
+    "rank": 3,
+    "tool": "gsetretro",
+    "precursors": "N[C@@H](CC(=O)O)C(=O)O",
+    "product": "NCCCC(=O)O",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "gsetretro:05-4",
+    "case": "05",
+    "name": "GABA",
+    "rank": 4,
+    "tool": "gsetretro",
+    "precursors": "N=C(N)NCCC(=O)O",
+    "product": "NCCCC(=O)O",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "gsetretro:05-5",
+    "case": "05",
+    "name": "GABA",
+    "rank": 5,
+    "tool": "gsetretro",
+    "precursors": "NCCC=O",
+    "product": "NCCCC(=O)O",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "gsetretro:06-1",
+    "case": "06",
+    "name": "L-tryptophan",
+    "rank": 1,
+    "tool": "gsetretro",
+    "precursors": "N[C@@H](Cc1c[nH]c2ccc(O)cc12)C(=O)O",
+    "product": "N[C@@H](Cc1c[nH]c2ccccc12)C(=O)O",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "gsetretro:06-2",
+    "case": "06",
+    "name": "L-tryptophan",
+    "rank": 2,
+    "tool": "gsetretro",
+    "precursors": "O=C(O)C(=O)Cc1c[nH]c2ccccc12",
+    "product": "N[C@@H](Cc1c[nH]c2ccccc12)C(=O)O",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "gsetretro:06-3",
+    "case": "06",
+    "name": "L-tryptophan",
+    "rank": 3,
+    "tool": "gsetretro",
+    "precursors": "CSCC[C@H](N)C(=O)O",
+    "product": "N[C@@H](Cc1c[nH]c2ccccc12)C(=O)O",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "gsetretro:06-4",
+    "case": "06",
+    "name": "L-tryptophan",
+    "rank": 4,
+    "tool": "gsetretro",
+    "precursors": "N[C@@H](Cc1c[nH]c2ccccc12)C(=O)O",
+    "product": "N[C@@H](Cc1c[nH]c2ccccc12)C(=O)O",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "gsetretro:06-5",
+    "case": "06",
+    "name": "L-tryptophan",
+    "rank": 5,
+    "tool": "gsetretro",
+    "precursors": "N[C@@H](Cc1cc[nH]c1)C(=O)O",
+    "product": "N[C@@H](Cc1c[nH]c2ccccc12)C(=O)O",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "readretro:01-1",
+    "case": "01",
+    "name": "trans-cinnamic acid",
+    "rank": 1,
+    "tool": "readretro",
+    "precursors": "N[C@@H](Cc1ccccc1)C(=O)O",
+    "product": "O=C(O)/C=C/c1ccccc1",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "readretro:01-2",
+    "case": "01",
+    "name": "trans-cinnamic acid",
+    "rank": 2,
+    "tool": "readretro",
+    "precursors": "O=C(O)/C=C/c1ccccc1",
+    "product": "O=C(O)/C=C/c1ccccc1",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "readretro:01-3",
+    "case": "01",
+    "name": "trans-cinnamic acid",
+    "rank": 3,
+    "tool": "readretro",
+    "precursors": "N[C@@H](Cc1ccccc1)C(=O)O.O=C(O)C(=O)O",
+    "product": "O=C(O)/C=C/c1ccccc1",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "readretro:01-4",
+    "case": "01",
+    "name": "trans-cinnamic acid",
+    "rank": 4,
+    "tool": "readretro",
+    "precursors": "O=C(O)C(=O)O",
+    "product": "O=C(O)/C=C/c1ccccc1",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "readretro:01-5",
+    "case": "01",
+    "name": "trans-cinnamic acid",
+    "rank": 5,
+    "tool": "readretro",
+    "precursors": "O=C(O)/C=C/c1ccccc1O",
+    "product": "O=C(O)/C=C/c1ccccc1",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "readretro:02-1",
+    "case": "02",
+    "name": "p-coumaric acid",
+    "rank": 1,
+    "tool": "readretro",
+    "precursors": "O=C(O)/C=C/c1ccc(O)cc1",
+    "product": "O=C(O)/C=C/c1ccc(O)cc1",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "readretro:03-1",
+    "case": "03",
+    "name": "benzyl alcohol",
+    "rank": 1,
+    "tool": "readretro",
+    "precursors": "O=Cc1ccccc1",
+    "product": "OCc1ccccc1",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "readretro:03-2",
+    "case": "03",
+    "name": "benzyl alcohol",
+    "rank": 2,
+    "tool": "readretro",
+    "precursors": "Cc1ccccc1",
+    "product": "OCc1ccccc1",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "readretro:04-1",
+    "case": "04",
+    "name": "tyramine",
+    "rank": 1,
+    "tool": "readretro",
+    "precursors": "NCCc1ccc(O)cc1",
+    "product": "NCCc1ccc(O)cc1",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "readretro:05-1",
+    "case": "05",
+    "name": "GABA",
+    "rank": 1,
+    "tool": "readretro",
+    "precursors": "NCCCC(=O)O",
+    "product": "NCCCC(=O)O",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "readretro:05-2",
+    "case": "05",
+    "name": "GABA",
+    "rank": 2,
+    "tool": "readretro",
+    "precursors": "NCCCC=O",
+    "product": "NCCCC(=O)O",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "readretro:06-1",
+    "case": "06",
+    "name": "L-tryptophan",
+    "rank": 1,
+    "tool": "readretro",
+    "precursors": "N[C@@H](Cc1c[nH]c2ccccc12)C(=O)O",
+    "product": "N[C@@H](Cc1c[nH]c2ccccc12)C(=O)O",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "readretro:06-2",
+    "case": "06",
+    "name": "L-tryptophan",
+    "rank": 2,
+    "tool": "readretro",
+    "precursors": "N[C@@H](Cc1c[nH]cn1)C(=O)O",
+    "product": "N[C@@H](Cc1c[nH]c2ccccc12)C(=O)O",
+    "cohort": "single_step_development"
+  },
+  {
+    "id": "phenylethanol:route1:step1",
+    "target_name": "phenylethanol",
+    "tool": "retrobiocat",
+    "route_rank": 1,
+    "forward_step_index": 1,
+    "precursors": "O=C(O)Cc1ccccc1",
+    "product": "O=CCc1ccccc1",
+    "upstream_step": {
+      "reaction": "Carboxylic acid reduction",
+      "product_smiles": "O=CCc1ccccc1",
+      "substrate_smiles": [
+        "O=C(O)Cc1ccccc1"
+      ],
+      "selected_enzyme": "CAR",
+      "possible_enzymes": [
+        "CAR"
+      ],
+      "enzyme_cofactors": {
+        "CAR": [
+          [
+            "NADP",
+            "AMP",
+            "Ppi"
+          ],
+          [
+            "NADPH",
+            "ATP"
+          ]
+        ]
+      }
+    },
+    "cohort": "multistep_development"
+  },
+  {
+    "id": "phenylethanol:route1:step2",
+    "target_name": "phenylethanol",
+    "tool": "retrobiocat",
+    "route_rank": 1,
+    "forward_step_index": 2,
+    "precursors": "O=CCc1ccccc1",
+    "product": "OCCc1ccccc1",
+    "upstream_step": {
+      "reaction": "Aldehyde reduction",
+      "product_smiles": "OCCc1ccccc1",
+      "substrate_smiles": [
+        "O=CCc1ccccc1"
+      ],
+      "selected_enzyme": "ADH",
+      "possible_enzymes": [
+        "ADH"
+      ],
+      "enzyme_cofactors": {
+        "ADH": [
+          [
+            "NADP"
+          ],
+          [
+            "NADPH"
+          ]
+        ]
+      }
+    },
+    "cohort": "multistep_development"
+  },
+  {
+    "id": "phenylethanol:route3:step1",
+    "target_name": "phenylethanol",
+    "tool": "retrobiocat",
+    "route_rank": 3,
+    "forward_step_index": 1,
+    "precursors": "O=CCc1ccccc1",
+    "product": "OCCc1ccccc1",
+    "upstream_step": {
+      "reaction": "Aldehyde reduction",
+      "product_smiles": "OCCc1ccccc1",
+      "substrate_smiles": [
+        "O=CCc1ccccc1"
+      ],
+      "selected_enzyme": "ADH",
+      "possible_enzymes": [
+        "ADH"
+      ],
+      "enzyme_cofactors": {
+        "ADH": [
+          [
+            "NADP"
+          ],
+          [
+            "NADPH"
+          ]
+        ]
+      }
+    },
+    "cohort": "multistep_development"
+  },
+  {
+    "id": "phenylethanol:route4:step1",
+    "target_name": "phenylethanol",
+    "tool": "retrobiocat",
+    "route_rank": 4,
+    "forward_step_index": 1,
+    "precursors": "NCCc1ccccc1",
+    "product": "O=CCc1ccccc1",
+    "upstream_step": {
+      "reaction": "Primary amine deamination",
+      "product_smiles": "O=CCc1ccccc1",
+      "substrate_smiles": [
+        "NCCc1ccccc1"
+      ],
+      "selected_enzyme": "AmDH",
+      "possible_enzymes": [
+        "AmDH",
+        "TA"
+      ],
+      "enzyme_cofactors": {
+        "AmDH": [
+          [
+            "NADH",
+            "NH3"
+          ],
+          [
+            "NAD"
+          ]
+        ],
+        "TA": [
+          [
+            "Amine"
+          ],
+          [
+            "Carbonyl"
+          ]
+        ]
+      }
+    },
+    "cohort": "multistep_development"
+  },
+  {
+    "id": "phenylethanol:route4:step2",
+    "target_name": "phenylethanol",
+    "tool": "retrobiocat",
+    "route_rank": 4,
+    "forward_step_index": 2,
+    "precursors": "O=CCc1ccccc1",
+    "product": "OCCc1ccccc1",
+    "upstream_step": {
+      "reaction": "Aldehyde reduction",
+      "product_smiles": "OCCc1ccccc1",
+      "substrate_smiles": [
+        "O=CCc1ccccc1"
+      ],
+      "selected_enzyme": "ADH",
+      "possible_enzymes": [
+        "ADH"
+      ],
+      "enzyme_cofactors": {
+        "ADH": [
+          [
+            "NADP"
+          ],
+          [
+            "NADPH"
+          ]
+        ]
+      }
+    },
+    "cohort": "multistep_development"
+  },
+  {
+    "id": "phenylethanol:route5:step1",
+    "target_name": "phenylethanol",
+    "tool": "retrobiocat",
+    "route_rank": 5,
+    "forward_step_index": 1,
+    "precursors": "O=C(O)C(=O)Cc1ccccc1",
+    "product": "O=CCc1ccccc1",
+    "upstream_step": {
+      "reaction": "Decarboxylation",
+      "product_smiles": "O=CCc1ccccc1",
+      "substrate_smiles": [
+        "O=C(O)C(=O)Cc1ccccc1"
+      ],
+      "selected_enzyme": "DC",
+      "possible_enzymes": [
+        "DC"
+      ],
+      "enzyme_cofactors": {
+        "DC": [
+          [
+            "CO2"
+          ],
+          []
+        ]
+      }
+    },
+    "cohort": "multistep_development"
+  },
+  {
+    "id": "phenylethanol:route5:step2",
+    "target_name": "phenylethanol",
+    "tool": "retrobiocat",
+    "route_rank": 5,
+    "forward_step_index": 2,
+    "precursors": "O=CCc1ccccc1",
+    "product": "OCCc1ccccc1",
+    "upstream_step": {
+      "reaction": "Aldehyde reduction",
+      "product_smiles": "OCCc1ccccc1",
+      "substrate_smiles": [
+        "O=CCc1ccccc1"
+      ],
+      "selected_enzyme": "ADH",
+      "possible_enzymes": [
+        "ADH"
+      ],
+      "enzyme_cofactors": {
+        "ADH": [
+          [
+            "NADP"
+          ],
+          [
+            "NADPH"
+          ]
+        ]
+      }
+    },
+    "cohort": "multistep_development"
+  },
+  {
+    "id": "cinnamyl_alcohol:route1:step1",
+    "target_name": "cinnamyl_alcohol",
+    "tool": "retrobiocat",
+    "route_rank": 1,
+    "forward_step_index": 1,
+    "precursors": "O=C(O)/C=C/c1ccccc1",
+    "product": "O=C/C=C/c1ccccc1",
+    "upstream_step": {
+      "reaction": "Carboxylic acid reduction",
+      "product_smiles": "O=C/C=C/c1ccccc1",
+      "substrate_smiles": [
+        "O=C(O)/C=C/c1ccccc1"
+      ],
+      "selected_enzyme": "CAR",
+      "possible_enzymes": [
+        "CAR"
+      ],
+      "enzyme_cofactors": {
+        "CAR": [
+          [
+            "NADP",
+            "AMP",
+            "Ppi"
+          ],
+          [
+            "NADPH",
+            "ATP"
+          ]
+        ]
+      }
+    },
+    "cohort": "multistep_development"
+  },
+  {
+    "id": "cinnamyl_alcohol:route1:step2",
+    "target_name": "cinnamyl_alcohol",
+    "tool": "retrobiocat",
+    "route_rank": 1,
+    "forward_step_index": 2,
+    "precursors": "O=C/C=C/c1ccccc1",
+    "product": "OC/C=C/c1ccccc1",
+    "upstream_step": {
+      "reaction": "Aldehyde reduction",
+      "product_smiles": "OC/C=C/c1ccccc1",
+      "substrate_smiles": [
+        "O=C/C=C/c1ccccc1"
+      ],
+      "selected_enzyme": "ADH",
+      "possible_enzymes": [
+        "ADH"
+      ],
+      "enzyme_cofactors": {
+        "ADH": [
+          [
+            "NADP"
+          ],
+          [
+            "NADPH"
+          ]
+        ]
+      }
+    },
+    "cohort": "multistep_development"
+  },
+  {
+    "id": "cinnamyl_alcohol:route3:step1",
+    "target_name": "cinnamyl_alcohol",
+    "tool": "retrobiocat",
+    "route_rank": 3,
+    "forward_step_index": 1,
+    "precursors": "O=C/C=C/c1ccccc1",
+    "product": "OC/C=C/c1ccccc1",
+    "upstream_step": {
+      "reaction": "Aldehyde reduction",
+      "product_smiles": "OC/C=C/c1ccccc1",
+      "substrate_smiles": [
+        "O=C/C=C/c1ccccc1"
+      ],
+      "selected_enzyme": "ADH",
+      "possible_enzymes": [
+        "ADH"
+      ],
+      "enzyme_cofactors": {
+        "ADH": [
+          [
+            "NADP"
+          ],
+          [
+            "NADPH"
+          ]
+        ]
+      }
+    },
+    "cohort": "multistep_development"
+  },
+  {
+    "id": "cinnamyl_alcohol:route4:step1",
+    "target_name": "cinnamyl_alcohol",
+    "tool": "retrobiocat",
+    "route_rank": 4,
+    "forward_step_index": 1,
+    "precursors": "O=C(O)C(=O)/C=C/c1ccccc1",
+    "product": "O=C/C=C/c1ccccc1",
+    "upstream_step": {
+      "reaction": "Decarboxylation",
+      "product_smiles": "O=C/C=C/c1ccccc1",
+      "substrate_smiles": [
+        "O=C(O)C(=O)/C=C/c1ccccc1"
+      ],
+      "selected_enzyme": "DC",
+      "possible_enzymes": [
+        "DC"
+      ],
+      "enzyme_cofactors": {
+        "DC": [
+          [
+            "CO2"
+          ],
+          []
+        ]
+      }
+    },
+    "cohort": "multistep_development"
+  },
+  {
+    "id": "cinnamyl_alcohol:route4:step2",
+    "target_name": "cinnamyl_alcohol",
+    "tool": "retrobiocat",
+    "route_rank": 4,
+    "forward_step_index": 2,
+    "precursors": "O=C/C=C/c1ccccc1",
+    "product": "OC/C=C/c1ccccc1",
+    "upstream_step": {
+      "reaction": "Aldehyde reduction",
+      "product_smiles": "OC/C=C/c1ccccc1",
+      "substrate_smiles": [
+        "O=C/C=C/c1ccccc1"
+      ],
+      "selected_enzyme": "ADH",
+      "possible_enzymes": [
+        "ADH"
+      ],
+      "enzyme_cofactors": {
+        "ADH": [
+          [
+            "NADP"
+          ],
+          [
+            "NADPH"
+          ]
+        ]
+      }
+    },
+    "cohort": "multistep_development"
+  },
+  {
+    "id": "cinnamyl_alcohol:route5:step1",
+    "target_name": "cinnamyl_alcohol",
+    "tool": "retrobiocat",
+    "route_rank": 5,
+    "forward_step_index": 1,
+    "precursors": "CCC(=O)OC/C=C/c1ccccc1",
+    "product": "OC/C=C/c1ccccc1",
+    "upstream_step": {
+      "reaction": "Ester hydrolysis (OH)",
+      "product_smiles": "OC/C=C/c1ccccc1",
+      "substrate_smiles": [
+        "CCC(=O)OC/C=C/c1ccccc1"
+      ],
+      "selected_enzyme": "Esterase",
+      "possible_enzymes": [
+        "Lipase",
+        "Esterase"
+      ],
+      "enzyme_cofactors": {
+        "Esterase": [
+          [
+            "R-COOH"
+          ],
+          [
+            "H2O"
+          ]
+        ],
+        "Lipase": [
+          [
+            "R-COOH"
+          ],
+          [
+            "H2O"
+          ]
+        ]
+      }
+    },
+    "cohort": "multistep_development"
+  },
+  {
+    "id": "cinnamate_known_L",
+    "precursors": "N[C@@H](Cc1ccccc1)C(=O)O",
+    "product": "O=C(O)/C=C/c1ccccc1",
+    "cohort": "engineering_controls"
+  },
+  {
+    "id": "cinnamate_D_control",
+    "precursors": "N[C@H](Cc1ccccc1)C(=O)O",
+    "product": "O=C(O)/C=C/c1ccccc1",
+    "cohort": "engineering_controls"
+  },
+  {
+    "id": "glutamate_to_GABA",
+    "precursors": "N[C@@H](CCC(=O)O)C(=O)O",
+    "product": "NCCCC(=O)O",
+    "cohort": "engineering_controls"
+  },
+  {
+    "id": "invalid_target",
+    "precursors": "CCCC",
+    "product": "invalid!",
+    "cohort": "engineering_controls"
+  },
+  {
+    "id": "partial_identity",
+    "precursors": "OCc1ccccc1",
+    "product": "OCc1ccccc1",
+    "cohort": "engineering_controls"
+  }
+]

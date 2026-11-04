@@ -1,0 +1,7 @@
+ReactEnzDB code distribution notice
+
+This directory is a local source-publication preparation package. No new project-wide open-source licence grant has been selected or asserted by this preparation step.
+
+Before public distribution, the authorised rights holder must confirm the licence for ReactEnzDB-authored code and the scope of that grant. Third-party code, templates, libraries and assets retain their own licences and notices; see THIRD_PARTY_NOTICES.md. This notice does not revoke any rights already granted by upstream licensors.
+
+The scientific data, model weights, rules and graph resources are separate materials and are not relicensed by this code package.

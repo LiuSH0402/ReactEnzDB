@@ -1,0 +1,289 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="1660" viewBox="0 0 1480 1660">
+<rect width="100%" height="100%" fill="#f8fbff"/>
+<text x="50.0" y="52.0" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#0d2b45" text-anchor="start">ReactEnzDB 2026.09.1 statistical landscape · updated 2026-10-30</text>
+<text x="50.0" y="82.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#63738a" text-anchor="start">Reaction-enzyme associations link biochemical transformations to enzyme candidates, source organisms, chassis annotations, kinetics and structure evidence.</text>
+<rect x="50" y="115" width="1380" height="260" rx="18" fill="#ffffff" stroke="#d9e4f2" stroke-width="1"/>
+<text x="68.0" y="143.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#2f6fed" text-anchor="start">A</text>
+<text x="94.0" y="143.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0d2b45" text-anchor="start">Release overview</text>
+<rect x="50" y="410" width="420" height="260" rx="18" fill="#ffffff" stroke="#d9e4f2" stroke-width="1"/>
+<text x="68.0" y="438.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#2f6fed" text-anchor="start">B</text>
+<text x="94.0" y="438.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0d2b45" text-anchor="start">Reaction direction</text>
+<rect x="530" y="410" width="420" height="260" rx="18" fill="#ffffff" stroke="#d9e4f2" stroke-width="1"/>
+<text x="548.0" y="438.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#2f6fed" text-anchor="start">C</text>
+<text x="574.0" y="438.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0d2b45" text-anchor="start">Reaction annotation coverage</text>
+<rect x="1010" y="410" width="420" height="260" rx="18" fill="#ffffff" stroke="#d9e4f2" stroke-width="1"/>
+<text x="1028.0" y="438.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#2f6fed" text-anchor="start">D</text>
+<text x="1054.0" y="438.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0d2b45" text-anchor="start">EC class distribution</text>
+<rect x="50" y="705" width="420" height="280" rx="18" fill="#ffffff" stroke="#d9e4f2" stroke-width="1"/>
+<text x="68.0" y="733.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#2f6fed" text-anchor="start">E</text>
+<text x="94.0" y="733.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0d2b45" text-anchor="start">Enzyme sequence length</text>
+<rect x="530" y="705" width="420" height="280" rx="18" fill="#ffffff" stroke="#d9e4f2" stroke-width="1"/>
+<text x="548.0" y="733.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#2f6fed" text-anchor="start">F</text>
+<text x="574.0" y="733.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0d2b45" text-anchor="start">Enzyme identifier / structure coverage</text>
+<rect x="1010" y="705" width="420" height="280" rx="18" fill="#ffffff" stroke="#d9e4f2" stroke-width="1"/>
+<text x="1028.0" y="733.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#2f6fed" text-anchor="start">G</text>
+<text x="1054.0" y="733.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0d2b45" text-anchor="start">Top source organisms</text>
+<rect x="50" y="1020" width="420" height="280" rx="18" fill="#ffffff" stroke="#d9e4f2" stroke-width="1"/>
+<text x="68.0" y="1048.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#2f6fed" text-anchor="start">H</text>
+<text x="94.0" y="1048.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0d2b45" text-anchor="start">Kinetic parameter types</text>
+<rect x="530" y="1020" width="420" height="280" rx="18" fill="#ffffff" stroke="#d9e4f2" stroke-width="1"/>
+<text x="548.0" y="1048.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#2f6fed" text-anchor="start">I</text>
+<text x="574.0" y="1048.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0d2b45" text-anchor="start">Compound structure coverage</text>
+<rect x="1010" y="1020" width="420" height="280" rx="18" fill="#ffffff" stroke="#d9e4f2" stroke-width="1"/>
+<text x="1028.0" y="1048.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#2f6fed" text-anchor="start">J</text>
+<text x="1054.0" y="1048.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0d2b45" text-anchor="start">Top chassis annotations</text>
+<line x1="108" y1="327" x2="1388" y2="327" stroke="#e8eef6" stroke-width="1"/>
+<line x1="214.7" y1="327.0" x2="214.7" y2="187.0" stroke="#2f6fed" stroke-opacity="0.55" stroke-width="16" stroke-linecap="round"/>
+<circle cx="214.7" cy="187.0" r="8" fill="#2f6fed"/>
+<text x="214.7" y="173.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#2f6fed" text-anchor="middle">249,032</text>
+<text x="214.7" y="351.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#0d2b45" text-anchor="middle">Association records</text>
+<line x1="428.0" y1="327.0" x2="428.0" y2="192.3" stroke="#2aa198" stroke-opacity="0.55" stroke-width="16" stroke-linecap="round"/>
+<circle cx="428.0" cy="192.3" r="8" fill="#2aa198"/>
+<text x="428.0" y="178.3" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#2aa198" text-anchor="middle">155,428</text>
+<text x="428.0" y="351.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#0d2b45" text-anchor="middle">Enzymes</text>
+<line x1="641.3" y1="327.0" x2="641.3" y2="213.6" stroke="#42b883" stroke-opacity="0.55" stroke-width="16" stroke-linecap="round"/>
+<circle cx="641.3" cy="213.6" r="8" fill="#42b883"/>
+<text x="641.3" y="199.6" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#42b883" text-anchor="middle">23,598</text>
+<text x="641.3" y="351.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#0d2b45" text-anchor="middle">Reactions</text>
+<line x1="854.7" y1="327.0" x2="854.7" y2="213.5" stroke="#d99a2b" stroke-opacity="0.55" stroke-width="16" stroke-linecap="round"/>
+<circle cx="854.7" cy="213.5" r="8" fill="#d99a2b"/>
+<text x="854.7" y="199.5" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#d99a2b" text-anchor="middle">23,634</text>
+<text x="854.7" y="351.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#0d2b45" text-anchor="middle">Kinetics</text>
+<line x1="1068.0" y1="327.0" x2="1068.0" y2="227.5" stroke="#63738a" stroke-opacity="0.55" stroke-width="16" stroke-linecap="round"/>
+<circle cx="1068.0" cy="227.5" r="8" fill="#63738a"/>
+<text x="1068.0" y="213.5" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#63738a" text-anchor="middle">6,831</text>
+<text x="1068.0" y="351.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#0d2b45" text-anchor="middle">Source organisms</text>
+<line x1="1281.3" y1="327.0" x2="1281.3" y2="240.8" stroke="#9ab7d7" stroke-opacity="0.55" stroke-width="16" stroke-linecap="round"/>
+<circle cx="1281.3" cy="240.8" r="8" fill="#9ab7d7"/>
+<text x="1281.3" y="226.8" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#9ab7d7" text-anchor="middle">2,100</text>
+<text x="1281.3" y="351.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#0d2b45" text-anchor="middle">Chassis annotations</text>
+<text x="108.0" y="357.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">Count axis uses log scaling to compare relation records with entity counts.</text>
+<text x="68.0" y="476.0" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">=</text>
+<line x1="226.4" y1="472.0" x2="400.0" y2="472.0" stroke="#2f6fed" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="400.0" cy="472.0" r="5" fill="#2f6fed"/>
+<text x="410.0" y="476.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">12,989</text>
+<text x="68.0" y="504.0" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">=&gt;</text>
+<line x1="226.4" y1="500.0" x2="336.3" y2="500.0" stroke="#2f6fed" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="336.3" cy="500.0" r="5" fill="#2f6fed"/>
+<text x="346.3" y="504.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">8,225</text>
+<text x="68.0" y="532.0" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">&lt;=&gt;</text>
+<line x1="226.4" y1="528.0" x2="247.9" y2="528.0" stroke="#2f6fed" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="247.9" cy="528.0" r="5" fill="#2f6fed"/>
+<text x="257.9" y="532.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">1,608</text>
+<text x="68.0" y="560.0" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">&lt;=</text>
+<line x1="226.4" y1="556.0" x2="236.5" y2="556.0" stroke="#2f6fed" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="236.5" cy="556.0" r="5" fill="#2f6fed"/>
+<text x="246.5" y="560.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">758</text>
+<text x="68.0" y="588.0" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">&lt;--&gt;</text>
+<line x1="226.4" y1="584.0" x2="226.6" y2="584.0" stroke="#2f6fed" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="226.6" cy="584.0" r="5" fill="#2f6fed"/>
+<text x="236.6" y="588.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">18</text>
+<line x1="564" y1="622" x2="926" y2="622" stroke="#e8eef6" stroke-width="1"/>
+<line x1="564" y1="468" x2="564" y2="622" stroke="#e8eef6" stroke-width="1"/>
+<line x1="600.2" y1="622.0" x2="600.2" y2="556.2" stroke="#42b883" stroke-opacity="0.5" stroke-width="10" stroke-linecap="round"/>
+<circle cx="600.2" cy="556.2" r="6" fill="#42b883"/>
+<text x="600.2" y="546.2" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#42b883" text-anchor="middle">42.8%</text>
+<text x="600.2" y="642.0" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#63738a" text-anchor="middle">EC</text>
+<line x1="672.6" y1="622.0" x2="672.6" y2="492.4" stroke="#2aa198" stroke-opacity="0.5" stroke-width="10" stroke-linecap="round"/>
+<circle cx="672.6" cy="492.4" r="6" fill="#2aa198"/>
+<text x="672.6" y="482.4" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#2aa198" text-anchor="middle">84.1%</text>
+<text x="672.6" y="642.0" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#63738a" text-anchor="middle">Rhea</text>
+<line x1="745.0" y1="622.0" x2="745.0" y2="607.9" stroke="#2f6fed" stroke-opacity="0.5" stroke-width="10" stroke-linecap="round"/>
+<circle cx="745.0" cy="607.9" r="6" fill="#2f6fed"/>
+<text x="745.0" y="597.9" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#2f6fed" text-anchor="middle">9.2%</text>
+<text x="745.0" y="642.0" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#63738a" text-anchor="middle">KEGG</text>
+<line x1="817.4" y1="622.0" x2="817.4" y2="591.1" stroke="#d99a2b" stroke-opacity="0.5" stroke-width="10" stroke-linecap="round"/>
+<circle cx="817.4" cy="591.1" r="6" fill="#d99a2b"/>
+<text x="817.4" y="581.1" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#d99a2b" text-anchor="middle">20.0%</text>
+<text x="817.4" y="642.0" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#63738a" text-anchor="middle">MetaCyc</text>
+<line x1="889.8" y1="622.0" x2="889.8" y2="468.0" stroke="#63738a" stroke-opacity="0.5" stroke-width="10" stroke-linecap="round"/>
+<circle cx="889.8" cy="468.0" r="6" fill="#63738a"/>
+<text x="889.8" y="458.0" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#63738a" text-anchor="middle">100.0%</text>
+<text x="889.8" y="642.0" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#63738a" text-anchor="middle">SMILES com...</text>
+<text x="1028.0" y="476.0" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">EC 1</text>
+<line x1="1186.4" y1="472.0" x2="1357.9" y2="472.0" stroke="#2aa198" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="1357.9" cy="472.0" r="5" fill="#2aa198"/>
+<text x="1367.9" y="476.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">3,105</text>
+<text x="1028.0" y="501.4" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">EC 2</text>
+<line x1="1186.4" y1="497.4" x2="1360.0" y2="497.4" stroke="#2aa198" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="1360.0" cy="497.4" r="5" fill="#2aa198"/>
+<text x="1370.0" y="501.4" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">3,143</text>
+<text x="1028.0" y="526.9" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">EC 3</text>
+<line x1="1186.4" y1="522.9" x2="1265.2" y2="522.9" stroke="#2aa198" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="1265.2" cy="522.9" r="5" fill="#2aa198"/>
+<text x="1275.2" y="526.9" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">1,426</text>
+<text x="1028.0" y="552.3" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">EC 4</text>
+<line x1="1186.4" y1="548.3" x2="1261.9" y2="548.3" stroke="#2aa198" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="1261.9" cy="548.3" r="5" fill="#2aa198"/>
+<text x="1271.9" y="552.3" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">1,367</text>
+<text x="1028.0" y="577.7" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">EC 5</text>
+<line x1="1186.4" y1="573.7" x2="1216.9" y2="573.7" stroke="#2aa198" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="1216.9" cy="573.7" r="5" fill="#2aa198"/>
+<text x="1226.9" y="577.7" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">553</text>
+<text x="1028.0" y="603.1" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">EC 6</text>
+<line x1="1186.4" y1="599.1" x2="1208.7" y2="599.1" stroke="#2aa198" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="1208.7" cy="599.1" r="5" fill="#2aa198"/>
+<text x="1218.7" y="603.1" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">404</text>
+<text x="1028.0" y="628.6" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">EC 7</text>
+<line x1="1186.4" y1="624.6" x2="1191.6" y2="624.6" stroke="#2aa198" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="1191.6" cy="624.6" r="5" fill="#2aa198"/>
+<text x="1201.6" y="628.6" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">95</text>
+<text x="68.0" y="771.0" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">missing</text>
+<line x1="226.4" y1="767.0" x2="226.4" y2="767.0" stroke="#42b883" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="226.4" cy="767.0" r="5" fill="#42b883"/>
+<text x="236.4" y="771.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">11</text>
+<text x="68.0" y="799.0" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">&lt;200 aa</text>
+<line x1="226.4" y1="795.0" x2="269.6" y2="795.0" stroke="#42b883" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="269.6" cy="795.0" r="5" fill="#42b883"/>
+<text x="279.6" y="799.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">20,290</text>
+<text x="68.0" y="827.0" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">200-399 aa</text>
+<line x1="226.4" y1="823.0" x2="400.0" y2="823.0" stroke="#42b883" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="400.0" cy="823.0" r="5" fill="#42b883"/>
+<text x="410.0" y="827.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">81,470</text>
+<text x="68.0" y="855.0" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">400-599 aa</text>
+<line x1="226.4" y1="851.0" x2="312.0" y2="851.0" stroke="#42b883" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="312.0" cy="851.0" r="5" fill="#42b883"/>
+<text x="322.0" y="855.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">40,188</text>
+<text x="68.0" y="883.0" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">600-799 aa</text>
+<line x1="226.4" y1="879.0" x2="243.9" y2="879.0" stroke="#42b883" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="243.9" cy="879.0" r="5" fill="#42b883"/>
+<text x="253.9" y="883.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">8,231</text>
+<text x="68.0" y="911.0" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">800-999 aa</text>
+<line x1="226.4" y1="907.0" x2="230.8" y2="907.0" stroke="#42b883" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="230.8" cy="907.0" r="5" fill="#42b883"/>
+<text x="240.8" y="911.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">2,068</text>
+<text x="68.0" y="939.0" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">&gt;=1000 aa</text>
+<line x1="226.4" y1="935.0" x2="233.2" y2="935.0" stroke="#42b883" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="233.2" cy="935.0" r="5" fill="#42b883"/>
+<text x="243.2" y="939.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">3,170</text>
+<line x1="564" y1="937" x2="926" y2="937" stroke="#e8eef6" stroke-width="1"/>
+<line x1="564" y1="763" x2="564" y2="937" stroke="#e8eef6" stroke-width="1"/>
+<line x1="600.2" y1="937.0" x2="600.2" y2="763.0" stroke="#42b883" stroke-opacity="0.5" stroke-width="10" stroke-linecap="round"/>
+<circle cx="600.2" cy="763.0" r="6" fill="#42b883"/>
+<text x="600.2" y="753.0" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#42b883" text-anchor="middle">100.0%</text>
+<text x="600.2" y="957.0" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#63738a" text-anchor="middle">Sequence</text>
+<line x1="672.6" y1="937.0" x2="672.6" y2="763.5" stroke="#2aa198" stroke-opacity="0.5" stroke-width="10" stroke-linecap="round"/>
+<circle cx="672.6" cy="763.5" r="6" fill="#2aa198"/>
+<text x="672.6" y="753.5" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#2aa198" text-anchor="middle">99.7%</text>
+<text x="672.6" y="957.0" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#63738a" text-anchor="middle">UniProt</text>
+<line x1="745.0" y1="937.0" x2="745.0" y2="935.2" stroke="#2f6fed" stroke-opacity="0.5" stroke-width="10" stroke-linecap="round"/>
+<circle cx="745.0" cy="935.2" r="6" fill="#2f6fed"/>
+<text x="745.0" y="925.2" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#2f6fed" text-anchor="middle">1.0%</text>
+<text x="745.0" y="957.0" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#63738a" text-anchor="middle">PDB</text>
+<line x1="817.4" y1="937.0" x2="817.4" y2="768.5" stroke="#d99a2b" stroke-opacity="0.5" stroke-width="10" stroke-linecap="round"/>
+<circle cx="817.4" cy="768.5" r="6" fill="#d99a2b"/>
+<text x="817.4" y="758.5" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#d99a2b" text-anchor="middle">96.9%</text>
+<text x="817.4" y="957.0" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#63738a" text-anchor="middle">AlphaFold</text>
+<line x1="889.8" y1="937.0" x2="889.8" y2="768.4" stroke="#63738a" stroke-opacity="0.5" stroke-width="10" stroke-linecap="round"/>
+<circle cx="889.8" cy="768.4" r="6" fill="#63738a"/>
+<text x="889.8" y="758.4" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#63738a" text-anchor="middle">96.9%</text>
+<text x="889.8" y="957.0" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#63738a" text-anchor="middle">PDB or Alp...</text>
+<text x="1028.0" y="771.0" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">Arabidopsis thaliana</text>
+<line x1="1186.4" y1="767.0" x2="1360.0" y2="767.0" stroke="#d99a2b" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="1360.0" cy="767.0" r="5" fill="#d99a2b"/>
+<text x="1370.0" y="771.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">2,332</text>
+<text x="1028.0" y="790.8" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">Homo sapiens</text>
+<line x1="1186.4" y1="786.8" x2="1356.6" y2="786.8" stroke="#d99a2b" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="1356.6" cy="786.8" r="5" fill="#d99a2b"/>
+<text x="1366.6" y="790.8" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">2,286</text>
+<text x="1028.0" y="810.6" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">Mus musculus</text>
+<line x1="1186.4" y1="806.6" x2="1339.4" y2="806.6" stroke="#d99a2b" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="1339.4" cy="806.6" r="5" fill="#d99a2b"/>
+<text x="1349.4" y="810.6" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">2,055</text>
+<text x="1028.0" y="830.4" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">Rattus norvegicus</text>
+<line x1="1186.4" y1="826.4" x2="1288.8" y2="826.4" stroke="#d99a2b" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="1288.8" cy="826.4" r="5" fill="#d99a2b"/>
+<text x="1298.8" y="830.4" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">1,376</text>
+<text x="1028.0" y="850.2" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">Escherichia coli K-12</text>
+<line x1="1186.4" y1="846.2" x2="1278.8" y2="846.2" stroke="#d99a2b" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="1278.8" cy="846.2" r="5" fill="#d99a2b"/>
+<text x="1288.8" y="850.2" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">1,241</text>
+<text x="1028.0" y="870.0" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">Bos taurus</text>
+<line x1="1186.4" y1="866.0" x2="1252.9" y2="866.0" stroke="#d99a2b" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="1252.9" cy="866.0" r="5" fill="#d99a2b"/>
+<text x="1262.9" y="870.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">893</text>
+<text x="1028.0" y="889.8" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">Saccharomyces cerevisiae ...</text>
+<line x1="1186.4" y1="885.8" x2="1252.0" y2="885.8" stroke="#d99a2b" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="1252.0" cy="885.8" r="5" fill="#d99a2b"/>
+<text x="1262.0" y="889.8" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">881</text>
+<text x="1028.0" y="909.6" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">Oryza sativa Japonica Group</text>
+<line x1="1186.4" y1="905.6" x2="1244.7" y2="905.6" stroke="#d99a2b" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="1244.7" cy="905.6" r="5" fill="#d99a2b"/>
+<text x="1254.7" y="909.6" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">783</text>
+<text x="1028.0" y="929.4" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">Mycobacterium tuberculosi...</text>
+<line x1="1186.4" y1="925.4" x2="1241.0" y2="925.4" stroke="#d99a2b" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="1241.0" cy="925.4" r="5" fill="#d99a2b"/>
+<text x="1251.0" y="929.4" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">734</text>
+<text x="1028.0" y="949.2" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">Bacillus subtilis subsp. ...</text>
+<line x1="1186.4" y1="945.2" x2="1238.7" y2="945.2" stroke="#d99a2b" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="1238.7" cy="945.2" r="5" fill="#d99a2b"/>
+<text x="1248.7" y="949.2" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">702</text>
+<text x="68.0" y="1086.0" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">km</text>
+<line x1="226.4" y1="1082.0" x2="400.0" y2="1082.0" stroke="#2f6fed" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="400.0" cy="1082.0" r="5" fill="#2f6fed"/>
+<text x="410.0" y="1086.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">13,978</text>
+<text x="68.0" y="1114.0" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">kcat</text>
+<line x1="226.4" y1="1110.0" x2="302.6" y2="1110.0" stroke="#2f6fed" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="302.6" cy="1110.0" r="5" fill="#2f6fed"/>
+<text x="312.6" y="1114.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">6,139</text>
+<text x="68.0" y="1142.0" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">kcat_km</text>
+<line x1="226.4" y1="1138.0" x2="269.7" y2="1138.0" stroke="#2f6fed" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="269.7" cy="1138.0" r="5" fill="#2f6fed"/>
+<text x="279.7" y="1142.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">3,487</text>
+<text x="68.0" y="1170.0" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">vmax</text>
+<line x1="226.4" y1="1166.0" x2="226.8" y2="1166.0" stroke="#2f6fed" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="226.8" cy="1166.0" r="5" fill="#2f6fed"/>
+<text x="236.8" y="1170.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">30</text>
+<line x1="564" y1="1252" x2="926" y2="1252" stroke="#e8eef6" stroke-width="1"/>
+<line x1="564" y1="1078" x2="564" y2="1252" stroke="#e8eef6" stroke-width="1"/>
+<line x1="609.2" y1="1252.0" x2="609.2" y2="1078.1" stroke="#42b883" stroke-opacity="0.5" stroke-width="10" stroke-linecap="round"/>
+<circle cx="609.2" cy="1078.1" r="6" fill="#42b883"/>
+<text x="609.2" y="1068.1" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#42b883" text-anchor="middle">100.0%</text>
+<text x="609.2" y="1272.0" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#63738a" text-anchor="middle">SMILES</text>
+<line x1="699.8" y1="1252.0" x2="699.8" y2="1078.0" stroke="#2aa198" stroke-opacity="0.5" stroke-width="10" stroke-linecap="round"/>
+<circle cx="699.8" cy="1078.0" r="6" fill="#2aa198"/>
+<text x="699.8" y="1068.0" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#2aa198" text-anchor="middle">100.0%</text>
+<text x="699.8" y="1272.0" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#63738a" text-anchor="middle">ChEBI</text>
+<line x1="790.2" y1="1252.0" x2="790.2" y2="1091.6" stroke="#2f6fed" stroke-opacity="0.5" stroke-width="10" stroke-linecap="round"/>
+<circle cx="790.2" cy="1091.6" r="6" fill="#2f6fed"/>
+<text x="790.2" y="1081.6" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#2f6fed" text-anchor="middle">92.2%</text>
+<text x="790.2" y="1272.0" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#63738a" text-anchor="middle">PubChem</text>
+<line x1="880.8" y1="1252.0" x2="880.8" y2="1116.0" stroke="#d99a2b" stroke-opacity="0.5" stroke-width="10" stroke-linecap="round"/>
+<circle cx="880.8" cy="1116.0" r="6" fill="#d99a2b"/>
+<text x="880.8" y="1106.0" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#d99a2b" text-anchor="middle">78.2%</text>
+<text x="880.8" y="1272.0" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#63738a" text-anchor="middle">SVG image</text>
+<text x="1028.0" y="1086.0" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">Escherichia coli</text>
+<line x1="1186.4" y1="1082.0" x2="1360.0" y2="1082.0" stroke="#63738a" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="1360.0" cy="1082.0" r="5" fill="#63738a"/>
+<text x="1370.0" y="1086.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">6,367</text>
+<text x="1028.0" y="1110.8" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">Escherichia coli strain B...</text>
+<line x1="1186.4" y1="1106.8" x2="1218.2" y2="1106.8" stroke="#63738a" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="1218.2" cy="1106.8" r="5" fill="#63738a"/>
+<text x="1228.2" y="1110.8" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">1,168</text>
+<text x="1028.0" y="1135.5" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">Escherichia coli BL21(DE3...</text>
+<line x1="1186.4" y1="1131.5" x2="1212.7" y2="1131.5" stroke="#63738a" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="1212.7" cy="1131.5" r="5" fill="#63738a"/>
+<text x="1222.7" y="1135.5" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">963</text>
+<text x="1028.0" y="1160.2" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">HEK-293 cells</text>
+<line x1="1186.4" y1="1156.2" x2="1211.8" y2="1156.2" stroke="#63738a" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="1211.8" cy="1156.2" r="5" fill="#63738a"/>
+<text x="1221.8" y="1160.2" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">930</text>
+<text x="1028.0" y="1185.0" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">Escherichia coli BL21(DE3)</text>
+<line x1="1186.4" y1="1181.0" x2="1207.4" y2="1181.0" stroke="#63738a" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="1207.4" cy="1181.0" r="5" fill="#63738a"/>
+<text x="1217.4" y="1185.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">771</text>
+<text x="1028.0" y="1209.8" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">COS-7 cells</text>
+<line x1="1186.4" y1="1205.8" x2="1207.0" y2="1205.8" stroke="#63738a" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="1207.0" cy="1205.8" r="5" fill="#63738a"/>
+<text x="1217.0" y="1209.8" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">757</text>
+<text x="1028.0" y="1234.5" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">Saccharomyces cerevisiae</text>
+<line x1="1186.4" y1="1230.5" x2="1204.3" y2="1230.5" stroke="#63738a" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="1204.3" cy="1230.5" r="5" fill="#63738a"/>
+<text x="1214.3" y="1234.5" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">658</text>
+<text x="1028.0" y="1259.2" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="400" fill="#0d2b45" text-anchor="start">COS-7 cell</text>
+<line x1="1186.4" y1="1255.2" x2="1202.3" y2="1255.2" stroke="#63738a" stroke-opacity="0.45" stroke-width="7" stroke-linecap="round"/>
+<circle cx="1202.3" cy="1255.2" r="5" fill="#63738a"/>
+<text x="1212.3" y="1259.2" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#63738a" text-anchor="start">584</text>
+<text x="50.0" y="1350.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#63738a" text-anchor="start">Source data: ReactEnzDB 2026.09.1; revision PUBLIC_SCOPE_20261030_V1.</text>
+<text x="50.0" y="1376.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#63738a" text-anchor="start">Figure export: editable SVG generated with Python from the release SQLite database.</text>
+</svg>

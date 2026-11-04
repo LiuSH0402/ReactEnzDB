@@ -1,0 +1,103 @@
+[
+  {
+    "module": "processing/compounds_pubchem.py",
+    "unchanged_function_count": 9,
+    "unchanged_functions": [
+      "connect",
+      "ensure_schema",
+      "normalize_chebi",
+      "valid_smiles",
+      "select_candidates",
+      "get_cached_found",
+      "upsert_cache",
+      "apply_enrichment",
+      "rebuild_compound_xrefs"
+    ],
+    "changed_functions": [],
+    "changed_functions_expected": true
+  },
+  {
+    "module": "processing/protein_domains.py",
+    "unchanged_function_count": 9,
+    "unchanged_functions": [
+      "connect",
+      "log",
+      "setup_tables",
+      "chunks",
+      "get_targets",
+      "split_ids",
+      "parse_features",
+      "first_match",
+      "entry_url"
+    ],
+    "changed_functions": [
+      "save_batch"
+    ],
+    "changed_functions_expected": true
+  },
+  {
+    "module": "processing/match_alphafold.py",
+    "unchanged_function_count": 6,
+    "unchanged_functions": [
+      "connect",
+      "ensure_schema",
+      "select_accessions",
+      "upsert_accession",
+      "rebuild_web_mappings",
+      "mirror_to_source"
+    ],
+    "changed_functions": [],
+    "changed_functions_expected": true
+  },
+  {
+    "module": "processing/kinetics_external_checks.py",
+    "unchanged_function_count": 19,
+    "unchanged_functions": [
+      "connect",
+      "log",
+      "setup_tables",
+      "normalize_parameter",
+      "normalize_value",
+      "parse_sabio_entry",
+      "parse_float",
+      "normalize_brenda_value",
+      "parse_brenda_kinetics",
+      "parse_brenda_attributes",
+      "species_name",
+      "local_kinetics",
+      "safe_pmids",
+      "token_set",
+      "score_match",
+      "rebuild_checks",
+      "local_attribute_conditions",
+      "score_attribute_match",
+      "rebuild_attribute_checks"
+    ],
+    "changed_functions": [],
+    "changed_functions_expected": true
+  },
+  {
+    "module": "processing/mcsa_mechanisms.py",
+    "unchanged_function_count": 11,
+    "unchanged_functions": [
+      "connect",
+      "log",
+      "setup_tables",
+      "full_url",
+      "safe_json",
+      "unique_sorted",
+      "entry_uniprots",
+      "parse_entries",
+      "local_ec_index",
+      "build_mappings",
+      "replace_data"
+    ],
+    "changed_functions": [],
+    "changed_functions_expected": true
+  },
+  {
+    "module": "processing/source_parser/parser.py",
+    "entire_module_AST_equal": true,
+    "function_count": 51
+  }
+]

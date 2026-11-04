@@ -1,0 +1,269 @@
+{
+  "status": "development_replay_complete_human_benefits_unproven",
+  "completed_at_utc": "2026-11-01T04:11:28.206995+00:00",
+  "executed_queries": 61,
+  "successful_new_requests": 61,
+  "metrics": {
+    "single_step_all": {
+      "A": {
+        "predictions": 43,
+        "raw_smiles_query_pairs": 39,
+        "matched_predictions": 3,
+        "returned_reference_rows": 6,
+        "core_pair_record_objects": 4,
+        "pairs_with_source_assertions": 0,
+        "pairs_with_same_assertion_measurement_and_pmid_or_doi": 0,
+        "pairs_with_auto_exact_measurement_and_pmid_or_doi": 0,
+        "pairs_with_literature_verified_flag": 0,
+        "predictions_with_source_pair": 0
+      },
+      "B": {
+        "predictions": 43,
+        "raw_smiles_query_pairs": 39,
+        "matched_predictions": 19,
+        "returned_reference_rows": 45,
+        "core_pair_record_objects": 308,
+        "pairs_with_source_assertions": 39,
+        "pairs_with_same_assertion_measurement_and_pmid_or_doi": 33,
+        "pairs_with_auto_exact_measurement_and_pmid_or_doi": 13,
+        "pairs_with_literature_verified_flag": 0,
+        "predictions_with_source_pair": 9
+      }
+    },
+    "gsetretro": {
+      "A": {
+        "predictions": 30,
+        "raw_smiles_query_pairs": 30,
+        "matched_predictions": 2,
+        "returned_reference_rows": 4,
+        "core_pair_record_objects": 4,
+        "pairs_with_source_assertions": 0,
+        "pairs_with_same_assertion_measurement_and_pmid_or_doi": 0,
+        "pairs_with_auto_exact_measurement_and_pmid_or_doi": 0,
+        "pairs_with_literature_verified_flag": 0,
+        "predictions_with_source_pair": 0
+      },
+      "B": {
+        "predictions": 30,
+        "raw_smiles_query_pairs": 30,
+        "matched_predictions": 14,
+        "returned_reference_rows": 33,
+        "core_pair_record_objects": 248,
+        "pairs_with_source_assertions": 39,
+        "pairs_with_same_assertion_measurement_and_pmid_or_doi": 33,
+        "pairs_with_auto_exact_measurement_and_pmid_or_doi": 13,
+        "pairs_with_literature_verified_flag": 0,
+        "predictions_with_source_pair": 8
+      }
+    },
+    "readretro": {
+      "A": {
+        "predictions": 13,
+        "raw_smiles_query_pairs": 13,
+        "matched_predictions": 1,
+        "returned_reference_rows": 2,
+        "core_pair_record_objects": 2,
+        "pairs_with_source_assertions": 0,
+        "pairs_with_same_assertion_measurement_and_pmid_or_doi": 0,
+        "pairs_with_auto_exact_measurement_and_pmid_or_doi": 0,
+        "pairs_with_literature_verified_flag": 0,
+        "predictions_with_source_pair": 0
+      },
+      "B": {
+        "predictions": 13,
+        "raw_smiles_query_pairs": 13,
+        "matched_predictions": 5,
+        "returned_reference_rows": 12,
+        "core_pair_record_objects": 106,
+        "pairs_with_source_assertions": 14,
+        "pairs_with_same_assertion_measurement_and_pmid_or_doi": 12,
+        "pairs_with_auto_exact_measurement_and_pmid_or_doi": 3,
+        "pairs_with_literature_verified_flag": 0,
+        "predictions_with_source_pair": 1
+      }
+    },
+    "multistep_all": {
+      "A": {
+        "predictions": 13,
+        "raw_smiles_query_pairs": 8,
+        "matched_predictions": 4,
+        "returned_reference_rows": 16,
+        "core_pair_record_objects": 4,
+        "pairs_with_source_assertions": 0,
+        "pairs_with_same_assertion_measurement_and_pmid_or_doi": 0,
+        "pairs_with_auto_exact_measurement_and_pmid_or_doi": 0,
+        "pairs_with_literature_verified_flag": 0,
+        "predictions_with_source_pair": 0
+      },
+      "B": {
+        "predictions": 13,
+        "raw_smiles_query_pairs": 8,
+        "matched_predictions": 11,
+        "returned_reference_rows": 34,
+        "core_pair_record_objects": 75,
+        "pairs_with_source_assertions": 13,
+        "pairs_with_same_assertion_measurement_and_pmid_or_doi": 12,
+        "pairs_with_auto_exact_measurement_and_pmid_or_doi": 2,
+        "pairs_with_literature_verified_flag": 0,
+        "predictions_with_source_pair": 10
+      }
+    },
+    "engineering_controls": {
+      "A": {
+        "predictions": 5,
+        "raw_smiles_query_pairs": 5,
+        "matched_predictions": 0,
+        "returned_reference_rows": 0,
+        "core_pair_record_objects": 0,
+        "pairs_with_source_assertions": 0,
+        "pairs_with_same_assertion_measurement_and_pmid_or_doi": 0,
+        "pairs_with_auto_exact_measurement_and_pmid_or_doi": 0,
+        "pairs_with_literature_verified_flag": 0,
+        "predictions_with_source_pair": 0
+      },
+      "B": {
+        "predictions": 5,
+        "raw_smiles_query_pairs": 5,
+        "matched_predictions": 2,
+        "returned_reference_rows": 7,
+        "core_pair_record_objects": 102,
+        "pairs_with_source_assertions": 19,
+        "pairs_with_same_assertion_measurement_and_pmid_or_doi": 15,
+        "pairs_with_auto_exact_measurement_and_pmid_or_doi": 3,
+        "pairs_with_literature_verified_flag": 0,
+        "predictions_with_source_pair": 2
+      }
+    }
+  },
+  "cohorts": {
+    "single_step_development": {
+      "new_status_counts": {
+        "candidate_query_structures": 6,
+        "no_match": 15,
+        "ambiguous_query_structures": 13,
+        "invalid_or_wildcard_structure": 3,
+        "no_net_query_transformation": 6
+      },
+      "new_truncated_predictions": 1,
+      "new_direction_unspecified_reference_rows": 26,
+      "new_extra_participant_reference_rows": 45,
+      "new_excluded_reasons": {
+        "no_net_chemical_change_transport_or_exchange": 4,
+        "opposes_reference_direction": 5
+      }
+    },
+    "multistep_development": {
+      "new_status_counts": {
+        "ambiguous_query_structures": 10,
+        "candidate_query_structures": 1,
+        "no_match": 2
+      },
+      "new_truncated_predictions": 4,
+      "new_direction_unspecified_reference_rows": 13,
+      "new_extra_participant_reference_rows": 34,
+      "new_excluded_reasons": {
+        "opposes_reference_direction": 6
+      }
+    },
+    "engineering_controls": {
+      "new_status_counts": {
+        "ambiguous_query_structures": 2,
+        "no_match": 1,
+        "invalid_or_wildcard_structure": 1,
+        "no_net_query_transformation": 1
+      },
+      "new_truncated_predictions": 0,
+      "new_direction_unspecified_reference_rows": 3,
+      "new_extra_participant_reference_rows": 7,
+      "new_excluded_reasons": {
+        "no_net_chemical_change_transport_or_exchange": 2,
+        "opposes_reference_direction": 1
+      }
+    }
+  },
+  "pair_scope_audit": {
+    "pair_record_objects": 384,
+    "assertion_pair_links_checked": 351,
+    "unique_source_assertions": 328,
+    "violations": 0
+  },
+  "route_results": {
+    "all_route_proposals": 10,
+    "empty_routes": 2,
+    "A_nonempty_routes_with_reference_for_every_step": 1,
+    "B_nonempty_routes_with_reference_for_every_step": 6
+  },
+  "review_packets": {
+    "reaction_objects": 53,
+    "pair_objects": 384
+  },
+  "accuracy_estimated": false,
+  "manual_savings_measured": false,
+  "complete_upstream_workflow_benchmarked": false,
+  "live_verification": {
+    "passed": true,
+    "checked_at_utc": "2026-11-01T04:09:25.031357+00:00",
+    "unique_live_post_requests": 50,
+    "local_replay_rows_verified": 61,
+    "scope": "Compare returned reaction IDs, orientation, match basis, direction status and candidate IDs. Not a human timing or scientific accuracy study.",
+    "local_server_result_differences": [],
+    "server_rdkit_versions": [
+      "2026.03.5"
+    ],
+    "historical_single_step_baseline_agrees": true,
+    "scientific_database_hashes_unchanged": {
+      "ReactEnzDB/web_release/reactenzdb_web.db": "1207a29d92e179442873df3592efafa8ea3a47eb6699410c8261a556de76b2a6",
+      "_public_scope_20261030/runtime/evidence_release/reactenzdb_evidence_rc.sqlite": "bdf445be87b1501207d9878f4d2ad36ed99f49b1cdb64e453170123eae548035"
+    }
+  },
+  "cutoff_diagnostic": [
+    {
+      "query_id": "phenylethanol:route1:step2",
+      "reference_id": "R02976",
+      "internal_id": "OENA13238",
+      "new_top5_truncated": true,
+      "new_total_reference_matches": 6,
+      "new_uncapped_rank": [
+        6
+      ],
+      "removed_by_top5_cap": true,
+      "other_exclusion_reasons": []
+    },
+    {
+      "query_id": "phenylethanol:route3:step1",
+      "reference_id": "R02976",
+      "internal_id": "OENA13238",
+      "new_top5_truncated": true,
+      "new_total_reference_matches": 6,
+      "new_uncapped_rank": [
+        6
+      ],
+      "removed_by_top5_cap": true,
+      "other_exclusion_reasons": []
+    },
+    {
+      "query_id": "phenylethanol:route4:step2",
+      "reference_id": "R02976",
+      "internal_id": "OENA13238",
+      "new_top5_truncated": true,
+      "new_total_reference_matches": 6,
+      "new_uncapped_rank": [
+        6
+      ],
+      "removed_by_top5_cap": true,
+      "other_exclusion_reasons": []
+    },
+    {
+      "query_id": "phenylethanol:route5:step2",
+      "reference_id": "R02976",
+      "internal_id": "OENA13238",
+      "new_top5_truncated": true,
+      "new_total_reference_matches": 6,
+      "new_uncapped_rank": [
+        6
+      ],
+      "removed_by_top5_cap": true,
+      "other_exclusion_reasons": []
+    }
+  ]
+}
