@@ -1,3 +1,5 @@
-# External release data
+# Runtime data directory
 
-Full databases are not committed here. See ../docs/DATA_LAYOUT.md for the required release files and layout. Never use test fixtures as scientific data.
+Place compatible runtime databases and release metadata here, or configure an alternative release directory.
+
+See [Data layout](../docs/DATA_LAYOUT.md) for required files and availability.

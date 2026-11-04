@@ -1,51 +1,53 @@
-# ReactEnzDB 对照评测：开发集重放与正式审核方案
+# Matching evaluation protocol
 
-2026-11-01。本轮是对已有开发案例的完整重放，已有结果已用于功能开发，不是独立测试集，也不据此估计全库准确率。先保留本方案，再运行当前软件并保存全部返回。
+Recorded on 1 November 2026. This protocol separates replay of existing development cases from proposed independent accuracy and usability studies. Only the development replay and automated checks were performed.
 
-## 本轮固定范围
+## Fixed development inputs
 
-1. 2026-10-31 已固定的六个单步目标与全部 43 条实际预测，保留原前体、产物、工具、次序和重复；不重跑模型改变输出。
-2. 先前两种产物、前五条路线中已有的全部 13 个非空路线步骤。空路线数量另从原始规划结果记录，不能静默删除。
-3. 已有 5 个人工构造的工程控制，单独统计，不能并入自然预测成功率。
+1. All 43 saved predictions for the six single-step targets fixed on 31 October 2026. Preserve precursors, products, tools, order and duplicates; use the saved predictions.
+2. All 13 non-empty steps from the previously selected top-five routes for two products. Retain empty proposals in the original planner records and report them separately.
+3. Five constructed engineering controls, reported separately from natural predictions.
 
-这些预测并非 56 个独立目标；按原工具输出及去重后的结构查询分别给出数量。路线中的重复步骤也不能作为独立重复实验。
+The 56 prediction/step inputs are not 56 independent targets. Report tool outputs and deduplicated structure queries separately; repeated route steps are not independent experiments.
 
-## 受控比较
+## Controlled component comparison
 
-- A：当前代码中保留的原 `findExactRetrosynthesisReactionMatches`，原始 canonical-SMILES、左到右覆盖，最多 5 条参考记录；核心酶候选上限 30。
-- B：实际当前网站 match 路由，质子化形式统一、方向判读、无净变化排除、最多 5 条参考记录和每个参考最多 30 个核心候选；所有结果仍为待审核候选。
-- 核心库、输入预测、排序上限一致。先核验新旧索引的 `(reaction_id,side,canonical_smiles,is_currency)` 逻辑记录相同，避免把索引数据范围变化当作算法收益。
-- 两臂均用相同证据库审计其核心反应—酶候选。A 原有详情页已有证据模块，不能把 A 的证据总量写成零；离线审计补联证据不代表旧匹配界面原本提供直接 pair 按钮。
-- 这是旧/新 ReactEnzDB 匹配组件比较，不是完整 READRetro、GSETRetro 或 RetroBioCat 产品比较。上游已有酶/EC/底物特异性模块必须纳入正式工作流对照。
+- **A — retained baseline:** `findExactRetrosynthesisReactionMatches`, canonical-SMILES matching with left-to-right coverage, at most five reference records and 30 core enzyme candidates per reference.
+- **B — current website route:** protonation normalization, direction interpretation and exclusion of no-net-change queries, with the same reference and core-candidate limits.
+- Use the same core database and predictions. First verify that old and new indexes contain the same logical `(reaction_id, side, canonical_smiles, is_currency)` records.
+- Audit both arms against the same evidence database. The baseline detail pages already contain evidence, so baseline evidence must not be treated as absent. An offline evidence join is distinct from a direct pair-specific interface link.
+- This compares two ReactEnzDB components. It is not a comparison of the complete READRetro, GSETRetro or RetroBioCat products and their native enzyme, EC or specificity features.
 
-## 本轮可以计算的技术指标
+## Automated measurements
 
-请求成功/失败；返回参考候选的预测数；未命中、通配/非法输入、无净变化；参考方向是否未指定；截断数；去重后的反应—蛋白候选数；有自动来源断言、测定和引文的候选数；缺测定/缺引文数；来源标记的独立文献核实数。证据 API 遍历全部分页，检查断言是否同时属于该反应及蛋白。
+Record request outcomes, predictions with reference candidates, unmatched/invalid/wildcard/no-net-change queries, unspecified directions, truncation, deduplicated reaction–protein pairs, and candidates linked to assertions, measurements and citations. Traverse all evidence pages and verify that each assertion belongs to both the reaction and the protein.
 
-不把这些指标改称准确率、真召回率、实验支持精确率、人工节时或操作减少。技术执行时间只记录为资源/可复现信息；本地两臂实现及缓存不同，不做人工耗时或速度优势比较。
+These measures describe retrieval and link consistency. They are not accuracy, true recall, experimental-support precision or human time savings. Technical execution times are reproducibility information; differences in implementation and caching preclude interpreting them as participant task times.
 
-## 正式论文评测：三个问题分开
+## Proposed independent studies
 
-### 对应是否更准确
+The following studies were specified but have not been conducted.
 
-另冻结未用于开发的新任务集；记录抽样总体、随机种子、排除规则和完整失败。按手性、区域、方向、辅因子/额外底物、交换/转运、单步/总反应分层，不能只挑成功例。
+### Reaction and evidence correspondence
 
-两位审核者独立判读方法身份被隐藏的反应与证据材料，再由第三方处理分歧。反应查询侧覆盖、完整反应身份、蛋白身份、构建体及实验支持分别标记为“支持/矛盾/不足以判断”。不确定不按错误或正确强行计分。没有完整正确答案集合时不报告真召回率。报告分歧和无法判定的比例。
+Freeze a new task set that was not used in development. Record the sampling population, seed, exclusions and failures. Stratify by stereochemistry, regioselectivity, direction, cofactors/additional substrates, exchange/transport and single-step versus overall reactions.
 
-### 证据是否更容易找到
+Two reviewers would independently assess materials with method identities hidden, with a third reviewer resolving disagreements. Label query-side coverage, complete reaction identity, protein identity, construct identity and experimental support separately as supported, contradicted or insufficient. Report disagreements and indeterminate cases. Report true recall only when a complete reference set exists.
 
-同一任务要求找到具体反应、蛋白/构建体、测定参数、条件以及原文表图/段落位置。仅找到 PMID 或来源记录不能算完成。分别记录找到来源线索、找到匹配实验、完成原文核实这三个终点。
+### Evidence retrieval
 
-正式对照至少包括 ReactEnzDB 整合流程和完整原工具加公开资源的现实流程；记录工具版本、网络可用性、原生酶/活性功能，不能将禁用这些功能的适配器当完整产品。
+Require a specific reaction, protein/construct, assay parameters, conditions and the supporting passage, figure or table. Distinguish finding a source lead, finding a matching experiment and verifying the original report.
 
-### 人工操作是否减少
+Compare the ReactEnzDB workflow against complete upstream tools plus public resources, recording versions, network availability and native enzyme/activity features.
 
-真实参与者做固定任务，交叉平衡方法顺序并匹配任务难度，避免同一个人在第二次直接记住答案。任务集和顺序在实施前固定；参与者不可能对界面盲法，最终正确性审核者可对方法身份盲法。
+### Human operations and task time
 
-统一定义计时起止、最长任务时限和完成标准。记录实际搜索、复制粘贴、标识转换、跨资源切换、阅读与核实次数，保留失败、超时、求助及中断。外站内部点击不能由 ReactEnzDB 日志完整捕获，需要屏幕/观察记录或参与者事件记录。记录器自身操作单列，不算业务操作。
+Use real participants, fixed tasks, counterbalanced workflow order and matched task difficulty. Specify tasks, timing boundaries, time limits and completion criteria before testing. Blind final correctness reviewers to method identity where possible.
 
-计时对象是达到同一正确终点的完整任务；同时报告完成率和错误率，不能用更快的错误答案证明节时。记录参与者背景并用配对/分层分析；样本量依据试验方差和目标精度另定，不预先虚构显著性或节省百分比。
+Record searches, copying, identifier conversions, resource switches, reading and verification steps, including failures, timeouts, assistance and interruptions. External-site actions require observation, screen records or participant event logs; ReactEnzDB logs alone are insufficient. Exclude recorder actions from task operations.
 
-## 交付与状态
+Compare time to the same correct endpoint and report completion and error rates alongside time. Account for participant background and paired/stratified analysis; determine sample size from pilot variance and target precision.
 
-原始结果与自动汇总可由程序完成。人工正确性与操作记录留空，独立审核和真实参与者实验未执行。数据库和线上服务均不修改。本轮结果如果有改善，只能表述为“开发集上参考记录/来源线索可达性变化”，不能直接用作正式优越性结论。
+## Recorded status
+
+Automated raw results and summaries are available. Independent correctness review and participant-operation measurements were not performed. Development replay results describe changes in reference-record and source-lead accessibility, without establishing independent superiority.

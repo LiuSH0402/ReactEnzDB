@@ -1,32 +1,34 @@
-# 本次代码包验证（2026-11-04）
+# Validation
 
-下面是本地整理副本的实际检查结果，不是新的独立生物学验证，也不是线上部署记录。
+The following checks were completed on the source package on 4 November 2026. Runtime-dependent checks used existing local databases.
 
-| 检查 | 实际结果 | 范围 |
-|---|---|---|
-| 前端依赖重新安装 | 成功，150个当前平台包 | 使用原锁定依赖；命令含`--ignore-scripts --legacy-peer-deps`，没有复制原node_modules |
-| Next.js生产构建 | 成功 | Next.js 15.5.24、Node.js 24.22.1；网站实际可编译，数据未打包 |
-| Python核心与离线边界测试 | 57项通过 | 其中52项为保留的核心测试，5项检查离线提取/范围/缺输入边界；使用标准库unittest及RDKit 2026.03.1 |
-| 网站测试（不挂完整运行数据） | 71通过，8项数据依赖测试跳过，0失败 | `npm run test:unit`；跳过不是验证成功 |
-| 同组网站测试（挂现有只读运行数据） | 79通过，0跳过，0失败 | 含证据范围、两条限定文献、反应匹配与动力学来源统计 |
-| 开发集重放 | 61/61请求成功 | 匹配、cohort与路线覆盖统计同2026-11-01原记录一致 |
-| 证据范围核查 | 384个记录对、351条断言—记录对链接，异常0 | 不是384个独立酶或实验，不是独立准确率评价 |
-| 本地生产HTTP检查 | 7项通过 | Help、Search、两条反应页面、两条正确候选的限定文献接口及错误配对404 |
-| Docker Compose | `config --quiet`通过 | 仅配置语法/展开检查；没有构建运行全部可选模型容器 |
-| 离线函数一致性 | 保留函数与原AST核对通过 | 5个混合模块中54个函数保持原AST；位点保存函数仅切换本地isoform序列来源；原离线HTML解析器51个函数的整模块AST保持一致 |
-| 输入区别检查 | 运行输入通过最低schema检查，下载投影被正确识别为不完整 | 不用空值或猜测修补来源字段 |
-| 静态检查 | Python语法、提取模块未定义全局名、采集调用及常见凭据/本机路径模式检查通过 | 属于针对本次打包的检查，不是全面安全审计或授权验收 |
+| Check | Result | Scope |
+| --- | --- | --- |
+| Frontend dependency installation | Passed; 150 platform packages | Original lockfile, `--ignore-scripts --legacy-peer-deps` |
+| Next.js production build | Passed | Next.js 15.5.24; Node.js 24.22.1 |
+| Python tests | 57 passed | 52 retained core tests and five offline-processing tests; standard-library unittest and RDKit 2026.03.1 |
+| Website tests without full runtime inputs | 71 passed, eight skipped, zero failed | Data-dependent tests skipped |
+| Website tests with read-only runtime inputs | 79 passed, zero skipped, zero failed | Evidence scope, literature notes, matching and kinetic-source summaries |
+| Development replay | 61/61 requests completed | Matching, cohort and route coverage reproduced the 1 November 2026 results |
+| Evidence-scope audit | 384 record pairs; 351 assertion-to-pair links; zero violations | Record-link consistency |
+| Local production HTTP checks | Seven passed | Help, Search, two reaction pages, two candidate-specific literature endpoints and an invalid-pair 404 |
+| Docker Compose | `config --quiet` passed | Configuration parsing and expansion |
+| Offline function comparison | Passed | 54 functions across five extracted modules retained their original ASTs; site saving uses a local isoform source; the complete offline HTML parser AST, including 51 functions, matched the original |
+| Runtime-input checks | Passed | Compatible runtime accepted; incomplete download projection identified |
+| Static checks | Passed | Python syntax, undefined globals in extracted modules, collection-call patterns, common credential patterns and machine-local paths |
 
-HTTP结果见HTTP_CHECK.json；开发集结果一致性见EVALUATION_REPLAY_CHECK.json。来源与算法边界见CODE_PROVENANCE及PROCESSING。
+Detailed results are stored in [`HTTP_CHECK.json`](HTTP_CHECK.json), [`EVALUATION_REPLAY_CHECK.json`](EVALUATION_REPLAY_CHECK.json) and [`FUNCTION_PRESERVATION.json`](FUNCTION_PRESERVATION.json).
 
-## 仍未验证的内容
+## Scope
 
-- `npm run test:release`中的完整冻结发布契约，需要全部原版运行/派生层及公开下载目录；这套广泛数据契约未在本次整理中全量运行。
-- 从原始来源到当前全部科学数据的整库重建、完整历史审核重演、全部模型推理、序列聚类、宿主模型分析。
-- 独立反应/候选正确率、真人任务耗时、实验成功率及整条级联实验。
-- 所有操作系统、Docker镜像和全部未来依赖版本。
-- 自有代码统一许可及所有第三方材料的最终授权。
+These checks establish buildability and the behavior tested on the stated inputs. They do not constitute independent biological validation or deployment verification.
 
-本机受限执行环境曾阻止构建子进程和临时SQLite操作；后续在正常本地执行条件下完成上述实际通过的测试，未把受限环境错误算成科学无匹配，也未删除失败断言伪造通过。
+The following were outside this validation:
 
-安装依赖、构建缓存、真实配置和运行数据库会从最终分发目录移除；读者应依照README安装并提供明确的数据输入。
+- The complete `npm run test:release` contract, which requires all frozen runtime/derived layers and the download catalog.
+- Full historical database reconstruction and record-level review replay.
+- All model inference, sequence clustering, host analyses and optional Docker services.
+- Independent accuracy assessment, participant timing and new experimental validation.
+- Other operating systems or future dependency versions.
+
+Full data, installed dependencies, build caches and actual environment files are supplied or generated separately.

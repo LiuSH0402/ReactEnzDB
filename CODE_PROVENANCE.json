@@ -84,27 +84,33 @@
     },
     {
       "path": "docs/DATA_LAYOUT.md",
-      "size": 3488,
-      "sha256": "d69e80def8591370a5696f94d8571ad19e30bc27290cd79b988297ddf24d9190",
+      "size": 2950,
+      "sha256": "8ac5d7347066ed2362d55e4e38771946397efa311320e37c62e19a8d891fe1a2",
       "classification": "new_packaging_documentation_or_helper",
       "sources": [],
-      "notes": []
+      "notes": [
+        "English documentation revised and redundant preparation commentary removed on 2026-11-04."
+      ]
     },
     {
       "path": "docs/DATA_SOURCES.md",
-      "size": 1948,
-      "sha256": "33dfa4dcd41532c77b9ac4a5bac0a191e9e49c525e1707e9e559799d905112f5",
+      "size": 1982,
+      "sha256": "f662efd7caa9161851c75cb49f439fbda5bc628938dd95c5c2646ca74782fbfd",
       "classification": "new_packaging_documentation_or_helper",
       "sources": [],
-      "notes": []
+      "notes": [
+        "English documentation revised and redundant preparation commentary removed on 2026-11-04."
+      ]
     },
     {
       "path": "docs/DEPLOYMENT.md",
-      "size": 1870,
-      "sha256": "09ee83f1274b1f3751c09e011db28fef4ed339730c8e0d046c6159515bed8827",
+      "size": 1876,
+      "sha256": "a26e58d0fc91dd130fd979bd50476b3fe9e2d24b4cef67b33e3b82256ece44a2",
       "classification": "new_packaging_documentation_or_helper",
       "sources": [],
-      "notes": []
+      "notes": [
+        "English documentation revised and redundant preparation commentary removed on 2026-11-04."
+      ]
     },
     {
       "path": "docs/EVALUATION_REPLAY_CHECK.json",
@@ -132,19 +138,23 @@
     },
     {
       "path": "docs/PACKAGING_CHANGES.md",
-      "size": 2178,
-      "sha256": "c368240f02044aabcdd2c6c920d25f3c5724b4535f72ba968f05dfd73273a520",
+      "size": 1696,
+      "sha256": "494633bf90973eb4929c8b67c396832c14f18c1c437ac975014e492ebc9b4ad0",
       "classification": "new_packaging_documentation_or_helper",
       "sources": [],
-      "notes": []
+      "notes": [
+        "English documentation revised and redundant preparation commentary removed on 2026-11-04."
+      ]
     },
     {
       "path": "docs/PROCESSING.md",
-      "size": 6166,
-      "sha256": "b31ac3b869e98ff3125c86fa5f19052b0d7f558666e32a7b0655ca19ef7cea77",
+      "size": 4849,
+      "sha256": "e9251ee4da15217d59062027f54c4f8a372c47439a86a73e14c260786f261a82",
       "classification": "new_packaging_documentation_or_helper",
       "sources": [],
-      "notes": []
+      "notes": [
+        "English documentation revised and redundant preparation commentary removed on 2026-11-04."
+      ]
     },
     {
       "path": "docs/PROCESSING_INPUTS.json",
@@ -156,27 +166,33 @@
     },
     {
       "path": "docs/REPRODUCIBILITY.md",
-      "size": 3090,
-      "sha256": "62df3e33992defbaa09adf896a1fadc7d6e8ef0ea8f62358a64b1b9d7bb27212",
+      "size": 3493,
+      "sha256": "45360e63c8febe19ec49ecfe71d485ff9eef7744cc2b7013dfe334260b6a0e8a",
       "classification": "new_packaging_documentation_or_helper",
       "sources": [],
-      "notes": []
+      "notes": [
+        "English documentation revised and redundant preparation commentary removed on 2026-11-04."
+      ]
     },
     {
       "path": "docs/TOOLS.md",
-      "size": 1828,
-      "sha256": "09771f5dc38760fff3b12dc74ed667b5af92f29895d3f049b74a7d2832fcb192",
+      "size": 2166,
+      "sha256": "eb5d59523d84d83a3bd6be31af87b214dc9e740af038a73740adede51680f9c6",
       "classification": "new_packaging_documentation_or_helper",
       "sources": [],
-      "notes": []
+      "notes": [
+        "English documentation revised and redundant preparation commentary removed on 2026-11-04."
+      ]
     },
     {
       "path": "docs/VALIDATION.md",
-      "size": 3211,
-      "sha256": "ef65be41bd0d30045df7a46033497e2a282c3a6f45b11d4c330e1b43b41ba038",
+      "size": 2796,
+      "sha256": "51c1f667f4be64ed7e943a85bfa4735aed2dba63a7399b285c9cbf078788a359",
       "classification": "new_packaging_documentation_or_helper",
       "sources": [],
-      "notes": []
+      "notes": [
+        "English documentation revised and redundant preparation commentary removed on 2026-11-04."
+      ]
     },
     {
       "path": "examples/multistep/recorded_route_20261031.json",
@@ -195,11 +211,13 @@
     },
     {
       "path": "examples/README.md",
-      "size": 990,
-      "sha256": "23760e4ea5c50ed8a4af16956039eeca073985969409341e9683bbcb6f8add6b",
+      "size": 1043,
+      "sha256": "0abbd849d384c421869f0a18c57495c628bdb6a263c2d1efc3b4d5e5cd21ebc0",
       "classification": "new_packaging_documentation_or_helper",
       "sources": [],
-      "notes": []
+      "notes": [
+        "English documentation revised and redundant preparation commentary removed on 2026-11-04."
+      ]
     },
     {
       "path": "examples/single_step/query.json",
@@ -271,8 +289,8 @@
     },
     {
       "path": "experiments/matching/recorded_20261101/PROTOCOL.md",
-      "size": 5050,
-      "sha256": "c95908707a4b272b4e6b3bf8591c05476cf6c2e706e463e95f771ee2d406d37a",
+      "size": 5033,
+      "sha256": "c8041331140401b2767d80d5c8a90154b5cf56febffc5233a0006584ce6a876d",
       "classification": "byte_identical_copy",
       "sources": [
         {
@@ -281,7 +299,8 @@
         }
       ],
       "notes": [
-        "Historical development input/result; not relabelled as an independent test"
+        "Historical development input/result; not relabelled as an independent test",
+        "English documentation revised and redundant preparation commentary removed on 2026-11-04."
       ]
     },
     {
@@ -6850,12 +6869,13 @@
     },
     {
       "path": "processing/source_parser/README.md",
-      "size": 359,
-      "sha256": "7df4fa16279497822b31760575c5dcd43216abefb65a77ce1f0833ae797e27ef",
+      "size": 319,
+      "sha256": "1ef7a281ed75bf6ba2a8d4a1e355f621dd15e5f0422e2a758021cf4185002fbe",
       "classification": "new_packaging_helper_or_metadata",
       "sources": [],
       "notes": [
-        "New public-package helper or documentation"
+        "New public-package helper or documentation",
+        "English documentation revised and redundant preparation commentary removed on 2026-11-04."
       ]
     },
     {
@@ -6875,12 +6895,13 @@
     },
     {
       "path": "README.md",
-      "size": 6772,
-      "sha256": "a7594dc5fcba75b223683fdb52601df21fcf389a57802b464b466c4e41b8418b",
+      "size": 3441,
+      "sha256": "9b9faa45adfddd8bf1ccb41875fc0d225418580b915dcd1abdba7df94e873c80",
       "classification": "new_packaging_documentation_or_helper",
       "sources": [],
       "notes": [
-        "Updated publication status for initial private GitHub upload on 2026-11-04."
+        "Updated publication status for initial private GitHub upload on 2026-11-04.",
+        "English documentation revised and redundant preparation commentary removed on 2026-11-04."
       ]
     },
     {
@@ -7930,30 +7951,23 @@
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "size": 1645,
-      "sha256": "3fac9a34d0aad2aa4a25c8dd364a53828f5c14b4b810f5e93a424c20a87aec08",
+      "size": 1413,
+      "sha256": "81ca985ed5658c869879ec65d92960ef7e2fd304deb80c594894fd8ff29454fb",
       "classification": "new_packaging_documentation_or_helper",
       "sources": [],
-      "notes": []
-    },
-    {
-      "path": "web_release/README.md",
-      "size": 181,
-      "sha256": "4008a2aab64ca90a22b24e49624d0638d1af78b086d5984a613b7cb087aaf9cd",
-      "classification": "new_packaging_helper_or_metadata",
-      "sources": [],
       "notes": [
-        "New public-package helper or documentation"
+        "English documentation revised and redundant preparation commentary removed on 2026-11-04."
       ]
     },
     {
-      "path": "整理说明_中文.md",
-      "size": 1968,
-      "sha256": "5380194cfbeafeebf815ed10c4f2e6e86ae44d2bd37f570bb3abe02fbde7f6b5",
-      "classification": "new_packaging_documentation_or_helper",
+      "path": "web_release/README.md",
+      "size": 220,
+      "sha256": "94add54d07e4b4a2518bfe089ca4f709455e0df2635c554801007fcc506719b7",
+      "classification": "new_packaging_helper_or_metadata",
       "sources": [],
       "notes": [
-        "Updated publication status for initial private GitHub upload on 2026-11-04."
+        "New public-package helper or documentation",
+        "English documentation revised and redundant preparation commentary removed on 2026-11-04."
       ]
     }
   ],

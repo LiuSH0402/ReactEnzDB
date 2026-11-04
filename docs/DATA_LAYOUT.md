@@ -1,25 +1,20 @@
-# 数据布局与实际可取得范围
+# Runtime data
 
-本包没有携带完整数据库。网站下载可用于其声明的公开分析范围，但当前下载投影与网站运行库有schema差异。结构对照保存在 `data/DOWNLOAD_VS_RUNTIME_SCHEMA.json`；记录的文件身份与SHA-256见 `data/RELEASE_IDENTITY.json`。
+The repository contains source code and database schemas. Full databases are supplied separately. File identities and checksums are recorded in [`data/RELEASE_IDENTITY.json`](../data/RELEASE_IDENTITY.json); schema differences are listed in [`data/DOWNLOAD_VS_RUNTIME_SCHEMA.json`](../data/DOWNLOAD_VS_RUNTIME_SCHEMA.json).
 
-## 当前事实
+## Data availability and compatibility
 
-- 运行核心库有102个普通/FTS相关表条目；公开下载核心库有71个。差异包括FTS索引、内部修订/来源记录等，并不意味着少了同样数量的科学实体。
-- 下载版的 `web_reactions`、`web_reaction_enzymes`、`web_kinetics` 等省略了 `source_db` 等字段。
-- 两者的核心四项记录数相同：23598、155428、249032、23634。
-- 当前下载目录没有完整独立证据运行库 `reactenzdb_evidence_rc.sqlite`。已下载的 `web_assay_source_evidence` 等表不能未经证明当成其 `assertions/measurements/citations` 全库。
-- 本次测试读取的是已有本地运行快照，既没有将它上传本仓库，也没有把“本地已有”写成“公众已可下载”。
+The website download is an analysis-oriented export rather than a complete runtime snapshot. Its four core record counts match the runtime database, but some source columns, internal tables and indexes are omitted. The runtime core has 102 regular/FTS-related table entries, compared with 71 in the download; this difference does not represent a count of missing scientific entities.
 
-不要伪造来源值、复制旧数据总数，或把缺失独立证据库解释为“没有实验支持”。
+The current download catalog does not include the standalone evidence database, `reactenzdb_evidence_rc.sqlite`. Downloaded evidence tables are not a substitute for its complete assertions, measurements and citations. Full evidence navigation and evaluation replay therefore require additional compatible runtime inputs. The validation in this repository used an existing local runtime snapshot; those databases are not bundled here.
 
-## 源码期待的布局
+## Expected layout
 
 ```text
 web_release/
-  reactenzdb_web.db                    # 与源码兼容的运行schema
+  reactenzdb_web.db
   retrosynthesis_reaction_lookup.sqlite
-  reaction_standardization.sqlite       # 标准化功能
-  ...                                   # 可选分析层数据库及其summary
+  reaction_standardization.sqlite
   evidence/
     reactenzdb_evidence_rc.sqlite
     reactenzdb_evidence_rc.summary.json
@@ -28,32 +23,29 @@ web_release/
   RETROSYNTHESIS_TOOL_REGISTRY.json
   PUBLIC_RELEASE_GOVERNANCE.json
   DATA_LAYER_REGISTRY.json
+  ...                                   # Additional analysis layers and summaries
 
 data/downloads/
-  catalog_public.json                   # 原经过筛选的公开下载目录
+  catalog_public.json
   download_bundle/...
 ```
 
-`REACTENZDB_RELEASE_DIR`可覆盖`web_release`的位置；独立证据、表达库、下载目录也各有环境变量。完整可选依赖按代码中对应功能的路径提供；缺少时不能声称全部网站功能可用。宿主模型另由 `HOST_CONTEXT_STAGING_DB_PATH` 和 `REACTENZDB_PATHWAY_COEFFICIENT_EVIDENCE_PATH` 配置，本次公开示例默认不启用。
+Set `REACTENZDB_RELEASE_DIR` to override the release directory. Evidence, expression and download locations have separate environment variables; see the website `.env.example` and [Deployment](DEPLOYMENT.md). Optional host-context functions use `HOST_CONTEXT_STAGING_DB_PATH` and `REACTENZDB_PATHWAY_COEFFICIENT_EVIDENCE_PATH`.
 
-`schemas/runtime_core.sql`和`schemas/runtime_evidence.sql`只记录真实schema，不包含数据；不是执行后就能重建数据的初始化承诺。
+`schemas/runtime_core.sql` and `schemas/runtime_evidence.sql` describe the runtime schemas without data rows.
 
-## 最低限度检查
+## Check the inputs
 
 ```bash
 python scripts/check_runtime_inputs.py --core /path/to/reactenzdb_web.db --evidence /path/to/reactenzdb_evidence_rc.sqlite
 ```
 
-未满足最低输入条件时退出码为2。它不会自动下载、添加缺失列、创建虚假来源或改变数据库。即便最低检查通过，也仍需验证可选层、版本、许可和案例。
+The command checks minimum schema requirements and exits with code 2 when inputs are insufficient. It does not download or modify databases. Optional layers must be configured separately.
 
-化学匹配索引记录RDKit版本；解释器版本与索引不同会被拒绝。取得兼容运行库后，可以用同一解释器在工作目录中重建派生索引：
+The reaction lookup records its RDKit version and rejects an incompatible interpreter. To rebuild a derived lookup from a compatible core database:
 
 ```bash
 python scripts/build_retrosynthesis_reaction_lookup.py --source /path/to/core.db --output /path/to/new_lookup.sqlite
 ```
 
-通过 `REACTENZDB_RETROSYNTHESIS_LOOKUP_DB` 指向新索引。不可覆盖原科学快照后继续沿用旧哈希。
-
-## 现阶段未完成的外部发布工作
-
-完整证据运行输入、兼容运行快照的公共分发范围、独立稳定归档及对应许可仍需另外落实。这里如实记录缺口，没有创建占位下载链接或DOI，也没有改动线上下载包。
+Point `REACTENZDB_RETROSYNTHESIS_LOOKUP_DB` to the new file and record its checksum separately from the original snapshot.

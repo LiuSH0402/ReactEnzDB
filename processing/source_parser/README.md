@@ -1,3 +1,5 @@
 # Offline source parsing
 
-`parser.py` is extracted from the original local RDBSB parser. It accepts previously obtained HTML and maps reaction, protein, reference and kinetic fields. It contains no HTTP client, collection queue or retry loop. This inherited-source parsing is not new experimental evidence. The extraction version is retained in config.py.
+`parser.py` parses local RDBSB HTML and maps reaction, protein, reference and kinetic fields. Its main entry point is `parse_detail_page(biopart_id, html)`.
+
+The extraction version is recorded in `config.py`. Source attribution is described in [Data sources](../../docs/DATA_SOURCES.md).
