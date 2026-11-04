@@ -14,7 +14,7 @@ const docCards = [
   {
     title: "Downloads and reproducibility",
     href: "/downloads",
-    text: "SQLite release, CSV/TSV bulk files, schema, field dictionary, sample records, license, citation, and checksums.",
+    text: "SQLite release, CSV/TSV bulk files, schema, field dictionary, sample records, license, and citation information.",
   },
   {
     title: "REST API",

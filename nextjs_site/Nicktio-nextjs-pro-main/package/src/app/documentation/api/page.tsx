@@ -29,7 +29,7 @@ const callNotes = [
     title: "Release files, not pagination",
     text: (
       <>
-        Verified data-only packages and filtered list/detail exports are available. Current file checksums and scope are on the <a className="font-bold text-primary hover:underline" href="/downloads">Downloads</a> page.
+        Verified data-only packages and filtered list/detail exports are available. Current files and scope are on the <a className="font-bold text-primary hover:underline" href="/downloads">Downloads</a> page.
       </>
     ),
   },
@@ -116,8 +116,8 @@ export REACTENZDB_BASE_URL="http://reactenzdb.lin-group.cn"
 $env:REACTENZDB_BASE_URL="http://reactenzdb.lin-group.cn"`,
   },
   {
-    title: "Python: verify downloaded bytes against the current manifest",
-    code: `import hashlib, json, os, urllib.request
+    title: "Python: download a file listed in the current manifest",
+    code: `import json, os, urllib.request
 
 base = os.environ["REACTENZDB_BASE_URL"].rstrip("/")
 route = base + "/api/reactenzdb/release-file?file="
@@ -128,9 +128,8 @@ expected = next(item for item in manifest["files"] if item["path"] == name)
 with urllib.request.urlopen(route + "download:" + name.split("/")[-1], timeout=60) as response:
     content = response.read()
 assert len(content) == expected["size"]
-assert hashlib.sha256(content).hexdigest() == expected["sha256"]
 print(manifest["revision"], manifest["source_snapshot"])
-print(name, expected["sha256"])`,
+print(name, len(content))`,
   },
   {
     title: "curl: search reactions",
@@ -350,7 +349,7 @@ export default function ApiDocumentationPage() {
         <h2 className="reactenz-tools-section-title mb-4">Recommended citation practice</h2>
         <p className="text-sm leading-7 text-muted dark:text-white/60">
           When using the API in a publication or workflow, report the ReactEnzDB release version, access date,
-          endpoint or downloaded artifact, and SHA256 checksum for bulk files. Source database identifiers and
+          endpoint or downloaded artifact. Source database identifiers and
           annotations should still cite their original providers where applicable.
         </p>
       </section>

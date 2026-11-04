@@ -619,67 +619,39 @@ def main() -> None:
     }
     REPORT_JSON.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     counts = validation["counts"]
-    REPORT_MD.write_text(f"""# ReactEnzDB Host Registry staging 数据库构建报告（2026.09.1）
+    REPORT_MD.write_text(f"""# Host registry build report
 
-> 数据库：`{result['database_path']}`  
-> SHA-256：`{result['database_sha256']}`  
-> 写入边界：`STAGING_DATABASE_ONLY`；生产数据库写入：`NONE`。
+Database: `{result['database_path']}`
 
-## 验收结果
+## Build summary
 
-- **达到第二步预期：** `host_id`、`model_id`、`release_id` 已成为三个独立主键层级。
-- 宿主 30、模型 30、固定 release 30、QC metric {counts['host_model_qc']}。
-- 当前 `statistics_eligible=true` 为 29；iWX1009 作为 `LIMITED_CANDIDATE` 保留，不进入正式可比统计。
-- alias {counts['host_aliases']}、relationship {counts['host_relationships']}、reference {counts['host_references']}、reference link {counts['host_reference_links']}、license {counts['host_licenses']}。
-- 已冻结 mapping policy 1 个，并从只读 `reactenzdb_web.db` 固定 {counts['reaction_registry_snapshot']} 个 `reaction_id`；实际 mapping rows 仍为 {counts['reaction_host_mapping']}。
-- SQLite `integrity_check=ok`，foreign-key violations=0。
-- `web_release` 下 {result['release_database_integrity']['files_checked']} 个数据库执行前后 SHA 全部一致。
-- Preliminary 的 `host_context_chassis.sqlite` 和 `host_pathway_coverage_analysis.sqlite` 均未导入、未覆盖、SHA 未改变。
+- The registry separates host, model and release identifiers.
+- Table counts: `{json.dumps(counts, sort_keys=True)}`.
+- SQLite integrity and foreign-key checks are included in the validation results.
+- Existing release databases were checked for changes before and after this build.
 
-## 关键身份边界
+## Identity and schema
 
-- `aniger_atcc1015` 是 canonical host；`aniger_consensus` 仅存在于 `host_aliases`。
-- `kphaffii_x33` 是 canonical host context；GS115 不在 alias 表，只以 `PARENT_OF_X33_NOT_ALIAS` 存于 `host_relationships`。
-- `host_models.model_scope` 保留 iMT1026v3 的 species-consensus 限定，不把它误写成 X-33 strain-specific GEM。
+- `aniger_atcc1015` is the canonical host; `aniger_consensus` is an alias.
+- `kphaffii_x33` is the canonical host context. GS115 is a related parent strain, not an alias.
+- The scope of iMT1026v3 remains species-consensus rather than an X-33-specific model.
+- Registry tables describe host identity, model releases, QC, aliases, relationships, references and license records.
 
-## 表及职责
+## Mapping requirements
 
-- `curated_hosts`：宿主身份和明确的候选/比较状态；表名不代表记录已经获得正式 Curated 发布批准。
-- `host_models`：模型家族和 model scope。
-- `host_model_releases`：版本、来源、artifact SHA、normalized SHA、objective 和 medium。
-- `host_model_qc` + `qc_runs`：结构、MEMOTE、培养基、一致性和比较决策的可追溯 metric。
-- `host_aliases`、`host_relationships`：兼容 ID 和“相关但不同”的菌株关系。
-- `host_references` + `host_reference_links`：论文、身份及培养基依据。
-- `host_licenses`：证据状态与商业/再分发边界；未确认项保留 NULL，不推断授权。
-- `mapping_policy_versions`：保存 policy JSON 与 SHA；`reaction_registry_snapshot`：冻结合法的 reaction-level 左键。
-- `reaction_host_mapping`：第三步使用的空表，数据库外键强制引用 `release_id`，并以 `reaction_id × release_id × policy_id` 唯一。
+Mappings use `reaction_id`, `release_id` and `policy_id`. Association-level `reo_id` values are not reaction keys.
+Supported core states are `EXACT_NATIVE`, `DIRECTIONAL_NATIVE`, `CONTEXT_ONLY`, `NOT_MAPPED` and `UNRESOLVED`.
+Comparison eligibility follows the recorded QC decisions and does not establish experimental suitability or licensing clearance.
 
-## Mapping 前置冻结
+## Release scope
 
-- 左键固定为 `web_reactions.reaction_id`；`reo_id` 属于 reaction–enzyme–organism association，明确禁止作为 reaction-host mapping 左键。
-- 右键固定为 `host_model_releases.release_id`，禁止只绑定 `host_id` 或 `model_id`。
-- 只允许 `EXACT_NATIVE / DIRECTIONAL_NATIVE / CONTEXT_ONLY / NOT_MAPPED / UNRESOLVED` 五种核心状态。
-- 当前 `reaction_host_mapping` 和 candidate 表均为空；本轮只冻结规则与约束，没有提前生成第三步结果。
+This build creates staging data. Production use requires the corresponding data review and release decision.
+Per-release licensing records remain applicable.
 
-## 推断
+## Command
 
-- 本 schema 已解决旧数据中“一个字符串同时表示宿主、模型和版本”的结构性问题，可作为第 3 步 Reaction × Host mapping 的外键基础。
-- 29 个 `COMPARISON_ELIGIBLE` 仅表示已通过当前计算门槛，不等于 29 个正式 Core，也不等于许可均已完成。
-
-## 建议
-
-- 第 3 步映射表只引用 `release_id`；页面聚合时再经 model/host 外键上卷，避免同一模型未来升级版本后覆盖历史结果。
-- 在正式数据冻结和人工批准前，网页/API 不应连接这个 staging 文件。
-
-## 未确认许可
-
-- 未取得把 staging registry 发布到生产环境的许可。
-- `host_licenses.review_status` 中的 REVIEW/BLOCKED 项仍须逐模型人工审查；本轮没有扩大任何许可解释。
-
-## 可复现命令
-
-```powershell
-.\\.host-qc-venv\\Scripts\\python.exe scripts\\build_host_registry_staging.py
+```bash
+python scripts/build_host_registry_staging.py
 ```
 """, encoding="utf-8")
     print(json.dumps({

@@ -125,7 +125,7 @@ function getFaqs(trainableReactions: number | undefined) { return [
   },
   {
     q: "How do I reproduce a download or view all kinetic rows?",
-    a: "Record the snapshot identifier, data revision, access date and file SHA256. Check the release manifest and each layer's recorded inputs. R05221 has 372 kinetic rows on two pages (200 and 172); use Next kinetics page for the remaining rows or download the full kinetics table. Detail API limits also cap returned rows.",
+    a: "Record the snapshot identifier, data revision, access date. Check the release manifest and each layer's recorded inputs. R05221 has 372 kinetic rows on two pages (200 and 172); use Next kinetics page for the remaining rows or download the full kinetics table. Detail API limits also cap returned rows.",
   },
   {
     q: "Are the licence, HTTPS and long-term DOI archive complete?",
@@ -253,7 +253,7 @@ export default function HelpPage() {
       <section className="reactenz-card">
         <h2 className="reactenz-tools-section-title mb-4">Contact and feedback</h2>
         <p className="text-sm leading-7 text-muted dark:text-white/60">
-          For data corrections, collaboration requests, or citation questions, contact the ReactEnzDB maintainers at <a className="font-black text-primary hover:underline" href="mailto:hlin@uestc.edu.cn">hlin@uestc.edu.cn</a>. Include the record ID, release version, affected page or API route, and supporting PMID/DOI or database identifier. Until the database manuscript is published, cite base release {REACTENZDB_RELEASE.version}{revision ? `, revision ${revision.revision}` : ""}, the exact snapshot identifier and file SHA256. Use the matching downloadable <code>CITATION.cff</code> metadata; local working files and frozen public files have separate identities.
+          For data corrections, collaboration requests, or citation questions, contact the ReactEnzDB maintainers at <a className="font-black text-primary hover:underline" href="mailto:hlin@uestc.edu.cn">hlin@uestc.edu.cn</a>. Include the record ID, release version, affected page or API route, and supporting PMID/DOI or database identifier. Until the database manuscript is published, cite base release {REACTENZDB_RELEASE.version}{revision ? `, revision ${revision.revision}` : ""}, the exact snapshot identifier. Use the matching downloadable <code>CITATION.cff</code> metadata; local working files and frozen public files have separate identities.
         </p>
       </section>
     </main>

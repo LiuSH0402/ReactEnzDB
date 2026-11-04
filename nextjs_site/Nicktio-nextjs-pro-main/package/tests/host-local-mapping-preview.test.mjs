@@ -38,7 +38,7 @@ test("pathway preview retains five statuses, duplicate steps and no suitability 
   assert.match(route, /A model mapping gap is not biological absence/);
   assert.match(workbench, /No host suitability ranking/);
   assert.match(route, /getPathwayCoefficientEvidence/);
-  assert.match(workbench, /系数证据不足/);
+  assert.match(workbench, /Coefficient evidence insufficient/);
   assert.match(workbench, /Select at least one host model first/);
   assert.match(workbench, /Select all/);
   assert.match(workbench, /Filter by species/);

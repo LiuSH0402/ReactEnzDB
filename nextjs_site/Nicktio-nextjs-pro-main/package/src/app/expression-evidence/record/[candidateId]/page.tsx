@@ -150,7 +150,7 @@ export default async function ExpressionEvidenceRecordPage({ params }: PageProps
           <section className="reactenz-detail-section scroll-mt-8 border-b border-border py-8 dark:border-dark_border" id="source">
             <p className="reactenz-eyebrow">Article provenance</p><h2 className="mt-2">Source trace</h2>
             <div className="mt-5 divide-y divide-border border-y border-border dark:divide-dark_border dark:border-dark_border">
-              {spans.slice(0, 5).map((span) => <blockquote className="py-5 text-sm leading-7 text-muted" key={span.span_id}><div className="mb-2 text-xs font-black uppercase tracking-[0.1em] text-midnight_text dark:text-white">{span.section || "article text"}{span.page_or_table ? ` · ${span.page_or_table}` : ""}</div>“{excerpt(span.evidence_text)}”<div className="mt-2 font-mono text-[11px]">trace {span.evidence_text_sha256.slice(0, 16)}</div></blockquote>)}
+              {spans.slice(0, 5).map((span) => <blockquote className="py-5 text-sm leading-7 text-muted" key={span.span_id}><div className="mb-2 text-xs font-black uppercase tracking-[0.1em] text-midnight_text dark:text-white">{span.section || "article text"}{span.page_or_table ? ` · ${span.page_or_table}` : ""}</div>“{excerpt(span.evidence_text)}”</blockquote>)}
               {!spans.length ? <p className="py-5 text-sm text-muted">No source span is available for this candidate.</p> : null}
             </div>
           </section>

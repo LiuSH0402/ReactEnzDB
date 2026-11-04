@@ -6,7 +6,7 @@ import { getReviewedCatalog, type ReviewedArtifact } from "@/lib/reviewedDownloa
 import { reviewedHref } from "@/lib/reviewedDownloadFiles.mjs";
 
 export const dynamic = "force-dynamic";
-export const metadata: Metadata = { title: "Downloads", description: "Download the current ReactEnzDB snapshot, SQLite databases, CSV/TSV tables, field dictionaries, and checksums.", alternates: { canonical: "/downloads" } };
+export const metadata: Metadata = { title: "Downloads", description: "Download the current ReactEnzDB snapshot, SQLite databases, CSV/TSV tables, and field dictionaries.", alternates: { canonical: "/downloads" } };
 
 function bytes(n: number) {
   if (n >= 1e9) return `${(n / 1e9).toFixed(2)} GB`;
@@ -21,13 +21,12 @@ function FileTable({ files }: { files: ReviewedArtifact[] }) {
   return <div className="overflow-x-auto rounded-[24px] border border-border bg-white dark:border-dark_border dark:bg-darkmode">
     <table className="w-full min-w-[680px] text-left text-sm">
       <thead className="bg-hero-bg text-xs uppercase tracking-wider text-muted dark:bg-dark_b"><tr>
-        <th className="px-4 py-4">File</th><th className="px-3 py-4">Rows</th><th className="px-3 py-4">Size</th><th className="px-3 py-4">SHA256</th><th className="px-3 py-4">Download</th>
+        <th className="px-4 py-4">File</th><th className="px-3 py-4">Rows</th><th className="px-3 py-4">Size</th><th className="px-3 py-4">Download</th>
       </tr></thead>
       <tbody className="divide-y divide-border dark:divide-dark_border">{files.map(file => <tr key={file.path}>
         <td className="px-4 py-4"><div className="max-w-[440px] break-words font-bold text-midnight_text dark:text-white">{file.name}</div>{file.rows === 0 ? <div className="mt-1 text-xs text-muted">Header only · excluded content</div> : null}</td>
         <td className="px-3 py-4 tabular-nums">{file.rows === undefined ? "—" : file.rows.toLocaleString()}</td>
         <td className="whitespace-nowrap px-3 py-4 tabular-nums">{bytes(file.size)}</td>
-        <td className="px-3 py-4"><code title={file.sha256} className="text-xs">{file.sha256.slice(0, 12)}…</code></td>
         <td className="px-3 py-4"><Button href={reviewedHref(file)}>Download</Button></td>
       </tr>)}</tbody>
     </table>
@@ -87,14 +86,14 @@ export default function DownloadsPage() {
       <p>Two primary-paper notes for existing reaction–enzyme pairs, including protein identity, measurements, source locations and limits. Revision: literature-pair-notes-20261104-v1. These notes are separate from the 2026-10-30 frozen data bundle and do not increase its assertion counts.</p>
       <a className="font-bold text-primary hover:underline" href="/data/reaction-enzyme-literature.json" download>Download literature notes (JSON)</a>
     </section>
-    <FileGroup title="Field dictionaries and release documents" description="Schemas, exact file checksums, citation information, and accompanying notices." id="release-documents" files={groups("metadata")} />
+    <FileGroup title="Field dictionaries and release documents" description="Schemas, citation information, and accompanying notices." id="release-documents" files={groups("metadata")} />
     <section className="mt-10"><p className="reactenz-eyebrow">Interactive exports</p><h2 className="reactenz-tools-section-title mb-5">Filtered list-page downloads</h2>
       <p className="mb-5 text-sm leading-7 text-muted">Use the export button on each list page to keep its filters, selected rows, and visible columns. The existing XLS headers remain compatible; collection-source descriptions are omitted.</p>
       <div className="grid gap-5 lg:grid-cols-2">{exports.map(item => <article key={item.type} className="rounded-[24px] border border-border bg-white p-6 dark:border-dark_border dark:bg-darkmode"><h3>{item.title}</h3><p className="my-4 text-sm leading-7 text-muted">{item.description}</p><div className="flex flex-wrap gap-3"><Button href={`/api/reactenzdb/export?type=${item.type}&format=xls`}>Export XLS</Button><Button href={`/api/reactenzdb/export?type=${item.type}&format=tsv.gz`}>Export TSV.GZ</Button></div></article>)}</div>
     </section>
     <section className="mt-10 rounded-[24px] border border-border bg-white p-6 text-sm leading-7 text-muted dark:border-dark_border dark:bg-darkmode">
       <h2 className="mb-4 text-midnight_text dark:text-white">Snapshot and citation</h2>
-      <p>Source snapshot: <code>{catalog.source_snapshot}</code>. Download revision: <code>{catalog.revision}</code>. Cite the downloaded file and its SHA256.</p>
+      <p>Source snapshot: <code>{catalog.source_snapshot}</code>. Download revision: <code>{catalog.revision}</code>. Cite the downloaded file and its release version.</p>
       <p className="mt-3">Identified KEGG content and unresolved mixed planning pools are excluded from this download snapshot. Ordinary identifiers and external links are retained. Full scope and applicable terms are recorded in the README and accompanying notices.</p>
       <div className="mt-5 flex flex-wrap gap-3"><Button href="/api/reactenzdb/release-file?file=catalog">Download manifest</Button><Button href="/api/reactenzdb/release-file?file=citation">Download CITATION.cff</Button><Button href="/documentation/api">API documentation</Button></div>
     </section>

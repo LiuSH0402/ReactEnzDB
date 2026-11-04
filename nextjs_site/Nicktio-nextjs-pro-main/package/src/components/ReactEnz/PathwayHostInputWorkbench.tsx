@@ -125,7 +125,7 @@ export default function PathwayHostInputWorkbench({ hosts, initialReactionId, ma
       const url = URL.createObjectURL(await response.blob());
       const anchor = document.createElement("a"); anchor.href = url; anchor.download = filenames[format]; anchor.click();
       setTimeout(() => URL.revokeObjectURL(url), 1000);
-      setLastDigest(`${filenames[format]} · SHA-256 ${response.headers.get("X-Content-SHA256") ?? "not returned"}`);
+      setLastDigest(`${filenames[format]} downloaded`);
     } catch (cause) { setError(cause instanceof Error ? cause.message : "Local export failed."); }
   }
 
@@ -261,7 +261,7 @@ export default function PathwayHostInputWorkbench({ hosts, initialReactionId, ma
                 <div className="border-l-2 border-primary/40 pl-4" key={step.step}>
                   <p className="font-semibold">Step {step.step} · {step.record_status === "FOUND" ? <Link className="text-primary hover:underline" href={`/reactions/${step.reaction_id}`}>{step.reaction_id}</Link> : step.reaction_id} · {step.requested_direction} · {step.record_status}</p>
                   <p className={`mt-1 text-xs font-semibold ${step.coefficient_evidence.status === "INSUFFICIENT" ? "text-amber-800 dark:text-amber-300" : "text-muted"}`}>
-                    {step.coefficient_evidence.status === "INSUFFICIENT" ? "系数证据不足 · Coefficient evidence insufficient" : "Coefficient text reconciled with the current equation (not chemical identity validation)"}
+                    {step.coefficient_evidence.status === "INSUFFICIENT" ? "Coefficient evidence insufficient" : "Coefficient text reconciled with the current equation (not chemical identity validation)"}
                     {step.coefficient_evidence.reasons.length ? ` · ${step.coefficient_evidence.reasons.join(", ")}` : ""}
                   </p>
                   <ul className="mt-2 grid gap-2 text-sm sm:grid-cols-2 xl:grid-cols-3">{step.hosts.map((host) => (

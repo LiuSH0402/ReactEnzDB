@@ -72,7 +72,7 @@ export default function MethodologyPage() {
       <section className="mb-10 text-sm leading-7 text-muted dark:text-white/60" aria-label="Release provenance">
         {revision ? <p>Current data revision: {revision.revision}, updated {revision.date}. The earlier reference repair closed 12 orphan kinetic references while preserving kinetic IDs, values, units and PMIDs; it also aligned direction semantics and retained original source labels.</p> : null}
         <p>Equation equality means unspecified direction. A source bidirectional arrow is not a thermodynamic reversibility measurement.</p>
-        <p>Derived layers retain their recorded source versions and input hashes. Model-ready subsets, sequence clusters, diversity and candidate selection were rebuilt from the expanded core on 2026-10-16. Host mappings retain their recorded model versions and input populations. Read the <Link className="font-bold text-primary hover:underline" href="/downloads">snapshot and data-layer lineage records</Link> before combining them. Independent dual review and adjudication remain separate from automated release acceptance.</p>
+        <p>Derived layers retain their recorded source versions and input metadata. Model-ready subsets, sequence clusters, diversity and candidate selection were rebuilt from the expanded core on 2026-10-16. Host mappings retain their recorded model versions and input populations. Read the <Link className="font-bold text-primary hover:underline" href="/downloads">snapshot and data-layer lineage records</Link> before combining them. Independent dual review and adjudication remain separate from automated release acceptance.</p>
       </section>
 
       <section className="mb-10">

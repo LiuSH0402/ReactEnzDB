@@ -36,18 +36,6 @@ export default function ReactionStandardizationPanel({ bundle }: { bundle: React
             <IdentityRow label="Reversibility" value={pretty(standardization.reversibility_status)} />
           </dl>
           <details className="group mt-4 border-b border-border pb-4 dark:border-dark_border">
-            <summary className="cursor-pointer list-none text-sm font-black text-primary transition group-open:mb-3">Show identity fingerprints</summary>
-            <p className="mb-3 text-xs leading-6 text-muted">
-              These are SHA-256 fingerprints of the normalized reaction, used to compare records. They are identifiers, not names, and not encoding errors.
-            </p>
-            <dl className="divide-y divide-border border-y border-border text-sm dark:divide-dark_border dark:border-dark_border">
-              <FingerprintRow label="Directional identity" value={standardization.directional_reaction_key} />
-              <FingerprintRow label="Directionless identity" value={standardization.directionless_reaction_key} />
-              <FingerprintRow label="Directional, stereo-relaxed" value={standardization.directional_reaction_key_no_stereo} />
-              <FingerprintRow label="Directionless, stereo-relaxed" value={standardization.directionless_reaction_key_no_stereo} />
-            </dl>
-          </details>
-          <details className="group mt-4 border-b border-border pb-4 dark:border-dark_border">
             <summary className="cursor-pointer list-none text-sm font-black text-primary transition group-open:mb-3">Show canonical reaction SMILES</summary>
             <code className="block overflow-x-auto whitespace-pre-wrap break-all bg-hero-bg p-4 text-xs leading-6 text-midnight_text dark:bg-dark_b dark:text-white">
               {standardization.canonical_reaction_smiles ?? "Canonical reaction SMILES unavailable."}
@@ -173,23 +161,6 @@ function mappingLink(mapping: CrossDatabaseMapping) {
 function Metric({ label, value, tone: metricTone }: { label: string; value: string; tone: "blue" | "green" | "amber" | "slate" }) { return <div className="xl:px-5 first:xl:pl-0"><div className="text-xs font-black uppercase tracking-[0.12em] text-muted">{label}</div><div className="mt-2 text-xl font-black text-midnight_text dark:text-white">{value}</div><div className="mt-2"><Badge tone={metricTone}>{metricTone === "green" ? "verified" : metricTone === "amber" ? "review" : "reported"}</Badge></div></div>; }
 function Eyebrow({ children }: { children: React.ReactNode }) { return <div className="max-w-full text-xs font-black uppercase tracking-[0.12em] text-primary">{children}</div>; }
 function IdentityRow({ label, value, mono = false }: { label: string; value: React.ReactNode; mono?: boolean }) { return <div className="grid gap-2 py-3 md:grid-cols-[190px_1fr]"><dt className="text-xs font-black uppercase tracking-[0.1em] text-muted">{label}</dt><dd className={`min-w-0 ${mono ? "overflow-x-auto whitespace-nowrap font-mono text-xs" : "font-semibold"} text-midnight_text dark:text-white`}>{value ?? "not available"}</dd></div>; }
-function FingerprintRow({ label, value }: { label: string; value: string | null | undefined }) {
-  const text = value?.trim() ?? "";
-  return (
-    <div className="grid gap-2 py-3 md:grid-cols-[220px_1fr] md:items-center">
-      <dt className="text-xs font-black uppercase tracking-[0.1em] text-muted">{label}</dt>
-      <dd className="min-w-0">
-        {text ? (
-          <code className="block select-all overflow-x-auto whitespace-nowrap bg-hero-bg px-3 py-2 font-mono text-[11px] leading-5 text-midnight_text dark:bg-dark_b dark:text-white" title={text}>
-            {text}
-          </code>
-        ) : (
-          <span className="text-sm font-semibold text-midnight_text dark:text-white">not available</span>
-        )}
-      </dd>
-    </div>
-  );
-}
 function SmallMeta({ label, value }: { label: string; value: React.ReactNode }) { return <div><dt className="text-xs font-black uppercase tracking-[0.1em] text-muted">{label}</dt><dd className="mt-1 font-bold text-midnight_text dark:text-white">{value ?? "unknown"}</dd></div>; }
 function pretty(value: string | null | undefined) { return value ? value.replaceAll("_", " ") : "not available"; }
 function balanceLabel(value: string) {

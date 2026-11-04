@@ -6,7 +6,7 @@ The repository supports source installation/build checks and replay of saved dev
 
 `experiments/matching/queries.json` contains 43 single-step predictions, 13 non-empty multistep route steps and five engineering controls. These inputs were used during development and are not an independent test set. The comparison covers the retained baseline and current ReactEnzDB matching component, rather than all capabilities of the upstream prediction tools.
 
-`recorded_20261101/summary.json` stores the original results. The hashes in `recorded_20261101/inputs.json` describe the runtime inputs used for that evaluation. Original planner proposals, including two empty routes among ten proposals, are retained in `original_routes/`.
+`recorded_20261101/summary.json` stores the original results. `recorded_20261101/inputs.json` describes the runtime inputs used for that evaluation. Original planner proposals, including two empty routes among ten proposals, are retained in `original_routes/`.
 
 ## Replay
 

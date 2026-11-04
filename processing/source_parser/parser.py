@@ -156,7 +156,7 @@ def _build_biopart(
         "pathway_annotations_json": _group_json(general_map, "pathways"),
         "optimum_ph_json": _group_json(general_map, "optimum ph"),
         "optimum_temperature_json": _group_json(general_map, "optimum temperature(ºc)")
-        or _group_json(general_map, "optimum temperature(潞c)"),
+        or _group_json(general_map, "optimum temperature(\u6f5ec)"),
         "temperature_stability_json": None,
         "ph_stability_json": None,
         "molecular_weight_json": None,

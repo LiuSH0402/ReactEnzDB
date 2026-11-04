@@ -1,6 +1,6 @@
 # Runtime data
 
-The repository contains source code and database schemas. Full databases are supplied separately. File identities and checksums are recorded in [`data/RELEASE_IDENTITY.json`](../data/RELEASE_IDENTITY.json); schema differences are listed in [`data/DOWNLOAD_VS_RUNTIME_SCHEMA.json`](../data/DOWNLOAD_VS_RUNTIME_SCHEMA.json).
+The repository contains source code and database schemas. Full databases are supplied separately. Release metadata are recorded in [`data/RELEASE_IDENTITY.json`](../data/RELEASE_IDENTITY.json); schema differences are listed in [`data/DOWNLOAD_VS_RUNTIME_SCHEMA.json`](../data/DOWNLOAD_VS_RUNTIME_SCHEMA.json).
 
 ## Data availability and compatibility
 
@@ -48,4 +48,4 @@ The reaction lookup records its RDKit version and rejects an incompatible interp
 python scripts/build_retrosynthesis_reaction_lookup.py --source /path/to/core.db --output /path/to/new_lookup.sqlite
 ```
 
-Point `REACTENZDB_RETROSYNTHESIS_LOOKUP_DB` to the new file and record its checksum separately from the original snapshot.
+Point `REACTENZDB_RETROSYNTHESIS_LOOKUP_DB` to the new file and retain the original snapshot separately.

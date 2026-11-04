@@ -156,7 +156,6 @@ export default function RetrosynthesisWorkbench({ registry, fixedTool }: { regis
             {result.tool_identity ? (
               <p className="mt-2 text-xs leading-5 text-muted dark:text-white/50">
                 Registry v{result.tool_identity.registry_version} · {result.tool_identity.checkpoint?.file ?? "checkpoint not recorded"}
-                {result.tool_identity.checkpoint?.sha256 ? ` · SHA256 ${result.tool_identity.checkpoint.sha256.slice(0, 12)}...` : ""}
                 {` · code ${result.tool_identity.code_license.spdx ?? "license not specified"} · weights ${result.tool_identity.model_weights_license?.status ?? "not recorded"}`}
               </p>
             ) : null}

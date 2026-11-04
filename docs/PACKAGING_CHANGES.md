@@ -2,6 +2,10 @@
 
 This repository is an independent copy of the application and processing code. Preparing it did not change the deployed service.
 
+## Presentation
+
+The interface and generated reports use English. Technical file identifiers are omitted from user-facing views.
+
 ## Configuration
 
 - Replaced machine-specific Python defaults with `python`, retaining environment overrides.

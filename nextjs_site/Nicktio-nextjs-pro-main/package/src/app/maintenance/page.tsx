@@ -23,7 +23,7 @@ const commitments = [
   },
   {
     title: "Version archive",
-    text: "Each public release will be assigned a version number, release date, manifest, schema documentation, and SHA256 checksums. Previous downloadable releases will be retained or archived so analyses can cite and reproduce the exact dataset version used.",
+    text: "Each public release will be assigned a version number, release date, manifest and schema documentation. Previous downloadable releases will be retained or archived so analyses can cite and reproduce the exact dataset version used.",
   },
   {
     title: "Issue handling",
@@ -85,7 +85,7 @@ export default function MaintenancePage() {
             <p>
               Public releases use versioned identifiers such as ReactEnzDB 2026.09.1. Each release should include
               a release date, schema file, field dictionary, downloadable SQLite database, CSV/TSV bulk files,
-              release manifest, and SHA256 checksum list. The repaired core is identified by its data revision and
+              release manifest. The repaired core is identified by its data revision and
               exact snapshot. Thirty host-model identities are a separately sourced staging lookup; this does not
               establish original GEM redistribution or completed human review.
             </p>
@@ -107,7 +107,7 @@ export default function MaintenancePage() {
         <h2 className="reactenz-tools-section-title mb-4">Statement for manuscript and website review</h2>
         <p className="text-sm leading-7 text-muted dark:text-white/60">
           ReactEnzDB will be maintained by the LinDing Group, UESTC. The database will provide versioned public
-          releases, downloadable archives, schema documentation, checksums, and correction records. The maintainers
+          releases, downloadable archives, schema documentation and correction records. The maintainers
           commit to keeping the resource accessible and maintained for at least five years after publication, subject
           to institutional server availability and standard source-database licensing constraints. User questions,
           bug reports, and data correction requests should be sent to hlin@uestc.edu.cn.

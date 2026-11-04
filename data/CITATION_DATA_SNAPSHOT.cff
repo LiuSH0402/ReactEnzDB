@@ -1,16 +1,31 @@
-cff-version: 1.2.0
-message: "Cite this exact data snapshot and the SHA256 of the downloaded file. Metadata corrections do not add experimental evidence or establish a manuscript or archive DOI."
-title: "ReactEnzDB: Reaction-centered Enzyme Evidence and Implementation Database, release 2026.09.1"
-type: dataset
-version: "2026.09.1-public-scope-20261030-public"
-authors:
-  - family-names: "Liu"
-    given-names: "Shanghua"
-    affiliation: "University of Electronic Science and Technology of China"
-keywords:
-  - enzyme
-  - reaction
-  - biosynthesis
-  - database
-  - biocatalysis
+cff-version: 1.2.0
+
+message: "Cite the data release and snapshot used in your analysis."
+
+title: "ReactEnzDB: Reaction-centered Enzyme Evidence and Implementation Database, release 2026.09.1"
+
+type: dataset
+
+version: "2026.09.1-public-scope-20261030-public"
+
+authors:
+
+  - family-names: "Liu"
+
+    given-names: "Shanghua"
+
+    affiliation: "University of Electronic Science and Technology of China"
+
+keywords:
+
+  - enzyme
+
+  - reaction
+
+  - biosynthesis
+
+  - database
+
+  - biocatalysis
+
 date-released: "2026-10-30"
