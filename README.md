@@ -73,4 +73,6 @@ See [Reproducibility](docs/REPRODUCIBILITY.md) for the evaluation scope and inte
 
 ## License
 
-See [LICENSE](LICENSE) and [Third-party notices](THIRD_PARTY_NOTICES.md).
+ReactEnzDB-authored code is licensed under the [MIT License](LICENSE), which permits use, modification, redistribution and commercial use, provided the copyright and license notices are retained.
+
+Third-party components retain their respective licenses. Scientific datasets and upstream model resources are not relicensed by this code license. See [Third-party notices](THIRD_PARTY_NOTICES.md).

@@ -18,4 +18,4 @@ GSETRetro, READRetro, BioNavi-NP, RetroBioCat and SubNetX are upstream projects.
 
 ## Scientific resources
 
-Data sources and attribution are listed in [Data sources](docs/DATA_SOURCES.md). Scientific data and model resources have terms separate from the application code. The project-code distribution notice is provided in [LICENSE](LICENSE).
+Data sources and attribution are listed in [Data sources](docs/DATA_SOURCES.md). Scientific data and model resources have terms separate from the application code. ReactEnzDB-authored code is licensed under the [MIT License](LICENSE). This grant does not relicense third-party components, scientific datasets or upstream model resources.
